@@ -1,0 +1,29 @@
+# Credenciales: nunca llegan al repositorio
+.env
+.streamlit/secrets.toml
+
+# Audios: la grabación real y los niveles degradados se regeneran, no se commitean
+*.m4a
+*.wav
+*.mp3
+*.ogg
+*.opus
+*.flac
+
+# Pesos de modelos (faster-whisper los descarga en la primera ejecución)
+models/
+*.bin
+*.pt
+*.safetensors
+*.onnx
+
+# Jupyter: los checkpoints no; las salidas de los notebooks SÍ se commitean (son evidencia)
+.ipynb_checkpoints/
+
+# Entorno de Python
+.venv/
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store

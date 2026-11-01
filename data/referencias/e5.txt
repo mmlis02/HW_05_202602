@@ -1,0 +1,18 @@
+Buenas tardes, bienvenido. Como el cliente principal de este equipo es de Canadá, vamos a empezar por ahí: ¿cómo está tu inglés?
+Bien. Viví dos años en Toronto por trabajo, así que lo uso con soltura. Diría que avanzado.
+Perfecto. ¿En qué estás trabajando actualmente?
+Soy líder técnico de QA en una empresa de comercio electrónico. Tengo a cargo a cuatro testers y defino la estrategia de pruebas de la tienda web y de la app.
+¿Qué herramientas usan?
+Para automatización web, Cypress. Antes usábamos Selenium y todavía mantenemos algunas pruebas viejas ahí. Las pruebas de API las hacemos en Postman, y el seguimiento de defectos está en Jira.
+¿Y pruebas de carga?
+Algo con JMeter, pero muy puntual, una o dos veces al año antes de las campañas grandes.
+Bien. Hablemos de tiempos. Si todo sale bien, ¿cuándo podrías empezar?
+Ahí tengo una restricción: en diciembre tenemos la campaña de fin de año y no quiero dejar al equipo en medio de eso. Podría empezar la segunda semana de enero, el lunes once.
+Entiendo, es razonable. ¿Cuál es tu expectativa salarial?
+Hoy gano seis mil doscientos. Mi pretensión es de siete mil soles brutos mensuales.
+Ok. ¿Y cuántos años llevas en calidad de software?
+Empecé como tester manual en dos mil veinte, así que van seis años. Los últimos dos como líder.
+Muy bien. Una última pregunta: ¿cómo decides qué automatizar y qué no?
+Automatizo lo que se repite en cada release y lo que más se rompe: el login, el carrito, el pago. Lo que cambia cada semana lo dejo manual hasta que se estabilice.
+Me parece un buen criterio. Te enviaremos la invitación para la entrevista con el gerente.
+Gracias, quedo atento.

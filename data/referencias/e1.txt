@@ -1,0 +1,22 @@
+Buenas tardes, gracias por venir. Soy Carlos, del área de talento de Andina Software. Para empezar, cuéntame un poco de ti y de lo que haces actualmente.
+Buenas tardes, gracias por la invitación. Bueno, actualmente trabajo en una fintech pequeña que se llama Crédito Ágil. Ahí estoy como desarrollador backend semi senior. Mi trabajo es básicamente construir y mantener las APIs que usan la app móvil y el portal web.
+¿Y cuánto tiempo llevas en ese puesto?
+En Crédito Ágil llevo dos años. Antes estuve en una consultora.
+Entonces, en total, ¿cuántos años de experiencia tienes programando?
+Casi cinco años. Bueno, si cuento solo lo formal, con contrato, serían cuatro años y medio. Antes hice algunos trabajos freelance, pero esos no los cuento.
+Perfecto. ¿Con qué tecnologías trabajas en el día a día?
+Principalmente Python, con Django para las APIs. La base de datos es PostgreSQL, y todo lo desplegamos en contenedores con Docker.
+Muy bien. El equipo aquí trabaja bastante con clientes de afuera. ¿Cómo está tu inglés?
+Leo documentación sin problema, eso todos los días. Escribir correos también. Lo que me cuesta un poco más es hablar, sobre todo en reuniones largas. Diría que tengo un nivel intermedio.
+Entendido. Te cuento del puesto: es para el equipo de pagos, son seis personas, trabajamos en sprints de dos semanas y hay dos días presenciales a la semana en la oficina. ¿Eso te acomoda?
+Sí, sin problema. Vivo relativamente cerca, así que dos días presenciales está bien.
+Genial. Hablemos de lo económico. ¿Cuál es tu pretensión salarial?
+Ahora estoy ganando cinco mil ochocientos. Por el cambio y por las responsabilidades del puesto, mi pretensión sería de seis mil quinientos soles mensuales.
+Bien, lo anoto. ¿Y cuándo podrías empezar?
+Tendría que avisar en mi trabajo y entregar un par de cosas pendientes. Creo que en dos semanas podría estar disponible.
+Perfecto. ¿Tienes alguna pregunta para nosotros?
+Sí, quería saber cómo es la revisión de código y si hay guardias fuera de horario.
+Todo pasa por pull requests con al menos una aprobación. Y sí, hay guardias, pero rotan cada seis semanas y se pagan aparte.
+Perfecto, me queda claro.
+Muy bien. Te escribiremos esta semana con los siguientes pasos. Gracias por tu tiempo.
+Gracias a ustedes. Hasta luego.
