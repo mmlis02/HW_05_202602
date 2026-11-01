@@ -350,9 +350,10 @@ def _trozos(texto):
 
 def _promocion(oraciones, p, negacion):
     alias = _config()["esquemas"]["pedido"]["alias"]["promocion"]
-    menciones = [((i, m.start()), nombre, original) for i, (original, _) in enumerate(oraciones)
+    # Se busca en la versión con dígitos: el alias "LEÑA5" solo existe después de convertir "LEÑA cinco".
+    menciones = [((i, m.start()), nombre, original) for i, (original, conv) in enumerate(oraciones)
                  for nombre, frases in alias.items()
-                 for m in re.finditer(_patron(frases), original, re.IGNORECASE)]
+                 for m in re.finditer(_patron(frases), conv, re.IGNORECASE)]
     if not menciones:
         for i in _respuesta(oraciones, p["pregunta_promocion"]):
             if re.match(_patron(negacion), oraciones[i][0].lstrip("¿¡ "), re.IGNORECASE):
