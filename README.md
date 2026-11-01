@@ -4,6 +4,14 @@ Proyecto integrador de ASR: una entrevista grabada se convierte en una ficha de 
 
 ## Setup
 
+### GPU en un sistema sin CUDA 12 (Colab)
+
+- **Problema.** Colab pasó a Python 3.13 con una CUDA más nueva y ya no trae las librerías de CUDA 12. CTranslate2 4.x, el motor de faster-whisper, necesita cuBLAS para CUDA 12 y cuDNN 9. La GPU se detecta igual, pero al transcribir falla con `RuntimeError: Library libcublas.so.12 is not found or cannot be loaded`.
+- **Solución.** `pip install -r requirements-gpu.txt` instala `nvidia-cublas-cu12==12.9.1.4` y `nvidia-cudnn-cu12==9.10.2.21`, como indica la documentación de faster-whisper 1.2.1. Después, `src.transcripcion.precargar_cuda12()` las carga en el proceso con `ctypes` y `RTLD_GLOBAL`, en orden (`libcublasLt` antes que `libcublas`, y las subbibliotecas de cuDNN antes que `libcudnn`). Cuando CTranslate2 pide `libcublas.so.12`, la encuentra ya cargada. `cargar_modelo` llama a esa función cada vez que el device es `cuda`.
+- **Por qué no `LD_LIBRARY_PATH`.** El cargador del sistema solo la lee al arrancar el proceso. Cambiarla con el kernel ya iniciado no tiene efecto, y en Colab tampoco sobrevive a un reinicio de la sesión.
+- **Comprobación.** `notebooks/02_transcripcion_gpu.ipynb` transcribe, justo después de instalar, un segundo de silencio con el modelo `tiny` en `cuda`. Si las librerías fallan, falla ahí y no a mitad de la corrida.
+- **PyAV.** `av` está fijado en 18.1.0: faster-whisper 1.2.1 usa un argumento de `av.open` que PyAV 19 eliminó, y sin esa versión toda lectura de audio falla.
+
 ## Audios
 
 Los 10 audios del corpus (5 entrevistas y 5 llamadas) **no están en este repositorio ni en su historial, por privacidad**. Todo lo que se dice en ellos es inventado, pero son voces de personas reales. Están en una carpeta privada de Google Drive, y el enlace a esa carpeta tampoco se publica.
