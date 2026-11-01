@@ -1,0 +1,20 @@
+Buenos días, gracias por conectarse. Le explico rápido: es una conversación corta para conocerle mejor. Antes de todo, una pregunta práctica: si avanzamos, ¿desde cuándo podría incorporarse?
+Buenos días. Puedo empezar de inmediato. Terminé mi último contrato el mes pasado, así que no tengo que dar preaviso.
+Excelente, eso nos ayuda mucho. La posición es para un equipo regional, así que buena parte de las reuniones son en inglés. ¿Cómo describiría su nivel?
+Tengo un nivel avanzado. Saqué el certificado C1 hace dos años, y en mi último trabajo presentaba los reportes mensuales en inglés a la gerencia de Chile y Colombia.
+Muy bien. Cuénteme de su experiencia.
+Trabajo como analista de datos desde dos mil veintitrés, o sea, tres años. Empecé en una empresa de seguros, en el área de riesgos, y luego pasé a una cadena de farmacias.
+¿Y cuál fue su último puesto exactamente?
+Analista de datos senior en Farmacias Bienestar. Bueno, el cargo decía senior, pero en la práctica éramos dos analistas y yo coordinaba con el área comercial.
+¿Qué herramientas usaba en ese puesto?
+Para los tableros, Power BI. Las consultas las hacía en SQL Server, y para automatizar la limpieza de datos usaba Python con pandas. Al final del año también armamos algunos flujos en Airflow.
+Interesante. ¿Qué proyecto destacaría de ese tiempo?
+Un modelo de reposición de inventario. Antes cada tienda pedía a ojo; con el modelo bajamos los quiebres de stock en casi un quince por ciento en seis meses.
+Muy bien. Por último, el tema salarial. Como es una posición regional, la pagamos en dólares. ¿Cuál sería su expectativa?
+Estaba pensando en algo alrededor de mil ochocientos dólares al mes. Considerando que es regional, lo veo razonable.
+Perfecto, está dentro del rango. ¿Alguna pregunta?
+Sí, ¿el trabajo es remoto?
+Es híbrido: un día a la semana en la oficina y el resto remoto.
+Perfecto, me parece bien.
+Entonces la siguiente etapa es una prueba técnica. Le llegará por correo mañana. Muchas gracias.
+Muchas gracias, quedo pendiente del correo.

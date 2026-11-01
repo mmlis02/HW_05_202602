@@ -1,0 +1,19 @@
+Hola, ¿qué tal? Vi tu portafolio antes de la llamada. ¿Con qué estás trabajando ahora?
+Hola, bien, gracias. Ahora todo lo hago en React con TypeScript. El último proyecto lo migramos a Next.js, y los diseños nos llegan en Figma.
+Bacán. ¿Y haces pruebas?
+Sí, pruebas unitarias con Jest. No llegamos al cien por ciento de cobertura, pero los componentes principales están cubiertos.
+¿Y cuánta experiencia tienes?
+Un año y medio en mi primer trabajo, en una agencia, y otro año en el actual.
+Ok, buena trayectoria. ¿Y en qué puesto estás ahora?
+Soy desarrollador frontend junior en una startup de educación, Aprende Más. Aunque ya llevo un año ahí, todavía figuro como junior.
+Entiendo. Hablemos de expectativas. ¿Cuánto estás buscando?
+Estaba pensando en cuatro mil doscientos… no, perdón, me confundí con lo que gano ahora. Mi pretensión es cuatro mil ochocientos soles.
+Ok, anotado. ¿Y el inglés?
+Intermedio. Entiendo casi todo cuando leo o veo videos, pero hablando me trabo un poco.
+Normal. Aquí el inglés es más para leer documentación. Cuéntame de algún problema difícil que hayas resuelto.
+En la migración a Next.js teníamos páginas que tardaban como seis segundos en cargar. Separé los componentes pesados, cargamos las imágenes de forma diferida y bajamos el tiempo a menos de dos segundos.
+Muy bien. ¿Cuándo podrías empezar?
+En mi contrato tengo un mes de preaviso, así que tendría que avisar y salir en un mes.
+Perfecto. Mañana te mando la prueba técnica: es un proyecto pequeño para hacer en casa, tienes tres días.
+Genial, muchas gracias.
+A ti. Hablamos.

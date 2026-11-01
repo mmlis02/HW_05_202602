@@ -1,0 +1,20 @@
+Hola, buenas tardes. Gracias por venir hasta la oficina.
+Buenas tardes. Antes de empezar, quería preguntar algo para no hacerles perder tiempo: ¿el rango salarial del aviso es fijo?
+Hay cierta flexibilidad. ¿Cuál sería tu pretensión?
+Estoy entre nueve y diez mil soles. Idealmente, nueve mil quinientos.
+Bien, eso entra en lo que tenemos. Cuéntame qué haces hoy.
+Hoy soy jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur. Manejo un equipo de tres personas.
+¿Y cuántos años de experiencia tienes en total?
+En infraestructura, ocho. Casi nueve, porque cumplo nueve en marzo, pero digamos ocho.
+¿Qué stack manejan?
+Todo está en AWS. Los clústeres corren en Kubernetes, la infraestructura la definimos con Terraform, los despliegues van por Jenkins y el monitoreo lo tenemos en Grafana. Antes usábamos Nagios, pero lo apagamos el año pasado.
+Este puesto tiene reuniones con un proveedor en Estados Unidos. ¿Cómo andas de inglés?
+Básico, la verdad. Leo documentación técnica, eso sí, porque todo está en inglés. Pero conversar me cuesta bastante. Estoy llevando clases los sábados.
+Ok, lo tomamos en cuenta. ¿Por qué quieres cambiar de trabajo?
+Porque en mi empresa la infraestructura ya está estable y quiero un reto más grande. Ustedes tienen tráfico de varios países y eso me interesa.
+Tiene sentido. Una pregunta técnica rápida: si un despliegue falla en producción a las dos de la mañana, ¿qué haces primero?
+Primero reviso si el rollback automático funcionó. Si no, hago rollback manual a la versión anterior, confirmo en Grafana que las métricas vuelvan a la normalidad y recién después investigo la causa. Al día siguiente escribimos el postmortem.
+Muy bien. ¿Y cuándo podrías incorporarte?
+Tengo que entregar una migración a fin de mes. A partir del primero de diciembre estaría libre.
+Perfecto. Te contactamos la próxima semana.
+Gracias, quedo atento.
