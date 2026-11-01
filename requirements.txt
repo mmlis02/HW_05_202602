@@ -1,0 +1,14 @@
+# Transcripción (CTranslate2; en Colab usa CUDA 12 + cuDNN 9)
+faster-whisper==1.2.1
+# WER y CER
+jiwer==4.0.0
+# Números en palabras -> dígitos en texto corrido, con soporte de español (alpha2digit(texto, "es"))
+text2num==3.1.0
+# Datos y configuración
+pandas==3.1.0
+PyYAML==6.0.3
+python-dotenv==1.2.4
+# App
+streamlit==1.66.1
+# Notebooks
+jupyter==1.1.1
