@@ -40,6 +40,9 @@ Pedido
   "en vez de" quita lo que sigue y una corrección deja solo lo dicho después del marcador.
 - precio_unitario: sale de carta.csv, nunca del audio, porque varios precios no se dicen.
 - promocion y descuento: la última mención de un alias de promoción; el descuento sale de promociones.csv.
+  Si no hay ninguna, se busca una respuesta negativa a la pregunta por la promoción ("¿Tiene algún
+  código?" -> "No, ninguno."): el valor queda nulo (descuento 0) y esa respuesta es la evidencia de
+  que la ausencia se dijo. Si tampoco la hay, el campo queda nulo y sin evidencia.
 - direccion_entrega: la última dirección con tipo de vía y número (la corregida, si hubo corrección);
   si esa mención no trae distrito, se toma de otra mención de la misma vía.
 - metodo_pago: el primer alias en la respuesta a la pregunta de pago; si no hay, el último del texto.
@@ -94,7 +97,7 @@ def extraer(transcript: str, schema: str) -> dict:
         }
     if schema == "pedido":
         p = reglas["pedido"]
-        promocion, descuento = _promocion(oraciones)
+        promocion, descuento = _promocion(oraciones, p, reglas["negacion"])
         return {
             "items": _items(oraciones, p, reglas["correccion"]),
             "promocion": promocion,
@@ -345,12 +348,15 @@ def _trozos(texto):
     return [t.strip(" .¿?¡!") for t in partes if t.strip(" .¿?¡!")]
 
 
-def _promocion(oraciones):
+def _promocion(oraciones, p, negacion):
     alias = _config()["esquemas"]["pedido"]["alias"]["promocion"]
     menciones = [((i, m.start()), nombre, original) for i, (original, _) in enumerate(oraciones)
                  for nombre, frases in alias.items()
                  for m in re.finditer(_patron(frases), original, re.IGNORECASE)]
     if not menciones:
+        for i in _respuesta(oraciones, p["pregunta_promocion"]):
+            if re.match(_patron(negacion), oraciones[i][0].lstrip("¿¡ "), re.IGNORECASE):
+                return _campo(None, oraciones[i][0]), _campo(0, oraciones[i][0])
         return _vacio(), _campo(0, None)
     _, nombre, original = max(menciones)
     promociones = pd.read_csv(_config()["rutas"]["promociones"]).set_index("promocion")
