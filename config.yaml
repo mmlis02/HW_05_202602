@@ -41,7 +41,7 @@ cache:
 colab:
   drive_salidas: /content/drive/MyDrive/HW_05_salidas
   # Se instalan con la versión fijada en requirements.txt; lo demás se usa tal como viene en Colab.
-  paquetes: [faster-whisper, jiwer, text2num, nvidia-ml-py]
+  paquetes: [faster-whisper, av, jiwer, text2num, nvidia-ml-py]
 
 audios:
   archivos:

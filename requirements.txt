@@ -1,5 +1,7 @@
 # Transcripción (CTranslate2; en Colab usa CUDA 12 + cuDNN 9)
 faster-whisper==1.2.1
+# faster-whisper 1.2.1 llama a av.open(..., metadata_errors=...), que PyAV 19 eliminó: se fija la última que lo acepta
+av==18.1.0
 # WER y CER
 jiwer==4.0.0
 # Números en palabras -> dígitos en texto corrido, con soporte de español (alpha2digit(texto, "es"))
