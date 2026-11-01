@@ -9,6 +9,11 @@
 *.ogg
 *.opus
 *.flac
+*.aac
+*.amr
+*.3gp
+*.mp4
+*.webm
 
 # Pesos de modelos (faster-whisper los descarga en la primera ejecución)
 models/
