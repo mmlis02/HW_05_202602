@@ -83,12 +83,59 @@ asr:
     - LEÑA5
 
 normalizacion:
-  # Misma regla para referencia e hipótesis antes de calcular WER/CER.
+  # Misma regla para referencia e hipótesis antes de calcular WER/CER. Reglas en src/normalizacion.py.
   minusculas: true
   quitar_puntuacion: true
-  numeros_a_digitos: true        # text2num.alpha2digit(texto, "es")
-  quitar_tildes: false           # "esta" vs "está" sí es un error de transcripción
+  palabras_a_numeros: true       # text2num.alpha2digit(texto, "es")
+  quitar_tildes: false           # provisional: "esta" vs "está" sí es un error de transcripción
   colapsar_espacios: true
+  # Números por debajo de este valor no se convierten cuando van sueltos: "un pollo", "una jarra"
+  # y "cada uno" siguen siendo palabras. Dentro de un compuesto sí ("treinta y un" -> 31).
+  umbral_numeros_pequenos: 2
+  # El umbral no alcanza cuando el artículo va junto a otro número: text2num lee "casi un quince"
+  # como "1 15" y "unos cuarenta" como "1 40". Estos artículos se apartan salvo detrás de otra
+  # palabra numérica ("ciento un" -> 101, "tres dos uno" -> 321) o de "decena y" ("treinta y un" -> 31).
+  articulos: [un, una, uno, unos, unas]
+  # Formas que text2num no reconoce: apócope y palabras con tilde escritas sin ella.
+  alias:
+    veintiún: veintiuno
+    veintiun: veintiuno
+    veintidos: veintidós
+    veintitres: veintitrés
+    veintiseis: veintiséis
+  # Se apartan antes de convertir y vuelven intactas: text2num convierte ordinales
+  # ("tres cuartos de pollo" -> "3 4ᵒˢ") y "por ciento" ("por 100"). Se acepta el plural con -s.
+  palabras_protegidas:
+    - por ciento
+    - primer
+    - primero
+    - primera
+    - segundo
+    - segunda
+    - tercer
+    - tercero
+    - tercera
+    - cuarto
+    - cuarta
+    - quinto
+    - quinta
+    - sexto
+    - sexta
+    - séptimo
+    - séptima
+    - octavo
+    - octava
+    - noveno
+    - novena
+    - décimo
+    - décima
+  # "<número> <unidad> y medio" -> "<número>.5 <unidad>". Solo unidades de tiempo: en "medio pollo"
+  # o "litro y medio", "medio" es un tamaño y no se toca.
+  unidades_y_medio: [año, años, mes, meses, hora, horas]
+  # Una corrida de al menos tantos dígitos sueltos es un dictado y se une: "nueve ocho siete" -> 987.
+  min_digitos_dictado: 3
+  # Códigos que se dicen separados y se escriben juntos: "LEÑA cinco" -> "LEÑA5".
+  codigos: [LEÑA5]
 
 esquemas:
   entrevista:
