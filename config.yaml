@@ -1,0 +1,203 @@
+# Configuración única del proyecto.
+# Todas las rutas son relativas a la raíz del repositorio; src/config.py las resuelve a rutas absolutas.
+# Ningún .py ni notebook escribe una ruta, un modelo, un umbral o un prompt a mano: los lee de aquí.
+
+proyecto:
+  idioma: es
+  dominio_task2: restaurante
+  # Base para convertir la disponibilidad relativa ("en dos semanas") en fecha absoluta.
+  fecha_grabacion: "2026-11-01"
+  # Solo para estimar la duración de un guion antes de grabarlo (habla conversacional).
+  palabras_por_minuto_estimadas: 150
+  duracion_clip_min: [2, 4]
+
+rutas:
+  enunciado: docs/enunciado.md
+  guiones: docs/guiones.md
+  audios_dir: data/audio                       # e1.m4a ... l5.m4a, no se commitean
+  audios_degradados_dir: data/audio_degradado  # L1-L3, se regeneran con 04_degradacion
+  ruido_dir: data/ruido                        # audio de ruido ambiente para L3, no se commitea
+  ground_truth_entrevistas: data/ground_truth/entrevistas.csv
+  ground_truth_llamadas: data/ground_truth/llamadas.csv
+  referencias_dir: data/referencias
+  carta: data/referencias/carta.csv
+  promociones: data/referencias/promociones.csv
+  transcripciones_dir: data/transcripciones    # caché commiteada: la app y CI nunca re-transcriben
+  resultados_dir: data/resultados
+  modelos_dir: models                          # pesos descargados, no se commitean
+
+archivos:
+  extension_audio: .m4a
+  patron_referencia: "{clip}.txt"
+
+asr:
+  modelo: large-v3
+  modelos_comparacion: [small, large-v3]
+  # "auto" deja elegir a la librería; el device REAL se lee en tiempo de ejecución, nunca de aquí.
+  dispositivo: auto
+  compute_type:
+    cuda: float16
+    cpu: int8
+  precisiones_comparacion: [float16, int8]
+  beam_size: 5
+  vad_filter: true
+  word_timestamps: true          # la probabilidad por palabra alimenta la regla de diagnóstico
+  # initial_prompt o hotwords: qué soporta la versión instalada se resuelve en 02_transcripcion_gpu.
+  glosario_mecanismo: initial_prompt
+  # Vocabulario del dominio, no la lista de respuestas: incluye términos que no aparecen en el corpus
+  # (Java, Angular, Azure...) para que el glosario no sea una filtración del ground truth.
+  glosario:
+    - Python
+    - Django
+    - PostgreSQL
+    - Docker
+    - Power BI
+    - SQL Server
+    - pandas
+    - Airflow
+    - AWS
+    - Azure
+    - Kubernetes
+    - Terraform
+    - Jenkins
+    - Grafana
+    - React
+    - Angular
+    - TypeScript
+    - Next.js
+    - Figma
+    - Jest
+    - Cypress
+    - Selenium
+    - Postman
+    - Jira
+    - JMeter
+    - Java
+    - Spring Boot
+    - La Leña Dorada
+    - chicha morada
+    - anticuchos
+    - mollejitas
+    - Yape
+    - Plin
+    - LEÑA5
+
+normalizacion:
+  # Misma regla para referencia e hipótesis antes de calcular WER/CER.
+  minusculas: true
+  quitar_puntuacion: true
+  numeros_a_digitos: true        # text2num.alpha2digit(texto, "es")
+  quitar_tildes: false           # "esta" vs "está" sí es un error de transcripción
+  colapsar_espacios: true
+
+esquemas:
+  entrevista:
+    campos:
+      anios_experiencia: numerico
+      ultimo_puesto: texto
+      tecnologias: lista
+      pretension_salarial: numerico_moneda
+      disponibilidad: fecha
+      nivel_ingles: categorico
+    clases:
+      nivel_ingles: [basico, intermedio, avanzado]
+    monedas: [PEN, USD]
+  pedido:
+    campos:
+      items: lista_objetos
+      promocion: texto_o_nulo
+      direccion_entrega: texto
+      metodo_pago: categorico
+      total_dicho: numerico
+    clases:
+      metodo_pago: [efectivo, yape, plin, tarjeta]
+
+extraccion:
+  metodos: [reglas, llm]
+  llm:
+    proveedor: anthropic
+    modelo: claude-haiku-5-5
+    temperatura: 0
+    max_tokens: 1500
+    variable_api_key: ANTHROPIC_API_KEY
+  prompts:
+    sistema: |
+      Eres un extractor de datos. Lees la transcripción automática de una conversación en español
+      y devuelves solo un objeto JSON válido, sin texto adicional.
+      Reglas:
+      - Para cada campo devuelve "valor" y "evidencia". "evidencia" es el fragmento EXACTO de la
+        transcripción del que sale el valor, copiado carácter por carácter.
+      - No corrijas la transcripción. Si una palabra parece mal oída, cópiala tal cual.
+      - Si un campo no se dice, devuelve null en "valor" y en "evidencia".
+      - Si el hablante se corrige, vale lo último que dice.
+    entrevista: |
+      Transcripción de una entrevista de trabajo. A entrevista, B es el candidato.
+      Fecha de la grabación: {fecha_grabacion}.
+      Extrae del candidato:
+      - anios_experiencia: número de años de experiencia total.
+      - ultimo_puesto: cargo actual o último cargo.
+      - tecnologias: lista de tecnologías que usa hoy (no las que abandonó).
+      - pretension_salarial: {{"monto": número, "moneda": "PEN" o "USD"}}. Es lo que pide, no lo que
+        gana hoy. Si da un rango y un ideal, vale el ideal.
+      - disponibilidad: fecha absoluta AAAA-MM-DD en que puede empezar, calculada desde la fecha de grabación.
+      - nivel_ingles: una de basico, intermedio, avanzado.
+      Transcripción:
+      {transcript}
+    pedido: |
+      Transcripción de una llamada de pedido a la pollería La Leña Dorada. A es el vendedor, B el cliente.
+      Extrae el pedido FINAL (después de cualquier corrección del cliente):
+      - items: lista de {{"producto", "tamano", "cantidad", "precio_unitario"}}.
+      - promocion: nombre de la promoción aplicada o null.
+      - descuento: monto del descuento en soles (0 si no hay).
+      - direccion_entrega: dirección final con números en dígitos.
+      - metodo_pago: uno de efectivo, yape, plin, tarjeta.
+      - total_dicho: total que dice el vendedor en voz alta, aunque esté mal sumado.
+      Transcripción:
+      {transcript}
+
+verificacion:
+  etiqueta_verificado: verificado
+  etiqueta_no_verificado: sin_verificar
+  # El valor debe aparecer literalmente en la transcripción después de normalizar ambos lados
+  # (minúsculas, sin puntuación, números a dígitos).
+  modo: literal_normalizado
+
+validacion:
+  tolerancia_total_soles: 0
+  # Regla de diagnóstico ASR vs hablante (a calibrar en 05_validacion): si alguna palabra numérica
+  # del pedido tiene probabilidad menor a este umbral, la discrepancia se atribuye al ASR.
+  umbral_probabilidad_palabra: 0.6
+
+degradacion:
+  semilla: 42
+  niveles:
+    L0:
+      simula: tal como se grabó
+    L1:
+      simula: nota de voz de WhatsApp
+      codec: libopus
+      bitrate: 16k
+      canales: 1
+    L2:
+      simula: llamada telefónica
+      frecuencia_baja_hz: 300
+      frecuencia_alta_hz: 3400
+      sample_rate: 8000
+    L3:
+      simula: ambiente ruidoso
+      base: L1
+      snr_db: 5          # provisional: se justifica y, si L3 no degrada, se endurece en 04_degradacion
+
+metricas:
+  intervalo_confianza: 0.95
+  bootstrap_iteraciones: 10000
+  semilla: 42
+  campo_macro_f1: nivel_ingles
+
+app:
+  titulo: De la voz al registro
+  pestanas:
+    - Problema y método
+    - Corpus
+    - Resultados
+    - Probador
