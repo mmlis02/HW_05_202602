@@ -1,5 +1,10 @@
 """Métricas de las dos capas: transcripción (WER, CER) y registro (exactitud, macro F1, error absoluto).
 
+Capa de transcripción. wer_cer normaliza referencia e hipótesis con normalizar_texto (la misma regla para
+las dos) antes de llamar a jiwer: así una mayúscula, un punto o "6.500" contra "seis mil quinientos" no
+cuentan como errores. Con listas, el WER es el del corpus (errores totales / palabras totales), no el
+promedio por clip.
+
 Capa de registro. Un campo acierta según su tipo (config.yaml -> esquemas):
 - numerico: la misma cifra.
 - numerico_moneda: el mismo monto y la misma moneda.
@@ -26,9 +31,15 @@ from src.config import cargar_config
 from src.normalizacion import normalizar_texto
 
 
-def wer_cer(referencia: str, hipotesis: str) -> dict:
-    """WER y CER entre dos textos ya normalizados."""
-    raise NotImplementedError
+def wer_cer(referencia: str | list[str], hipotesis: str | list[str]) -> dict:
+    """WER y CER entre referencia e hipótesis, después de normalizar las dos con normalizar_texto."""
+    import jiwer
+
+    def normalizar(textos):
+        return normalizar_texto(textos) if isinstance(textos, str) else [normalizar_texto(t) for t in textos]
+
+    ref, hip = normalizar(referencia), normalizar(hipotesis)
+    return {"wer": jiwer.wer(ref, hip), "cer": jiwer.cer(ref, hip)}
 
 
 def ground_truth(schema: str) -> dict[str, dict]:
