@@ -1,14 +1,18 @@
 """Regla de verificación: todo valor extraído debe existir literalmente en la transcripción.
 
 Transcripción y valor se normalizan con src.normalizacion.normalizar_texto y el valor se busca como
-secuencia de palabras completas ("8" no aparece dentro de "1800"). Tres estados (config.yaml ->
+secuencia de palabras completas ("8" no aparece dentro de "1800"). Cuatro estados (config.yaml ->
 verificacion):
 
-- verificado: el valor aparece en la transcripción.
+- verificado: el valor aparece en la transcripción. Para un campo nulo (o un descuento 0, ver
+  cero_es_ausencia), la ausencia se dijo en voz alta: su evidencia es una respuesta que empieza con
+  una negación ("No, ninguno.") y aparece literalmente.
 - verificado_carta: solo para precio_unitario, que sale de la carta y no del audio. Se reporta aparte
   y nunca se suma a verificado.
-- sin_verificar: no aparece, aunque el valor sea correcto (los 2.5 años de E4, que se obtienen
-  sumando y nunca se dicen), o no hay valor.
+- sin_verificar: el valor no aparece, aunque sea correcto (los 2.5 años de E4, que se obtienen
+  sumando y nunca se dicen); o un campo nulo cuya evidencia no aparece o no es una negación.
+- no_mencionado: campo nulo sin evidencia; el extractor no encontró ninguna mención. No es un fallo de
+  verificación y se cuenta aparte para no inflar sin_verificar.
 
 Qué se busca según el tipo del campo (config.yaml -> esquemas):
 - numerico: la cifra ("4.5", "96").
@@ -55,8 +59,8 @@ def _verificar_campo(campo, dato, texto):
         return [_estado(_aparece(v, texto)) for v in valor or []]
     if tipo == "lista_objetos":
         return [_verificar_item(item, dato.get("menciones") or [], texto) for item in valor or []]
-    if valor is None:
-        return _estado(False)
+    if valor is None or (valor == 0 and campo in cfg["verificacion"]["cero_es_ausencia"]):
+        return _verificar_ausencia(dato["evidencia"], texto)
     if tipo == "numerico":
         return _estado(_aparece(_cifra(valor), texto))
     if tipo == "numerico_moneda":
@@ -72,6 +76,14 @@ def _verificar_campo(campo, dato, texto):
         return _estado(bool(encontrada) and encontrada[1].isoformat() == valor
                        and _aparece(encontrada[0], texto))
     raise ValueError(f"tipo desconocido: {tipo!r}")
+
+
+def _verificar_ausencia(evidencia, texto):
+    if not evidencia:
+        return _config()["verificacion"]["etiqueta_no_mencionado"]
+    negacion = _config()["extraccion"]["reglas"]["negacion"]
+    patron = r"^(?:" + "|".join(re.escape(normalizar_texto(n)) for n in negacion) + r")(?!\S)"
+    return _estado(_aparece(evidencia, texto) and re.match(patron, normalizar_texto(evidencia)) is not None)
 
 
 def _verificar_item(item, menciones, texto):

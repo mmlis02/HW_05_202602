@@ -32,6 +32,17 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 - **Para comparar textos** (WER, CER, verificación): números a dígitos, `%` → "por ciento", minúsculas, separador de miles fuera y coma decimal a punto, sin puntuación (salvo el punto decimal), espacios colapsados. Las tildes se mantienen (`quitar_tildes: false`).
 - **Limitaciones**: "entre nueve y diez mil" da 9 y 10000, no 9000; "año y medio" sin número delante no llega a 1.5; un teléfono escrito sin espacios no coincide con el dictado por grupos.
 
+## Diagnóstico de un total que no cuadra
+
+`src/validacion.py`; parámetros en `config.yaml → validacion`; pruebas en `notebooks/05_validacion.ipynb`.
+
+- **Chequeo:** Σ cantidad × precio de la carta − descuento contra el total dicho.
+- **Explicación:** una causa de un solo paso que dé la diferencia exacta. Las humanas son descuento olvidado o duplicado, unidad o ítem omitido o de más, y tamaño cobrado por otro. Un salto de ±1, ±10 o ±100 es ambiguo: puede ser una suma mal llevada o un número mal oído.
+- **Señal de ASR:** alguna palabra numérica del total o de los ítems tiene `word.probability` menor que 0.6 (provisional).
+- **Señales de hablante:** el total se dice dos veces igual, o hay una explicación humana.
+- **Decisión:** solo señal de ASR → `asr`; señales de los dos lados → `indeterminado`; solo de hablante → `hablante`; ninguna → `indeterminado`.
+- **Sin probabilidades** (transcripciones de referencia), la regla solo puede concluir `hablante` o `indeterminado`.
+
 ## Resultados Task 1
 
 ## Resultados Task 2

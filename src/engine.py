@@ -19,7 +19,7 @@ def procesar(audio_path: str, schema: str) -> dict:
             transcript (str): transcripción completa.
             campos (dict): valores extraídos según el esquema.
             campos_verificados (dict): estado de cada campo según src.verificacion:
-                "verificado", "verificado_carta" (solo precios) o "sin_verificar".
+                "verificado", "verificado_carta" (solo precios), "sin_verificar" o "no_mencionado".
             device (str): dispositivo que usó la librería, leído en tiempo de ejecución.
             tiempo_s (float): segundos de procesamiento.
             error (str | None): mensaje si algo falló; el motor no lanza la excepción a la app.

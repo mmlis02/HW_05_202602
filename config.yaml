@@ -236,6 +236,8 @@ extraccion:
   reglas:
     ventana_respuesta: 5
     correccion: ["no, perdón", perdón, me equivoqué, me confundí, corrijo, mejor dicho, mejor]
+    # Una respuesta que empieza así declara el campo ausente en voz alta ("No, ninguno").
+    negacion: ["no", ninguno, ninguna, nada, tampoco]
     entrevista:
       pregunta_pretension: [pretensión, expectativa, expectativas, salarial, sueldo, salario, cuánto estás buscando, cuánto buscas]
       salario_actual: [gano, ganando, gana, cobro, percibo, sueldo actual]
@@ -259,6 +261,7 @@ extraccion:
     pedido:
       confirmacion: [le confirmo, le repito, confirmo su pedido, confirmo el pedido, repaso su pedido, su pedido es]
       reemplazo: [en vez de, en lugar de]
+      pregunta_promocion: [promoción, promociones, promo, código, códigos, descuento]
       pregunta_pago: [cómo va a pagar, cómo paga, cómo desea pagar, forma de pago, método de pago]
       tipos_via: [Calle, Avenida, Av, Jirón, Jr, Pasaje, Malecón, Prolongación, Carretera]
       complementos_direccion: [departamento, dpto, interior, oficina, piso, bloque, manzana, lote, torre]
@@ -307,15 +310,26 @@ verificacion:
   etiqueta_verificado: verificado
   etiqueta_carta: verificado_carta     # solo precio_unitario: viene de la carta, no del audio
   etiqueta_no_verificado: sin_verificar
+  etiqueta_no_mencionado: no_mencionado   # campo nulo del que no se encontró ninguna mención
+  # En estos campos, 0 significa "no hay" y se verifica como un campo nulo (descuento 0 = sin promoción).
+  cero_es_ausencia: [descuento]
   # El valor debe aparecer literalmente en la transcripción después de normalizar ambos lados
   # (minúsculas, sin puntuación, números a dígitos).
   modo: literal_normalizado
 
 validacion:
+  # Diferencia máxima, en soles, entre el total esperado y el dicho para que cuadre. También es la
+  # tolerancia con la que una explicación coincide con la diferencia.
   tolerancia_total_soles: 0
-  # Regla de diagnóstico ASR vs hablante (a calibrar en 05_validacion): si alguna palabra numérica
-  # del pedido tiene probabilidad menor a este umbral, la discrepancia se atribuye al ASR.
+  # Diagnóstico (src/validacion.py): una palabra numérica del total o de los ítems con probabilidad
+  # (word.probability de faster-whisper) menor a este umbral es señal de error del ASR. Provisional:
+  # se calibra con audio real en 05_validacion.
   umbral_probabilidad_palabra: 0.6
+  # Palabras máximas que puede ocupar en la transcripción un número o la mención de un ítem.
+  max_palabras_mencion: 12
+  # Errores de una unidad, decena o centena: pueden ser una suma mal llevada o un número mal oído,
+  # así que explican la diferencia pero no cuentan como causa humana.
+  saltos_ambiguos: [1, 10, 100]
 
 degradacion:
   semilla: 42
