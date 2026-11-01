@@ -65,6 +65,14 @@ def buscar_audios(raiz: str | Path) -> dict[str, Path]:
     return {clip: encontrados[clip][0] for clip in nombres}
 
 
+def duracion_audio_s(ruta: str | Path) -> float:
+    """Duración real del audio en segundos, decodificándolo como lo hace faster-whisper (16 kHz, mono)."""
+    from faster_whisper import decode_audio
+
+    frecuencia = 16000
+    return round(len(decode_audio(str(ruta), sampling_rate=frecuencia)) / frecuencia, 2)
+
+
 def _clave(nombre):
     return re.sub(r"\s+", " ", unicodedata.normalize("NFC", nombre)).strip().lower()
 
