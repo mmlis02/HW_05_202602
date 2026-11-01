@@ -6,7 +6,7 @@ proyecto:
   idioma: es
   dominio_task2: restaurante
   # Base para convertir la disponibilidad relativa ("en dos semanas") en fecha absoluta.
-  fecha_grabacion: "2026-11-01"
+  fecha_grabacion: "2026-10-31"
   # Solo para estimar la duración de un guion antes de grabarlo (habla conversacional).
   palabras_por_minuto_estimadas: 150
   duracion_clip_min: [2, 4]

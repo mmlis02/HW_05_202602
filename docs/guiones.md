@@ -25,7 +25,7 @@ Son 10 clips de unos 3 minutos cada uno: 5 entrevistas (Task 1) y 5 llamadas a u
 **Ajustes que debes hacer tú**
 
 - **Género:** los cargos están en masculino ("desarrollador"). Si tú haces de candidato y prefieres la forma femenina, cámbiala en el guión y en la tabla de ground truth.
-- **Fecha de referencia:** la disponibilidad se calculó suponiendo que graban el domingo 1 de noviembre de 2026. Si graban otro día, recalcula esa columna.
+- **Fecha de grabación:** los clips se grabaron el sábado 31 de octubre de 2026, y la disponibilidad se calcula desde esa fecha.
 - **Tu hermano:** la tarea dice que grabas con un compañero de clase. Dilo tal cual en el README, junto con la línea de consentimiento, y si puedes confírmalo con el profesor.
 - **Personaliza:** la tarea pide guiones propios. Cambia nombres, empresas o frases donde quieras; solo actualiza el ground truth si tocas un valor.
 
@@ -253,14 +253,14 @@ A = tú · B = tu hermano
 
 ## Task 1 — Ground truth
 
-Estos son los valores correctos que tu sistema debe extraer. La disponibilidad absoluta supone grabación el 2026-11-01.
+Estos son los valores correctos que tu sistema debe extraer. La disponibilidad absoluta se calcula desde la fecha de grabación, el 2026-10-31.
 
 | Clip | anios_experiencia | ultimo_puesto | tecnologias | pretension_salarial | disponibilidad | nivel_ingles |
 | --- | --- | --- | --- | --- | --- | --- |
-| E1 | 4.5 | Desarrollador backend semi senior | Python, Django, PostgreSQL, Docker | 6500 PEN | 2026-11-15 ("en dos semanas") | intermedio |
-| E2 | 3 | Analista de datos senior | Power BI, SQL Server, Python, pandas, Airflow | 1800 USD | 2026-11-01 ("de inmediato") | avanzado |
+| E1 | 4.5 | Desarrollador backend semi senior | Python, Django, PostgreSQL, Docker | 6500 PEN | 2026-11-14 ("en dos semanas") | intermedio |
+| E2 | 3 | Analista de datos senior | Power BI, SQL Server, Python, pandas, Airflow | 1800 USD | 2026-10-31 ("de inmediato") | avanzado |
 | E3 | 8 | Jefe de infraestructura | AWS, Kubernetes, Terraform, Jenkins, Grafana | 9500 PEN | 2026-12-01 ("primero de diciembre") | basico |
-| E4 | 2.5 | Desarrollador frontend junior | React, TypeScript, Next.js, Figma, Jest | 4800 PEN | 2026-12-01 ("un mes de preaviso") | intermedio |
+| E4 | 2.5 | Desarrollador frontend junior | React, TypeScript, Next.js, Figma, Jest | 4800 PEN | 2026-11-30 ("un mes de preaviso") | intermedio |
 | E5 | 6 | Líder técnico de QA | Cypress, Selenium, Postman, Jira, JMeter | 7000 PEN | 2027-01-11 ("el lunes once" de enero) | avanzado |
 
 **Reglas de anotación** (explícalas en el README)
