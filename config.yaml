@@ -305,6 +305,7 @@ extraccion:
 
 verificacion:
   etiqueta_verificado: verificado
+  etiqueta_carta: verificado_carta     # solo precio_unitario: viene de la carta, no del audio
   etiqueta_no_verificado: sin_verificar
   # El valor debe aparecer literalmente en la transcripción después de normalizar ambos lados
   # (minúsculas, sin puntuación, números a dígitos).
