@@ -12,3 +12,5 @@ python-dotenv==1.2.4
 streamlit==1.66.1
 # Notebooks
 jupyter==1.1.1
+# Memoria de la GPU medida desde fuera de PyTorch (CTranslate2 no pasa por torch.cuda)
+nvidia-ml-py==12.575.51
