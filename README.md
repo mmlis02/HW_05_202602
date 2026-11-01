@@ -4,6 +4,15 @@ Proyecto integrador de ASR: una entrevista grabada se convierte en una ficha de 
 
 ## Setup
 
+## Audios
+
+Los 10 audios del corpus (5 entrevistas y 5 llamadas) **no están en este repositorio ni en su historial, por privacidad**. Todo lo que se dice en ellos es inventado, pero son voces de personas reales. Están en una carpeta privada de Google Drive, y el enlace a esa carpeta tampoco se publica.
+
+- **Cómo pedirlos:** abre un issue en este repositorio pidiendo acceso e indica la cuenta de Google con la que quieres verlos. La carpeta se comparte con esa cuenta, con permiso de lectura.
+- **Nombres:** los archivos conservan su nombre original: `task 1-1` … `task 1-5` (entrevistas E1 a E5) y `task 2-1` … `task 2-5` (llamadas L1 a L5). La extensión puede variar. El mapeo a los clips `e1 … l5` está en `config.yaml → audios.archivos`.
+- **En Colab:** `notebooks/02_transcripcion_gpu.ipynb` monta Drive y busca esos 10 archivos dentro de `MyDrive`, en cualquier subcarpeta. Se detiene si falta o se repite alguno, y muestra la carpeta que encontró.
+- **Copia local (opcional):** con los nombres originales, en `data/audio/`. `.gitignore` excluye los formatos de audio para que nunca se suban.
+
 ## Comandos
 
 Verificar que el motor no importa librerías de UI. Revisa también las importaciones transitivas, no solo el texto de `engine.py`:
