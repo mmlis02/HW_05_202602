@@ -60,7 +60,7 @@ def ground_truth(schema: str) -> dict[str, dict]:
 def aciertos(predicho: dict, verdadero: dict, schema: str) -> dict[str, bool]:
     """Si cada campo del registro predicho coincide con el ground truth."""
     tipos = _config()["esquemas"][schema]["campos"]
-    return {campo: _coincide(tipo, predicho.get(campo), verdadero.get(campo)) for campo, tipo in tipos.items()}
+    return {campo: coincide(tipo, predicho.get(campo), verdadero.get(campo)) for campo, tipo in tipos.items()}
 
 
 def exactitud_por_campo(predichos: list[dict], verdaderos: list[dict], schema: str) -> dict[str, float]:
@@ -112,7 +112,8 @@ def intervalo_wilson(exitos: int, n: int) -> tuple[float, float]:
     return max(0.0, centro - margen), min(1.0, centro + margen)
 
 
-def _coincide(tipo, p, v):
+def coincide(tipo: str, p, v) -> bool:
+    """Si un valor predicho coincide con el verdadero, según el tipo del campo (ver arriba)."""
     if tipo == "texto_o_nulo" and p is None and v is None:
         return True
     if p is None or v is None:
