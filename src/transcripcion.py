@@ -13,10 +13,17 @@
   "hotwords" o "ambos".
 - Caché: cada transcripción se guarda como JSON en <raiz>/<cache.patron_transcripcion>. Guarda solo el
   nombre del archivo de audio, nunca su ruta en Drive.
+- CUDA 12 en un sistema con otra versión (Colab con CUDA 13): CTranslate2 abre libcublas.so.12 y
+  libcudnn*.so.9 por nombre con dlopen. Si el sistema no las trae, se instalan con pip
+  (requirements-gpu.txt) y precargar_cuda12() las carga en el proceso con ctypes y RTLD_GLOBAL, antes del
+  primer uso de la GPU. Después, el dlopen de CTranslate2 encuentra la librería ya cargada por su soname.
+  Cambiar LD_LIBRARY_PATH con el proceso ya iniciado no sirve: el cargador la lee al arrancar.
 """
 
+import ctypes
 import gc
 import json
+import sys
 import threading
 import time
 from datetime import datetime, timezone
@@ -26,6 +33,15 @@ from pathlib import Path
 from src.config import cargar_config
 
 _MODELOS = {}
+
+# Orden de carga: cada librería después de las que necesita (libcublasLt antes que libcublas; las
+# subbibliotecas de cuDNN 9 antes que libcudnn). Son los nombres de los wheels de requirements-gpu.txt.
+_CUDA12 = {
+    "cublas": ["libcublasLt.so.12", "libcublas.so.12"],
+    "cudnn": ["libcudnn_graph.so.9", "libcudnn_engines_precompiled.so.9", "libcudnn_engines_runtime_compiled.so.9",
+              "libcudnn_heuristic.so.9", "libcudnn_ops.so.9", "libcudnn_cnn.so.9", "libcudnn_adv.so.9",
+              "libcudnn.so.9"],
+}
 
 
 def transcribir(
@@ -102,9 +118,12 @@ def cargar_modelo(modelo: str, device: str = "auto", compute_type: str | None = 
     Los datos de la carga traen el device y la precisión que reporta CTranslate2, el tiempo de carga y
     la VRAM usada antes de cargar.
     """
-    compute_type = compute_type or _config()["asr"]["compute_type"][_resolver_device(device)]
+    resuelto = _resolver_device(device)
+    compute_type = compute_type or _config()["asr"]["compute_type"][resuelto]
     clave = (modelo, device, compute_type)
     if clave not in _MODELOS:
+        if resuelto == "cuda":
+            precargar_cuda12()
         from faster_whisper import WhisperModel
 
         base = vram_usada_mb()
@@ -116,6 +135,42 @@ def cargar_modelo(modelo: str, device: str = "auto", compute_type: str | None = 
             "tiempo_carga_s": round(time.perf_counter() - inicio, 3), "vram_base_mb": base,
         })
     return _MODELOS[clave]
+
+
+@cache
+def precargar_cuda12() -> list[str]:
+    """Carga en este proceso cuBLAS 12 y cuDNN 9 instalados con pip, si están instalados.
+
+    Busca nvidia/cublas/lib y nvidia/cudnn/lib en sys.path: estos wheels no traen __init__.py, así que
+    `nvidia.cublas.lib.__file__` no sirve para ubicarlos. Si un orden no alcanza, reintenta las que fallaron
+    mientras alguna nueva cargue.
+
+    Returns:
+        Las librerías cargadas; vacío si los paquetes no están (CPU, macOS o CUDA 12 del sistema).
+
+    Raises:
+        OSError: si los paquetes están pero alguna librería no carga.
+    """
+    pendientes = []
+    for paquete, librerias in _CUDA12.items():
+        carpeta = next((Path(p) / "nvidia" / paquete / "lib" for p in sys.path
+                        if (Path(p) / "nvidia" / paquete / "lib").is_dir()), None)
+        if carpeta:
+            pendientes += [carpeta / nombre for nombre in librerias if (carpeta / nombre).exists()]
+    cargadas, errores = [], {}
+    while pendientes:
+        fallidas = []
+        for ruta in pendientes:
+            try:
+                ctypes.CDLL(str(ruta), mode=ctypes.RTLD_GLOBAL)
+                cargadas.append(ruta.name)
+            except OSError as e:
+                fallidas.append(ruta)
+                errores[ruta.name] = str(e)
+        if len(fallidas) == len(pendientes):
+            raise OSError("no se pudieron cargar: " + "; ".join(f"{r.name}: {errores[r.name]}" for r in fallidas))
+        pendientes = fallidas
+    return cargadas
 
 
 def liberar_modelos() -> None:

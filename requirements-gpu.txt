@@ -1,0 +1,6 @@
+# Solo para GPU en Linux cuando el sistema no trae CUDA 12 (por ejemplo, Colab con CUDA 13).
+# CTranslate2 4.x necesita cuBLAS para CUDA 12 y cuDNN 9; faster-whisper 1.2.1 indica instalarlas con pip.
+# src/transcripcion.precargar_cuda12() las carga en el proceso antes del primer uso de la GPU.
+# cuBLAS 12.9 es la última serie de CUDA 12: sirve para un CTranslate2 compilado con cualquier 12.x.
+nvidia-cublas-cu12==12.9.1.4
+nvidia-cudnn-cu12==9.10.2.21
