@@ -24,6 +24,10 @@ rutas:
   promociones: data/referencias/promociones.csv
   cache_dir: data/cache                        # transcripciones en JSON, commiteadas: la app y CI nunca re-transcriben
   resultados_dir: data/resultados
+  duraciones: data/resultados/duraciones.csv                       # duración real de cada audio (02)
+  mediciones_transcripcion: data/resultados/mediciones_transcripcion.csv  # una fila por corrida (02)
+  wer_por_clip: data/resultados/wer_por_clip.csv                   # una fila por corrida y clip (02)
+  glosario_por_clip: data/resultados/glosario_por_clip.csv         # WER con y sin glosario, pareado (02)
   modelos_dir: models                          # pesos descargados, no se commitean
 
 archivos:
