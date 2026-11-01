@@ -13,6 +13,8 @@ proyecto:
 
 rutas:
   enunciado: docs/enunciado.md
+  requisitos: requirements.txt
+  requisitos_gpu: requirements-gpu.txt          # cuBLAS 12 y cuDNN 9 con pip, para Colab con CUDA 13
   guiones: docs/guiones.md
   audios_dir: data/audio                       # copia local opcional, con los nombres originales; no se commitea
   audios_degradados_dir: data/audio_degradado  # L1-L3, se regeneran con 04_degradacion
@@ -46,6 +48,8 @@ colab:
   drive_salidas: /content/drive/MyDrive/HW_05_salidas
   # Se instalan con la versión fijada en requirements.txt; lo demás se usa tal como viene en Colab.
   paquetes: [faster-whisper, av, jiwer, text2num, nvidia-ml-py]
+  # Modelo mínimo para comprobar, justo después de instalar, que la GPU transcribe de verdad.
+  modelo_comprobacion: tiny
 
 audios:
   archivos:
