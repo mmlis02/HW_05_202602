@@ -46,41 +46,45 @@ asr:
   glosario_mecanismo: initial_prompt
   # Vocabulario del dominio, no la lista de respuestas: incluye términos que no aparecen en el corpus
   # (Java, Angular, Azure...) para que el glosario no sea una filtración del ground truth.
+  # El glosario que recibe el ASR es la unión de las dos listas; extraccion_reglas usa solo tecnologias.
   glosario:
-    - Python
-    - Django
-    - PostgreSQL
-    - Docker
-    - Power BI
-    - SQL Server
-    - pandas
-    - Airflow
-    - AWS
-    - Azure
-    - Kubernetes
-    - Terraform
-    - Jenkins
-    - Grafana
-    - React
-    - Angular
-    - TypeScript
-    - Next.js
-    - Figma
-    - Jest
-    - Cypress
-    - Selenium
-    - Postman
-    - Jira
-    - JMeter
-    - Java
-    - Spring Boot
-    - La Leña Dorada
-    - chicha morada
-    - anticuchos
-    - mollejitas
-    - Yape
-    - Plin
-    - LEÑA5
+    tecnologias:
+      - Python
+      - Django
+      - PostgreSQL
+      - Docker
+      - Power BI
+      - SQL Server
+      - pandas
+      - Airflow
+      - AWS
+      - Azure
+      - Kubernetes
+      - Terraform
+      - Jenkins
+      - Grafana
+      - Nagios
+      - React
+      - Angular
+      - TypeScript
+      - Next.js
+      - Figma
+      - Jest
+      - Cypress
+      - Selenium
+      - Postman
+      - Jira
+      - JMeter
+      - Java
+      - Spring Boot
+    restaurante:
+      - La Leña Dorada
+      - chicha morada
+      - anticuchos
+      - mollejitas
+      - Yape
+      - Plin
+      - LEÑA5
 
 normalizacion:
   # Misma regla para referencia e hipótesis antes de calcular WER/CER. Reglas en src/normalizacion.py.
@@ -149,18 +153,115 @@ esquemas:
     clases:
       nivel_ingles: [basico, intermedio, avanzado]
     monedas: [PEN, USD]
+    # Cómo se dice cada clase o moneda. Lo usan la extracción y la verificación.
+    alias:
+      nivel_ingles:
+        basico: [básico, básica, basico, basica, elemental]
+        intermedio: [intermedio, intermedia]
+        avanzado: [avanzado, avanzada, fluido, fluida, nativo, nativa]
+      moneda:
+        PEN: [soles, sol, S/, nuevos soles]
+        USD: [dólares, dólar, USD]
+    # Marco europeo: se usa solo si no se dice ninguna palabra de nivel.
+    mcer:
+      A1: basico
+      A2: basico
+      B1: intermedio
+      B2: intermedio
+      C1: avanzado
+      C2: avanzado
+    moneda_por_defecto: PEN
   pedido:
     campos:
       items: lista_objetos
       promocion: texto_o_nulo
+      descuento: numerico
       direccion_entrega: texto
       metodo_pago: categorico
       total_dicho: numerico
     clases:
       metodo_pago: [efectivo, yape, plin, tarjeta]
+    alias:
+      metodo_pago:
+        efectivo: [efectivo, cash]
+        yape: [yape, yapeo]
+        plin: [plin]
+        tarjeta: [tarjeta, visa, mastercard, débito, crédito]
+      # Frases específicas: "código" solo no basta ("¿tiene algún código de promoción?" no es la promo).
+      promocion:
+        duo familiar: [dúo familiar, duo familiar]
+        promo app: [LEÑA5, código de la app, código de la aplicación, descuento de la app, el de la app]
+    # Cómo se nombra cada producto de la carta y sus tamaños. La etiqueta del tamaño es el comienzo del
+    # tamaño en carta.csv ("jarra" -> "jarra de 1 litro"). Sin tamaños: el único tamaño de la carta.
+    productos:
+      pollo a la brasa:
+        alias: [pollo, pollos]
+        tamanos:
+          entero: [entero, enteros]
+          medio: [medio, medios]
+          cuarto: [cuarto, cuartos]
+      papas fritas:
+        alias: [papa, papas]
+        tamanos:
+          familiar: [familiar, familiares]
+          personal: [personal, personales]
+      chicha morada:
+        alias: [chicha, chichas, jarra, jarras, vaso, vasos]
+        tamanos:
+          jarra: [jarra, jarras]
+          vaso: [vaso, vasos]
+      gaseosa:
+        alias: [gaseosa, gaseosas]
+        tamanos:
+          1.5 litros: [litro y medio, 1.5 litros]
+          personal: [personal, personales]
+      ensalada clásica:
+        alias: [ensalada, ensaladas]
+      anticuchos:
+        alias: [anticucho, anticuchos]
+        tamanos:
+          porción: [porción, porciones]
+      mollejitas:
+        alias: [mollejita, mollejitas]
+      torta de chocolate:
+        alias: [torta, tortas]
+        tamanos:
+          porción: [porción, porciones]
 
 extraccion:
   metodos: [reglas, llm]
+  # Marcadores de src/extraccion_reglas.py. La transcripción no trae hablantes: una pregunta se
+  # reconoce por sus palabras clave y su respuesta son las oraciones siguientes, hasta la próxima
+  # pregunta ("?") o hasta `ventana_respuesta` oraciones.
+  reglas:
+    ventana_respuesta: 5
+    correccion: ["no, perdón", perdón, me equivoqué, me confundí, corrijo, mejor dicho, mejor]
+    entrevista:
+      pregunta_pretension: [pretensión, expectativa, expectativas, salarial, sueldo, salario, cuánto estás buscando, cuánto buscas]
+      salario_actual: [gano, ganando, gana, cobro, percibo, sueldo actual]
+      ideal: [idealmente, lo ideal, ideal]
+      monto_minimo: 100
+      pregunta_experiencia: [años de experiencia, cuánta experiencia, su experiencia, tu experiencia, cuántos años]
+      aproximacion: [casi, cerca de, más de, menos de]
+      subconjunto: [los últimos, las últimas, de ellos, de esos]
+      adicional: [y otro, y otros]
+      anios_maximo: 50
+      pregunta_disponibilidad: [cuándo podrías, cuándo podría, cuándo puedes, cuándo puede, desde cuándo, incorporarte, incorporarse, disponibilidad]
+      inmediato: [de inmediato, inmediatamente, ya mismo, desde ya]
+      pregunta_ingles: [inglés]
+      cargos: [desarrollador, desarrolladora, programador, programadora, analista, jefe, jefa, líder, gerente, director, directora, coordinador, coordinadora, ingeniero, ingeniera, arquitecto, arquitecta, consultor, consultora, especialista, administrador, administradora, diseñador, diseñadora, tester, asistente, practicante]
+      cargo_pasado: [empecé como, empezó como, inicié como, comencé como, antes fui, antes era, fui, era]
+      cargo_ofrecido: [buscamos, el puesto es, la posición es, es para un, es para una]
+      cargo_fin: [en, desde, para, con, y, hace, porque, pero, que, a, al]
+      cargo_max_palabras: 6
+      abandono: [lo apagamos, la apagamos, los apagamos, dejamos de usar, dejé de usar, ya no usamos, ya no uso, lo reemplazamos, lo abandonamos, migramos de, antes usábamos, antes usaba]
+      continua: [todavía, aún, seguimos, sigo, mantenemos]
+    pedido:
+      confirmacion: [le confirmo, le repito, confirmo su pedido, confirmo el pedido, repaso su pedido, su pedido es]
+      reemplazo: [en vez de, en lugar de]
+      pregunta_pago: [cómo va a pagar, cómo paga, cómo desea pagar, forma de pago, método de pago]
+      tipos_via: [Calle, Avenida, Av, Jirón, Jr, Pasaje, Malecón, Prolongación, Carretera]
+      complementos_direccion: [departamento, dpto, interior, oficina, piso, bloque, manzana, lote, torre]
   llm:
     proveedor: anthropic
     modelo: claude-haiku-5-5
@@ -204,6 +305,7 @@ extraccion:
 
 verificacion:
   etiqueta_verificado: verificado
+  etiqueta_carta: verificado_carta     # solo precio_unitario: viene de la carta, no del audio
   etiqueta_no_verificado: sin_verificar
   # El valor debe aparecer literalmente en la transcripción después de normalizar ambos lados
   # (minúsculas, sin puntuación, números a dígitos).
