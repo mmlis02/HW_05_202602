@@ -211,6 +211,16 @@ def cargar_transcripcion(raiz: str | Path, corrida: str, clip: str) -> dict | No
     return json.loads(ruta.read_text(encoding="utf-8")) if ruta.exists() else None
 
 
+def cargar_cache(raiz: str | Path) -> dict[str, dict[str, dict]]:
+    """Todas las transcripciones guardadas en la caché, {corrida: {clip: transcripción}}, sin transcribir."""
+    patron = _config()["cache"]["patron_transcripcion"].format(corrida="*", clip="*")
+    corridas = {}
+    for ruta in sorted(Path(raiz).glob(patron)):
+        transcripcion = json.loads(ruta.read_text(encoding="utf-8"))
+        corridas.setdefault(transcripcion["corrida"], {})[transcripcion["clip"]] = transcripcion
+    return corridas
+
+
 def transcribir_corpus(
     audios: dict[str, Path],
     modelo: str,

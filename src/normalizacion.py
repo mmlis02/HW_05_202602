@@ -113,10 +113,12 @@ def _proteger(texto: str, palabras: list[str], articulos: list[str], multiplicad
         apartadas.append(m[2])
         return f"{m[1]}⟦{len(apartadas) - 1}⟧"
 
-    patron = "|".join(re.escape(p) for p in sorted(multiplicadores, key=len, reverse=True))
-    cantidad = "|".join(re.escape(c) for c in cantidades)
-    texto = re.sub(rf"(\d\s+|\b(?:{cantidad})\s+)({patron})\b", marcar_multiplicador, texto, flags=re.IGNORECASE)
-    texto = re.sub(rf"(\b)({patron})(?=\s+\d)", marcar_multiplicador, texto, flags=re.IGNORECASE)
+    if multiplicadores:
+        patron = "|".join(re.escape(p) for p in sorted(multiplicadores, key=len, reverse=True))
+        cantidad = "|".join(re.escape(c) for c in cantidades)
+        texto = re.sub(rf"(\d\s+|\b(?:{cantidad})\s+)({patron})\b", marcar_multiplicador, texto,
+                       flags=re.IGNORECASE)
+        texto = re.sub(rf"(\b)({patron})(?=\s+\d)", marcar_multiplicador, texto, flags=re.IGNORECASE)
 
     def marcar_articulo(m):
         antes = re.findall(r"\w+", m.string[: m.start()])[-2:]
@@ -151,6 +153,7 @@ def _cifras_mixtas(texto: str, multiplicadores: dict, cantidades: dict) -> str:
     """Une una cifra con el multiplicador en palabra que la sigue: "10 mil" -> 10000.
 
     Va de menor a mayor multiplicador para que "2 millones 500 mil" pase por "2 millones 500000".
+    Con multiplicadores vacío no hace nada: es el comportamiento anterior, sin cifras mixtas.
     """
     cantidad = r"\d+(?:[.,]\d+)?|" + "|".join(re.escape(c) for c in cantidades)
     for valor in sorted(set(multiplicadores.values())):

@@ -31,12 +31,15 @@ from src.config import cargar_config
 from src.normalizacion import normalizar_texto
 
 
-def wer_cer(referencia: str | list[str], hipotesis: str | list[str]) -> dict:
-    """WER y CER entre referencia e hipótesis, después de normalizar las dos con normalizar_texto."""
+def wer_cer(referencia: str | list[str], hipotesis: str | list[str], reglas: dict | None = None) -> dict:
+    """WER y CER entre referencia e hipótesis, después de normalizar las dos con normalizar_texto.
+
+    reglas reemplaza config.yaml -> normalizacion, para comparar con otra normalización.
+    """
     import jiwer
 
     def normalizar(textos):
-        return normalizar_texto(textos) if isinstance(textos, str) else [normalizar_texto(t) for t in textos]
+        return normalizar_texto(textos, reglas) if isinstance(textos, str) else [normalizar_texto(t, reglas) for t in textos]
 
     ref, hip = normalizar(referencia), normalizar(hipotesis)
     return {"wer": jiwer.wer(ref, hip), "cer": jiwer.cer(ref, hip)}
