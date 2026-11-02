@@ -30,6 +30,10 @@ rutas:
   mediciones_transcripcion: data/resultados/mediciones_transcripcion.csv  # una fila por corrida (02)
   wer_por_clip: data/resultados/wer_por_clip.csv                   # una fila por corrida y clip (02)
   glosario_por_clip: data/resultados/glosario_por_clip.csv         # WER con y sin glosario, pareado (02)
+  # Los tres de arriba guardan el WER y el CER con la normalización de la corrida en Colab. Los
+  # definitivos se recalculan desde la caché, sin transcribir, en 06_resultados (sección 1).
+  metricas_transcripcion: data/resultados/metricas_transcripcion.csv  # WER y CER definitivos por corrida (06)
+  metricas_por_clip: data/resultados/metricas_por_clip.csv            # WER y CER definitivos por corrida y clip (06)
   modelos_dir: models                          # pesos descargados, no se commitean
 
 archivos:
