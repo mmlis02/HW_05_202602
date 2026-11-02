@@ -89,6 +89,49 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 
 ## Resultados Task 1
 
+Corrida principal: la configuración por defecto del motor, `large-v3` en float16 con glosario `hotwords`, sobre la T4 de Colab y los 10 clips. Todo se calcula desde `data/cache/`, sin transcribir: `notebooks/06_resultados.ipynb`, secciones 1 a 3. Las otras 6 corridas aparecen ahí como comparación.
+
+### Capa de transcripción
+
+| WER | IC 95 % del WER por clip | CER | Velocidad | VRAM pico |
+|---|---|---|---|---|
+| 3.63 % | 2.71 % a 5.64 % | 2.57 % | 7.8 s por minuto de audio | 5558 MB (5002 MB de la corrida) |
+
+### Capa de registro
+
+Exactitud por campo con intervalo de Wilson al 95 %. El techo es la misma extracción sobre las referencias (el texto del guion), que acierta 60 de 60.
+
+| Campo | Aciertos | IC 95 % | | Campo | Aciertos | IC 95 % |
+|---|---|---|---|---|---|---|
+| `anios_experiencia` | 5/5 | 0.57 a 1 | | `items` | 5/5 | 0.57 a 1 |
+| `ultimo_puesto` | 3/5 | 0.23 a 0.88 | | `promocion` | 5/5 | 0.57 a 1 |
+| `tecnologias` | 5/5 | 0.57 a 1 | | `descuento` | 5/5 | 0.57 a 1 |
+| `pretension_salarial` | **1/5** | 0.04 a 0.62 | | `direccion_entrega` | **1/5** | 0.04 a 0.62 |
+| `disponibilidad` | 5/5 | 0.57 a 1 | | `metodo_pago` | 5/5 | 0.57 a 1 |
+| `nivel_ingles` | 5/5 | 0.57 a 1 | | `total_dicho` | 5/5 | 0.57 a 1 |
+
+- **Total:** 50 de 60 campos, contra 60 de 60 del techo.
+- **`nivel_ingles`:** macro F1 = 1.0.
+- **Numéricos:** `anios_experiencia`, `total_dicho` y `descuento` tienen error absoluto 0. `pretension_salarial` no da valor en 3 de 5 clips y, donde da, el error medio es 250 soles (E3 sale 10000 en lugar de 9500).
+- **Verificación:** 49 campos correctos quedan `verificado` y 1 `sin_verificar` (los 2.5 años de E4, que nunca se dicen). De los 10 errados, 6 quedan `no_mencionado` y **4 quedan `verificado`**: el valor equivocado aparece literal en la transcripción, y la verificación comprueba presencia, no corrección.
+- **Por qué se pierden los 10 campos.** Casi ninguno es una palabra mal oída: son diferencias de formato entre cómo escribe Whisper y cómo están escritos los guiones.
+  - **Separador de miles:** "6.500" y "$1.800" se leen como 6.5 y 1.8 y caen bajo el monto mínimo (pretensión de E1, E2 y E3).
+  - **Guion:** "semi-senior" y "front-end" cortan el cargo (E1 y E4).
+  - **Coma o punto junto al número:** "Calle Los Cedros, 245" no encaja en el patrón de dirección (L1, L2 y L5).
+  - **Palabra mal oída:** "Girón" por "Jirón" en L3, el único fallo de oído.
+  - **Lo que se dijo:** en E5 el salario actual y la pretensión quedaron en una sola oración.
+
+  Las reglas no se corrigieron en esta evaluación.
+
+### ¿Se puede saber si el registro sirve mirando solo el WER?
+
+No. En la corrida principal:
+- **E1 tiene el WER más bajo (1.08 %) y el peor registro (4 de 6).** "6.500" y "semi-senior" no cuentan como error en el WER, porque la normalización quita el separador y el guion, pero rompen dos campos.
+- **L4 tiene el WER más alto (8.67 %) y el único registro perfecto (6 de 6).** Su WER viene de una frase entera que Whisper repite, y esa frase no toca ningún campo.
+- **L4 con `initial_prompt`** tiene menos WER que con `hotwords` (7.14 % contra 8.67 %), pero un solo error, "Plim" por "Plin", deja vacío `metodo_pago`.
+
+La correlación de Spearman entre el WER y los campos correctos es −0.29 sobre los 62 puntos, y dentro de `large-v3` cambia de signo (+0.33). **Quien reporte solo el WER puede elegir entre un modelo peor y uno mejor, pero no puede afirmar que el registro sea utilizable: eso se mide campo por campo.** El gráfico está en `data/resultados/wer_contra_registro.png`.
+
 ## Resultados Task 2
 
 ## Herramientas de IA y MCP
