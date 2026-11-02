@@ -1,0 +1,37 @@
+corrida,clip,total_errado,veredicto,diferencia_gt,diferencia_detectada,explicacion,explicacion_coincide,diagnostico,diagnostico_vs_causa,probabilidad_minima
+referencias,l1,False,correcto,0,0.0,cuadra,,,,
+referencias,l2,True,atrapado,5,5.0,se olvidó el descuento de promo app (5),True,hablante,acierta,
+referencias,l3,True,atrapado,10,10.0,salto de +10: suma mal llevada o número mal oído,True,indeterminado,no decide,
+referencias,l4,False,correcto,0,0.0,cuadra,,,,
+referencias,l5,True,atrapado,-9,-9.0,se omitió una unidad de gaseosa 1.5 litros (9),True,hablante,acierta,
+large-v3_float16_cuda_hotwords,l1,False,correcto,0,0.0,cuadra,,,,
+large-v3_float16_cuda_hotwords,l2,True,atrapado,5,5.0,se olvidó el descuento de promo app (5),True,hablante,acierta,0.8184
+large-v3_float16_cuda_hotwords,l3,True,atrapado,10,10.0,salto de +10: suma mal llevada o número mal oído,True,indeterminado,no decide,0.8154
+large-v3_float16_cuda_hotwords,l4,False,correcto,0,0.0,cuadra,,,,
+large-v3_float16_cuda_hotwords,l5,True,atrapado,-9,-9.0,se omitió una unidad de gaseosa 1.5 litros (9),True,hablante,acierta,0.77
+large-v3_float16_cuda_sin-glosario,l1,False,correcto,0,0.0,cuadra,,,,
+large-v3_float16_cuda_sin-glosario,l2,True,atrapado,5,5.0,se olvidó el descuento de promo app (5),True,hablante,acierta,0.8491
+large-v3_float16_cuda_sin-glosario,l3,True,atrapado,10,10.0,salto de +10: suma mal llevada o número mal oído,True,indeterminado,no decide,0.8452
+large-v3_float16_cuda_sin-glosario,l4,False,correcto,0,0.0,cuadra,,,,
+large-v3_float16_cuda_sin-glosario,l5,True,atrapado,-9,-9.0,se omitió una unidad de gaseosa 1.5 litros (9),True,hablante,acierta,0.7645
+large-v3_int8_cuda_sin-glosario,l1,False,correcto,0,0.0,cuadra,,,,
+large-v3_int8_cuda_sin-glosario,l2,True,atrapado,5,5.0,se olvidó el descuento de promo app (5),True,hablante,acierta,0.7417
+large-v3_int8_cuda_sin-glosario,l3,True,atrapado,10,10.0,salto de +10: suma mal llevada o número mal oído,True,indeterminado,no decide,0.8452
+large-v3_int8_cuda_sin-glosario,l4,False,correcto,0,0.0,cuadra,,,,
+large-v3_int8_cuda_sin-glosario,l5,True,atrapado,-9,-9.0,se omitió una unidad de gaseosa 1.5 litros (9),True,hablante,acierta,0.7752
+large-v3_float16_cuda_initial_prompt,l1,False,correcto,0,0.0,cuadra,,,,
+large-v3_float16_cuda_initial_prompt,l2,True,atrapado,5,5.0,se olvidó el descuento de promo app (5),True,hablante,acierta,0.8208
+large-v3_float16_cuda_initial_prompt,l3,True,atrapado,10,10.0,salto de +10: suma mal llevada o número mal oído,True,indeterminado,no decide,0.8203
+large-v3_float16_cuda_initial_prompt,l4,False,correcto,0,0.0,cuadra,,,,
+large-v3_float16_cuda_initial_prompt,l5,True,atrapado,-9,-9.0,se omitió una unidad de gaseosa 1.5 litros (9),True,hablante,acierta,0.769
+small_float16_cuda_sin-glosario,l1,False,correcto,0,0.0,cuadra,,,,
+small_float16_cuda_sin-glosario,l2,True,atrapado,5,5.0,se olvidó el descuento de promo app (5),True,indeterminado,no decide,0.3242
+small_float16_cuda_sin-glosario,l3,True,atrapado,10,22.0,sin explicación,False,asr,se equivoca,0.0022
+small_float16_cuda_sin-glosario,l4,False,correcto,0,0.0,cuadra,,,,
+small_float16_cuda_sin-glosario,l5,True,no validable,-9,,no validable,False,indeterminado,no decide,
+small_int8_cuda_sin-glosario,l1,False,correcto,0,0.0,cuadra,,,,
+small_int8_cuda_sin-glosario,l2,True,atrapado,5,5.0,se olvidó el descuento de promo app (5),True,indeterminado,no decide,0.488
+small_int8_cuda_sin-glosario,l3,True,atrapado,10,10.0,salto de +10: suma mal llevada o número mal oído,True,asr,se equivoca,0.0011
+small_int8_cuda_sin-glosario,l4,False,correcto,0,0.0,cuadra,,,,
+small_int8_cuda_sin-glosario,l5,True,no validable,-9,,no validable,False,indeterminado,no decide,
+small_int8_cpu_sin-glosario,l1,False,correcto,0,0.0,cuadra,,,,
