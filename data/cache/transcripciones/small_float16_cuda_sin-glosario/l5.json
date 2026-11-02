@@ -1,0 +1,1239 @@
+{
+ "clip": "l5",
+ "archivo": "Task 2-5.m4a",
+ "corrida": "small_float16_cuda_sin-glosario",
+ "fecha": "2026-11-01T22:45:56+00:00",
+ "texto": "La leña dorada. Buenas noches. Delivery o recojo en tienda? Delivery, por favor. Es para una reunión familiar. Perfecto. ¿Qué le enviamos? Dos pollos enteros, dos papas familiares y dos caciosas de litro y medio. Dos pollos enteros. Espere, déjenme preguntar. Ya, mejor que sea un pollo entero y un medio pollo. Somos menos de lo que pensábamos. Bien, un pollo entero y un medio pollo. ¿Las dos papas familiares y las dos caciosas de litro y medio se mantienen? Sí, eso se mantiene. Perfecto. Como lleva pollo entero con papas familiares, tiene el dúo familiar. 10 soles de descuento. Genial. Viene con cremas. Sí, cada pollo trae un mayonesa, quechú y ají. Perfecto. Dirección de la entrega. Ha venido a los laureles 2271. Bloque C. Departamento 504 en San Juan de Lurigancho. 2271. Bloque C. Departamento 504. Forma de pago. Ya pe. Muy bien, le confirmo. Un pollo entero, un medio pollo, dos papas familiares y dos caciosas de litro y medio con el dúo familiar. El total es 131 soles. 131, perfecto. Le llegué en una hora aproximadamente. Hoy tenemos bastante demanda. No hay problema, gracias. Eso es todo. Buenas noches.",
+ "palabras": [
+  {
+   "word": " La",
+   "start": 0.14,
+   "end": 0.64,
+   "probability": 0.5767
+  },
+  {
+   "word": " leña",
+   "start": 0.64,
+   "end": 0.9,
+   "probability": 0.7651
+  },
+  {
+   "word": " dorada.",
+   "start": 0.9,
+   "end": 1.32,
+   "probability": 0.908
+  },
+  {
+   "word": " Buenas",
+   "start": 2.26,
+   "end": 2.54,
+   "probability": 0.9194
+  },
+  {
+   "word": " noches.",
+   "start": 2.54,
+   "end": 2.88,
+   "probability": 0.9939
+  },
+  {
+   "word": " Delivery",
+   "start": 3.66,
+   "end": 4.1,
+   "probability": 0.936
+  },
+  {
+   "word": " o",
+   "start": 4.1,
+   "end": 4.7,
+   "probability": 0.4768
+  },
+  {
+   "word": " recojo",
+   "start": 4.7,
+   "end": 5.34,
+   "probability": 0.968
+  },
+  {
+   "word": " en",
+   "start": 5.34,
+   "end": 5.48,
+   "probability": 0.9502
+  },
+  {
+   "word": " tienda?",
+   "start": 5.48,
+   "end": 5.68,
+   "probability": 0.9841
+  },
+  {
+   "word": " Delivery,",
+   "start": 6.54,
+   "end": 7.1,
+   "probability": 0.9944
+  },
+  {
+   "word": " por",
+   "start": 7.42,
+   "end": 7.62,
+   "probability": 0.9893
+  },
+  {
+   "word": " favor.",
+   "start": 7.62,
+   "end": 7.96,
+   "probability": 0.9941
+  },
+  {
+   "word": " Es",
+   "start": 8.34,
+   "end": 8.72,
+   "probability": 0.9585
+  },
+  {
+   "word": " para",
+   "start": 8.72,
+   "end": 9.06,
+   "probability": 0.9937
+  },
+  {
+   "word": " una",
+   "start": 9.06,
+   "end": 9.62,
+   "probability": 0.9907
+  },
+  {
+   "word": " reunión",
+   "start": 9.62,
+   "end": 10.32,
+   "probability": 0.9917
+  },
+  {
+   "word": " familiar.",
+   "start": 10.32,
+   "end": 10.96,
+   "probability": 0.9756
+  },
+  {
+   "word": " Perfecto.",
+   "start": 11.92,
+   "end": 12.72,
+   "probability": 0.947
+  },
+  {
+   "word": " ¿Qué",
+   "start": 13.68,
+   "end": 14.22,
+   "probability": 0.9126
+  },
+  {
+   "word": " le",
+   "start": 14.22,
+   "end": 14.66,
+   "probability": 0.2015
+  },
+  {
+   "word": " enviamos?",
+   "start": 14.66,
+   "end": 14.94,
+   "probability": 0.7556
+  },
+  {
+   "word": " Dos",
+   "start": 16.1,
+   "end": 16.4,
+   "probability": 0.9355
+  },
+  {
+   "word": " pollos",
+   "start": 16.4,
+   "end": 16.86,
+   "probability": 0.7732
+  },
+  {
+   "word": " enteros,",
+   "start": 16.86,
+   "end": 17.6,
+   "probability": 0.9944
+  },
+  {
+   "word": " dos",
+   "start": 18.32,
+   "end": 18.72,
+   "probability": 0.9531
+  },
+  {
+   "word": " papas",
+   "start": 18.72,
+   "end": 19.2,
+   "probability": 0.8594
+  },
+  {
+   "word": " familiares",
+   "start": 19.2,
+   "end": 20.0,
+   "probability": 0.9968
+  },
+  {
+   "word": " y",
+   "start": 20.0,
+   "end": 20.98,
+   "probability": 0.7686
+  },
+  {
+   "word": " dos",
+   "start": 20.98,
+   "end": 21.4,
+   "probability": 0.9883
+  },
+  {
+   "word": " caciosas",
+   "start": 21.4,
+   "end": 22.22,
+   "probability": 0.8135
+  },
+  {
+   "word": " de",
+   "start": 22.22,
+   "end": 22.64,
+   "probability": 0.9927
+  },
+  {
+   "word": " litro",
+   "start": 22.64,
+   "end": 23.22,
+   "probability": 0.9829
+  },
+  {
+   "word": " y",
+   "start": 23.22,
+   "end": 23.52,
+   "probability": 0.9951
+  },
+  {
+   "word": " medio.",
+   "start": 23.52,
+   "end": 23.78,
+   "probability": 0.9395
+  },
+  {
+   "word": " Dos",
+   "start": 23.78,
+   "end": 25.42,
+   "probability": 0.0467
+  },
+  {
+   "word": " pollos",
+   "start": 25.42,
+   "end": 25.84,
+   "probability": 0.7235
+  },
+  {
+   "word": " enteros.",
+   "start": 25.84,
+   "end": 26.36,
+   "probability": 0.9832
+  },
+  {
+   "word": " Espere,",
+   "start": 26.44,
+   "end": 26.84,
+   "probability": 0.8015
+  },
+  {
+   "word": " déjenme",
+   "start": 27.44,
+   "end": 28.16,
+   "probability": 0.7553
+  },
+  {
+   "word": " preguntar.",
+   "start": 28.16,
+   "end": 29.58,
+   "probability": 0.9946
+  },
+  {
+   "word": " Ya,",
+   "start": 30.1,
+   "end": 30.92,
+   "probability": 0.7861
+  },
+  {
+   "word": " mejor",
+   "start": 32.02,
+   "end": 33.6,
+   "probability": 0.8696
+  },
+  {
+   "word": " que",
+   "start": 33.6,
+   "end": 34.28,
+   "probability": 0.9917
+  },
+  {
+   "word": " sea",
+   "start": 34.28,
+   "end": 34.56,
+   "probability": 0.9932
+  },
+  {
+   "word": " un",
+   "start": 34.56,
+   "end": 34.98,
+   "probability": 0.9951
+  },
+  {
+   "word": " pollo",
+   "start": 34.98,
+   "end": 35.34,
+   "probability": 0.549
+  },
+  {
+   "word": " entero",
+   "start": 35.34,
+   "end": 35.76,
+   "probability": 0.938
+  },
+  {
+   "word": " y",
+   "start": 35.76,
+   "end": 36.34,
+   "probability": 0.9756
+  },
+  {
+   "word": " un",
+   "start": 36.34,
+   "end": 36.74,
+   "probability": 0.9839
+  },
+  {
+   "word": " medio",
+   "start": 36.74,
+   "end": 37.0,
+   "probability": 0.9609
+  },
+  {
+   "word": " pollo.",
+   "start": 37.0,
+   "end": 37.54,
+   "probability": 0.5522
+  },
+  {
+   "word": " Somos",
+   "start": 37.82,
+   "end": 38.5,
+   "probability": 0.9272
+  },
+  {
+   "word": " menos",
+   "start": 38.5,
+   "end": 39.06,
+   "probability": 0.9766
+  },
+  {
+   "word": " de",
+   "start": 39.06,
+   "end": 39.28,
+   "probability": 0.9927
+  },
+  {
+   "word": " lo",
+   "start": 39.28,
+   "end": 39.38,
+   "probability": 0.9844
+  },
+  {
+   "word": " que",
+   "start": 39.38,
+   "end": 39.52,
+   "probability": 0.9985
+  },
+  {
+   "word": " pensábamos.",
+   "start": 39.52,
+   "end": 40.2,
+   "probability": 0.9818
+  },
+  {
+   "word": " Bien,",
+   "start": 41.34,
+   "end": 41.58,
+   "probability": 0.9507
+  },
+  {
+   "word": " un",
+   "start": 42.24,
+   "end": 42.5,
+   "probability": 0.9785
+  },
+  {
+   "word": " pollo",
+   "start": 42.5,
+   "end": 42.72,
+   "probability": 0.9219
+  },
+  {
+   "word": " entero",
+   "start": 42.72,
+   "end": 43.04,
+   "probability": 0.9958
+  },
+  {
+   "word": " y",
+   "start": 43.04,
+   "end": 43.64,
+   "probability": 0.9844
+  },
+  {
+   "word": " un",
+   "start": 43.64,
+   "end": 43.78,
+   "probability": 0.9863
+  },
+  {
+   "word": " medio",
+   "start": 43.78,
+   "end": 44.04,
+   "probability": 0.998
+  },
+  {
+   "word": " pollo.",
+   "start": 44.04,
+   "end": 44.52,
+   "probability": 0.9666
+  },
+  {
+   "word": " ¿Las",
+   "start": 45.1,
+   "end": 45.82,
+   "probability": 0.804
+  },
+  {
+   "word": " dos",
+   "start": 45.82,
+   "end": 45.96,
+   "probability": 0.9883
+  },
+  {
+   "word": " papas",
+   "start": 45.96,
+   "end": 46.32,
+   "probability": 0.9336
+  },
+  {
+   "word": " familiares",
+   "start": 46.32,
+   "end": 47.06,
+   "probability": 0.9951
+  },
+  {
+   "word": " y",
+   "start": 47.06,
+   "end": 47.34,
+   "probability": 0.9731
+  },
+  {
+   "word": " las",
+   "start": 47.34,
+   "end": 47.52,
+   "probability": 0.9868
+  },
+  {
+   "word": " dos",
+   "start": 47.52,
+   "end": 47.82,
+   "probability": 0.9883
+  },
+  {
+   "word": " caciosas",
+   "start": 47.82,
+   "end": 48.42,
+   "probability": 0.6452
+  },
+  {
+   "word": " de",
+   "start": 48.42,
+   "end": 48.52,
+   "probability": 0.6865
+  },
+  {
+   "word": " litro",
+   "start": 48.52,
+   "end": 48.82,
+   "probability": 0.9851
+  },
+  {
+   "word": " y",
+   "start": 48.82,
+   "end": 48.88,
+   "probability": 0.9946
+  },
+  {
+   "word": " medio",
+   "start": 48.88,
+   "end": 49.18,
+   "probability": 0.999
+  },
+  {
+   "word": " se",
+   "start": 49.18,
+   "end": 49.62,
+   "probability": 0.8442
+  },
+  {
+   "word": " mantienen?",
+   "start": 49.62,
+   "end": 50.0,
+   "probability": 0.9912
+  },
+  {
+   "word": " Sí,",
+   "start": 50.0,
+   "end": 50.86,
+   "probability": 0.1791
+  },
+  {
+   "word": " eso",
+   "start": 51.08,
+   "end": 51.6,
+   "probability": 0.9155
+  },
+  {
+   "word": " se",
+   "start": 51.6,
+   "end": 51.96,
+   "probability": 0.9702
+  },
+  {
+   "word": " mantiene.",
+   "start": 51.96,
+   "end": 52.38,
+   "probability": 0.9978
+  },
+  {
+   "word": " Perfecto.",
+   "start": 53.3,
+   "end": 53.98,
+   "probability": 0.8374
+  },
+  {
+   "word": " Como",
+   "start": 54.74,
+   "end": 55.18,
+   "probability": 0.8286
+  },
+  {
+   "word": " lleva",
+   "start": 55.18,
+   "end": 55.58,
+   "probability": 0.9717
+  },
+  {
+   "word": " pollo",
+   "start": 55.58,
+   "end": 55.86,
+   "probability": 0.9602
+  },
+  {
+   "word": " entero",
+   "start": 55.86,
+   "end": 56.18,
+   "probability": 0.9695
+  },
+  {
+   "word": " con",
+   "start": 56.18,
+   "end": 56.66,
+   "probability": 0.9312
+  },
+  {
+   "word": " papas",
+   "start": 56.66,
+   "end": 56.96,
+   "probability": 0.9031
+  },
+  {
+   "word": " familiares,",
+   "start": 56.96,
+   "end": 57.62,
+   "probability": 0.9941
+  },
+  {
+   "word": " tiene",
+   "start": 57.8,
+   "end": 58.44,
+   "probability": 0.9873
+  },
+  {
+   "word": " el",
+   "start": 58.44,
+   "end": 58.76,
+   "probability": 0.9971
+  },
+  {
+   "word": " dúo",
+   "start": 58.76,
+   "end": 58.96,
+   "probability": 0.875
+  },
+  {
+   "word": " familiar.",
+   "start": 58.96,
+   "end": 59.42,
+   "probability": 0.9419
+  },
+  {
+   "word": " 10",
+   "start": 60.26,
+   "end": 60.46,
+   "probability": 0.7334
+  },
+  {
+   "word": " soles",
+   "start": 60.46,
+   "end": 60.88,
+   "probability": 0.8003
+  },
+  {
+   "word": " de",
+   "start": 60.88,
+   "end": 61.22,
+   "probability": 0.9927
+  },
+  {
+   "word": " descuento.",
+   "start": 61.22,
+   "end": 61.68,
+   "probability": 0.9842
+  },
+  {
+   "word": " Genial.",
+   "start": 62.44,
+   "end": 62.96,
+   "probability": 0.9492
+  },
+  {
+   "word": " Viene",
+   "start": 63.56,
+   "end": 63.96,
+   "probability": 0.9387
+  },
+  {
+   "word": " con",
+   "start": 63.96,
+   "end": 64.46,
+   "probability": 0.998
+  },
+  {
+   "word": " cremas.",
+   "start": 64.46,
+   "end": 65.32,
+   "probability": 0.9602
+  },
+  {
+   "word": " Sí,",
+   "start": 66.34,
+   "end": 66.64,
+   "probability": 0.9756
+  },
+  {
+   "word": " cada",
+   "start": 67.4,
+   "end": 67.7,
+   "probability": 0.9971
+  },
+  {
+   "word": " pollo",
+   "start": 67.7,
+   "end": 68.14,
+   "probability": 0.9968
+  },
+  {
+   "word": " trae",
+   "start": 68.14,
+   "end": 68.7,
+   "probability": 0.8406
+  },
+  {
+   "word": " un",
+   "start": 68.7,
+   "end": 68.84,
+   "probability": 0.2996
+  },
+  {
+   "word": " mayonesa,",
+   "start": 68.84,
+   "end": 69.44,
+   "probability": 0.9285
+  },
+  {
+   "word": " quechú",
+   "start": 70.1,
+   "end": 70.44,
+   "probability": 0.5329
+  },
+  {
+   "word": " y",
+   "start": 70.44,
+   "end": 70.88,
+   "probability": 0.874
+  },
+  {
+   "word": " ají.",
+   "start": 70.88,
+   "end": 71.14,
+   "probability": 0.7927
+  },
+  {
+   "word": " Perfecto.",
+   "start": 72.8,
+   "end": 73.72,
+   "probability": 0.9578
+  },
+  {
+   "word": " Dirección",
+   "start": 75.81,
+   "end": 76.27,
+   "probability": 0.9653
+  },
+  {
+   "word": " de",
+   "start": 76.27,
+   "end": 76.39,
+   "probability": 0.9976
+  },
+  {
+   "word": " la",
+   "start": 76.39,
+   "end": 76.49,
+   "probability": 0.9775
+  },
+  {
+   "word": " entrega.",
+   "start": 76.49,
+   "end": 76.91,
+   "probability": 0.9963
+  },
+  {
+   "word": " Ha",
+   "start": 76.91,
+   "end": 78.23,
+   "probability": 0.0707
+  },
+  {
+   "word": " venido",
+   "start": 78.23,
+   "end": 78.71,
+   "probability": 0.9868
+  },
+  {
+   "word": " a",
+   "start": 78.71,
+   "end": 78.95,
+   "probability": 0.8979
+  },
+  {
+   "word": " los",
+   "start": 78.95,
+   "end": 79.43,
+   "probability": 0.7271
+  },
+  {
+   "word": " laureles",
+   "start": 79.43,
+   "end": 80.79,
+   "probability": 0.8506
+  },
+  {
+   "word": " 2271.",
+   "start": 80.79,
+   "end": 83.11,
+   "probability": 0.7305
+  },
+  {
+   "word": " Bloque",
+   "start": 83.87,
+   "end": 84.59,
+   "probability": 0.5992
+  },
+  {
+   "word": " C.",
+   "start": 84.59,
+   "end": 84.91,
+   "probability": 0.854
+  },
+  {
+   "word": " Departamento",
+   "start": 85.63,
+   "end": 86.55,
+   "probability": 0.8737
+  },
+  {
+   "word": " 504",
+   "start": 86.55,
+   "end": 87.77,
+   "probability": 0.9822
+  },
+  {
+   "word": " en",
+   "start": 87.77,
+   "end": 88.71,
+   "probability": 0.7344
+  },
+  {
+   "word": " San",
+   "start": 88.71,
+   "end": 89.07,
+   "probability": 0.9858
+  },
+  {
+   "word": " Juan",
+   "start": 89.07,
+   "end": 89.33,
+   "probability": 0.9966
+  },
+  {
+   "word": " de",
+   "start": 89.33,
+   "end": 89.47,
+   "probability": 0.4465
+  },
+  {
+   "word": " Lurigancho.",
+   "start": 89.47,
+   "end": 90.13,
+   "probability": 0.833
+  },
+  {
+   "word": " 2271.",
+   "start": 93.29,
+   "end": 94.57,
+   "probability": 0.7018
+  },
+  {
+   "word": " Bloque",
+   "start": 95.19,
+   "end": 95.63,
+   "probability": 0.9673
+  },
+  {
+   "word": " C.",
+   "start": 95.63,
+   "end": 95.91,
+   "probability": 0.9946
+  },
+  {
+   "word": " Departamento",
+   "start": 96.43,
+   "end": 96.99,
+   "probability": 0.9917
+  },
+  {
+   "word": " 504.",
+   "start": 96.99,
+   "end": 97.91,
+   "probability": 0.9856
+  },
+  {
+   "word": " Forma",
+   "start": 98.57,
+   "end": 99.11,
+   "probability": 0.8254
+  },
+  {
+   "word": " de",
+   "start": 99.11,
+   "end": 99.25,
+   "probability": 0.9937
+  },
+  {
+   "word": " pago.",
+   "start": 99.25,
+   "end": 99.55,
+   "probability": 0.9263
+  },
+  {
+   "word": " Ya",
+   "start": 100.39,
+   "end": 101.15,
+   "probability": 0.1989
+  },
+  {
+   "word": " pe.",
+   "start": 101.15,
+   "end": 101.37,
+   "probability": 0.4661
+  },
+  {
+   "word": " Muy",
+   "start": 102.21,
+   "end": 102.55,
+   "probability": 0.9175
+  },
+  {
+   "word": " bien,",
+   "start": 102.55,
+   "end": 102.81,
+   "probability": 0.9946
+  },
+  {
+   "word": " le",
+   "start": 103.51,
+   "end": 104.15,
+   "probability": 0.7397
+  },
+  {
+   "word": " confirmo.",
+   "start": 104.15,
+   "end": 104.63,
+   "probability": 0.9509
+  },
+  {
+   "word": " Un",
+   "start": 105.31,
+   "end": 106.05,
+   "probability": 0.8228
+  },
+  {
+   "word": " pollo",
+   "start": 106.05,
+   "end": 106.35,
+   "probability": 0.9878
+  },
+  {
+   "word": " entero,",
+   "start": 106.35,
+   "end": 106.69,
+   "probability": 0.9937
+  },
+  {
+   "word": " un",
+   "start": 107.71,
+   "end": 107.89,
+   "probability": 0.9346
+  },
+  {
+   "word": " medio",
+   "start": 107.89,
+   "end": 108.29,
+   "probability": 0.9829
+  },
+  {
+   "word": " pollo,",
+   "start": 108.29,
+   "end": 109.29,
+   "probability": 0.2485
+  },
+  {
+   "word": " dos",
+   "start": 109.71,
+   "end": 109.95,
+   "probability": 0.873
+  },
+  {
+   "word": " papas",
+   "start": 109.95,
+   "end": 110.35,
+   "probability": 0.9429
+  },
+  {
+   "word": " familiares",
+   "start": 110.35,
+   "end": 111.05,
+   "probability": 0.9968
+  },
+  {
+   "word": " y",
+   "start": 111.05,
+   "end": 112.07,
+   "probability": 0.7563
+  },
+  {
+   "word": " dos",
+   "start": 112.07,
+   "end": 112.37,
+   "probability": 0.979
+  },
+  {
+   "word": " caciosas",
+   "start": 112.37,
+   "end": 112.91,
+   "probability": 0.6792
+  },
+  {
+   "word": " de",
+   "start": 112.91,
+   "end": 113.07,
+   "probability": 0.9766
+  },
+  {
+   "word": " litro",
+   "start": 113.07,
+   "end": 113.43,
+   "probability": 0.9878
+  },
+  {
+   "word": " y",
+   "start": 113.43,
+   "end": 113.59,
+   "probability": 0.9932
+  },
+  {
+   "word": " medio",
+   "start": 113.59,
+   "end": 113.85,
+   "probability": 0.9985
+  },
+  {
+   "word": " con",
+   "start": 113.85,
+   "end": 114.55,
+   "probability": 0.5942
+  },
+  {
+   "word": " el",
+   "start": 114.55,
+   "end": 114.69,
+   "probability": 0.9976
+  },
+  {
+   "word": " dúo",
+   "start": 114.69,
+   "end": 114.91,
+   "probability": 0.8066
+  },
+  {
+   "word": " familiar.",
+   "start": 114.91,
+   "end": 115.35,
+   "probability": 0.9688
+  },
+  {
+   "word": " El",
+   "start": 115.85,
+   "end": 116.31,
+   "probability": 0.9849
+  },
+  {
+   "word": " total",
+   "start": 116.31,
+   "end": 116.61,
+   "probability": 0.999
+  },
+  {
+   "word": " es",
+   "start": 116.61,
+   "end": 117.15,
+   "probability": 0.998
+  },
+  {
+   "word": " 131",
+   "start": 117.15,
+   "end": 118.23,
+   "probability": 0.9836
+  },
+  {
+   "word": " soles.",
+   "start": 118.23,
+   "end": 118.81,
+   "probability": 0.4979
+  },
+  {
+   "word": " 131,",
+   "start": 119.77,
+   "end": 120.53,
+   "probability": 0.9697
+  },
+  {
+   "word": " perfecto.",
+   "start": 120.73,
+   "end": 121.69,
+   "probability": 0.9736
+  },
+  {
+   "word": " Le",
+   "start": 121.83,
+   "end": 122.03,
+   "probability": 0.9683
+  },
+  {
+   "word": " llegué",
+   "start": 122.03,
+   "end": 122.27,
+   "probability": 0.7375
+  },
+  {
+   "word": " en",
+   "start": 122.27,
+   "end": 122.43,
+   "probability": 0.9487
+  },
+  {
+   "word": " una",
+   "start": 122.43,
+   "end": 122.61,
+   "probability": 0.9116
+  },
+  {
+   "word": " hora",
+   "start": 122.61,
+   "end": 122.77,
+   "probability": 0.9966
+  },
+  {
+   "word": " aproximadamente.",
+   "start": 122.77,
+   "end": 123.23,
+   "probability": 0.7837
+  },
+  {
+   "word": " Hoy",
+   "start": 123.95,
+   "end": 124.29,
+   "probability": 0.936
+  },
+  {
+   "word": " tenemos",
+   "start": 124.29,
+   "end": 124.57,
+   "probability": 0.9932
+  },
+  {
+   "word": " bastante",
+   "start": 124.57,
+   "end": 124.97,
+   "probability": 0.9736
+  },
+  {
+   "word": " demanda.",
+   "start": 124.97,
+   "end": 125.53,
+   "probability": 0.9241
+  },
+  {
+   "word": " No",
+   "start": 125.65,
+   "end": 125.81,
+   "probability": 0.9585
+  },
+  {
+   "word": " hay",
+   "start": 125.81,
+   "end": 125.89,
+   "probability": 0.7959
+  },
+  {
+   "word": " problema,",
+   "start": 125.89,
+   "end": 126.11,
+   "probability": 0.9849
+  },
+  {
+   "word": " gracias.",
+   "start": 126.27,
+   "end": 126.49,
+   "probability": 0.9932
+  },
+  {
+   "word": " Eso",
+   "start": 126.49,
+   "end": 127.19,
+   "probability": 0.0087
+  },
+  {
+   "word": " es",
+   "start": 127.19,
+   "end": 127.45,
+   "probability": 0.6704
+  },
+  {
+   "word": " todo.",
+   "start": 127.45,
+   "end": 127.63,
+   "probability": 0.4563
+  },
+  {
+   "word": " Buenas",
+   "start": 128.01,
+   "end": 128.31,
+   "probability": 0.8516
+  },
+  {
+   "word": " noches.",
+   "start": 128.31,
+   "end": 128.99,
+   "probability": 0.9629
+  }
+ ],
+ "segmentos": [
+  {
+   "start": 0.14,
+   "end": 10.96,
+   "text": "La leña dorada. Buenas noches. Delivery o recojo en tienda? Delivery, por favor. Es para una reunión familiar."
+  },
+  {
+   "start": 11.92,
+   "end": 23.78,
+   "text": "Perfecto. ¿Qué le enviamos? Dos pollos enteros, dos papas familiares y dos caciosas de litro y medio."
+  },
+  {
+   "start": 23.78,
+   "end": 40.2,
+   "text": "Dos pollos enteros. Espere, déjenme preguntar. Ya, mejor que sea un pollo entero y un medio pollo. Somos menos de lo que pensábamos."
+  },
+  {
+   "start": 41.34,
+   "end": 50.0,
+   "text": "Bien, un pollo entero y un medio pollo. ¿Las dos papas familiares y las dos caciosas de litro y medio se mantienen?"
+  },
+  {
+   "start": 50.0,
+   "end": 61.68,
+   "text": "Sí, eso se mantiene. Perfecto. Como lleva pollo entero con papas familiares, tiene el dúo familiar. 10 soles de descuento."
+  },
+  {
+   "start": 62.44,
+   "end": 76.91,
+   "text": "Genial. Viene con cremas. Sí, cada pollo trae un mayonesa, quechú y ají. Perfecto. Dirección de la entrega."
+  },
+  {
+   "start": 76.91,
+   "end": 90.13,
+   "text": "Ha venido a los laureles 2271. Bloque C. Departamento 504 en San Juan de Lurigancho."
+  },
+  {
+   "start": 93.29,
+   "end": 99.55,
+   "text": "2271. Bloque C. Departamento 504. Forma de pago."
+  },
+  {
+   "start": 100.39,
+   "end": 115.35,
+   "text": "Ya pe. Muy bien, le confirmo. Un pollo entero, un medio pollo, dos papas familiares y dos caciosas de litro y medio con el dúo familiar."
+  },
+  {
+   "start": 115.85,
+   "end": 126.49,
+   "text": "El total es 131 soles. 131, perfecto. Le llegué en una hora aproximadamente. Hoy tenemos bastante demanda. No hay problema, gracias."
+  },
+  {
+   "start": 126.49,
+   "end": 128.99,
+   "text": "Eso es todo. Buenas noches."
+  }
+ ],
+ "idioma": "es",
+ "duracion_audio_s": 130.239,
+ "modelo": "small",
+ "device": "cuda",
+ "compute_type": "float16",
+ "glosario": null,
+ "tiempo_s": 3.444,
+ "segundos_por_minuto": 1.587,
+ "tiempo_carga_s": 1.88,
+ "vram_base_mb": 556.2,
+ "vram_pico_mb": 1302.2,
+ "versiones": {
+  "faster_whisper": "1.2.1",
+  "ctranslate2": "4.8.4"
+ }
+}

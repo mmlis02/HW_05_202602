@@ -13,6 +13,8 @@ proyecto:
 
 rutas:
   enunciado: docs/enunciado.md
+  requisitos: requirements.txt
+  requisitos_gpu: requirements-gpu.txt          # cuBLAS 12 y cuDNN 9 con pip, para Colab con CUDA 13
   guiones: docs/guiones.md
   audios_dir: data/audio                       # copia local opcional, con los nombres originales; no se commitea
   audios_degradados_dir: data/audio_degradado  # L1-L3, se regeneran con 04_degradacion
@@ -22,8 +24,16 @@ rutas:
   referencias_dir: data/referencias
   carta: data/referencias/carta.csv
   promociones: data/referencias/promociones.csv
-  transcripciones_dir: data/transcripciones    # caché commiteada: la app y CI nunca re-transcriben
+  cache_dir: data/cache                        # transcripciones en JSON, commiteadas: la app y CI nunca re-transcriben
   resultados_dir: data/resultados
+  duraciones: data/resultados/duraciones.csv                       # duración real de cada audio (02)
+  mediciones_transcripcion: data/resultados/mediciones_transcripcion.csv  # una fila por corrida (02)
+  wer_por_clip: data/resultados/wer_por_clip.csv                   # una fila por corrida y clip (02)
+  glosario_por_clip: data/resultados/glosario_por_clip.csv         # WER con y sin glosario, pareado (02)
+  # Los tres de arriba guardan el WER y el CER con la normalización de la corrida en Colab. Los
+  # definitivos se recalculan desde la caché, sin transcribir, en 06_resultados (sección 1).
+  metricas_transcripcion: data/resultados/metricas_transcripcion.csv  # WER y CER definitivos por corrida (06)
+  metricas_por_clip: data/resultados/metricas_por_clip.csv            # WER y CER definitivos por corrida y clip (06)
   modelos_dir: models                          # pesos descargados, no se commitean
 
 archivos:
@@ -32,6 +42,19 @@ archivos:
 # Los audios son privados: no están en el repo, y el enlace a su carpeta tampoco. Se identifican por su
 # nombre original, sin renombrarlos. Este mapeo es el único lugar donde aparecen esos nombres: a partir
 # de aquí todo el código usa los clips e1 ... l5 (src/audios.py).
+# Transcripciones guardadas como JSON, una por clip y corrida: <cache_dir>/<patron_transcripcion>.
+cache:
+  patron_transcripcion: "transcripciones/{corrida}/{clip}.json"
+
+# Colab. En Drive, salidas/ replica data/: al terminar, salidas/cache -> data/cache y
+# salidas/resultados -> data/resultados.
+colab:
+  drive_salidas: /content/drive/MyDrive/HW_05_salidas
+  # Se instalan con la versión fijada en requirements.txt; lo demás se usa tal como viene en Colab.
+  paquetes: [faster-whisper, av, jiwer, text2num, nvidia-ml-py]
+  # Modelo mínimo para comprobar, justo después de instalar, que la GPU transcribe de verdad.
+  modelo_comprobacion: tiny
+
 audios:
   archivos:
     task 1-1: e1
@@ -62,8 +85,24 @@ asr:
   beam_size: 5
   vad_filter: true
   word_timestamps: true          # la probabilidad por palabra alimenta la regla de diagnóstico
-  # initial_prompt o hotwords: qué soporta la versión instalada se resuelve en 02_transcripcion_gpu.
-  glosario_mecanismo: initial_prompt
+  # faster-whisper 1.2.1 acepta initial_prompt, hotwords o los dos (ver 02_transcripcion_gpu, sección 8).
+  # El motor usa este; el notebook 02 compara los dos contra no pasar glosario.
+  # Por defecto hotwords: ninguno de los dos mejora el WER de forma significativa (IC 95 % pareado
+  # con el 0 dentro), pero hotwords es el único que transcribe bien los 40 términos del glosario dichos
+  # en el corpus. initial_prompt escribe "Plim" en L4 y metodo_pago queda vacío; sin glosario, Nagios
+  # (la tecnología abandonada de E3) sale "nacos" y la trampa no llega a probarse. Ver README, "Glosario".
+  glosario_mecanismo: hotwords
+  glosario_mecanismos_comparacion: [initial_prompt, hotwords]
+  # Corrida rápida antes de la completa: un clip de cada tarea.
+  clips_prueba_rapida: [e1, l1]
+  # CPU contra GPU: solo el modelo pequeño y pocos clips, para que la sesión de Colab no expire.
+  # float16 no existe en CPU, así que la comparación se hace en int8 en los dos devices.
+  cpu:
+    modelo: small
+    compute_type: int8
+    clips: [e1, l1]
+  # Cada cuánto se consulta la memoria de la GPU (pynvml) mientras se transcribe.
+  vram_intervalo_s: 0.05
   # Vocabulario del dominio, no la lista de respuestas: incluye términos que no aparecen en el corpus
   # (Java, Angular, Azure...) para que el glosario no sea una filtración del ground truth.
   # El glosario que recibe el ASR es la unión de las dos listas; extraccion_reglas usa solo tecnologias.
@@ -158,6 +197,13 @@ normalizacion:
   unidades_y_medio: [año, años, mes, meses, hora, horas]
   # Una corrida de al menos tantos dígitos sueltos es un dictado y se une: "nueve ocho siete" -> 987.
   min_digitos_dictado: 3
+  # Cifras mixtas: Whisper escribe "10 mil" y "1.5 millones" donde el guion dice "diez mil" y
+  # "un millón y medio". Un multiplicador en palabra detrás de una cifra o de una de estas cantidades
+  # se aparta de text2num y luego se multiplica: "10 mil" -> 10000, "1.5 millones" -> 1500000,
+  # "medio millón" -> 500000. Una cifra menor que el multiplicador justo detrás se suma:
+  # "10 mil 500" -> 10500, "2 millones 500 mil" -> 2500000.
+  multiplicadores: {mil: 1000, millón: 1000000, millon: 1000000, millones: 1000000}
+  cantidades_palabra: {un: 1, una: 1, medio: 0.5}
   # Códigos que se dicen separados y se escriben juntos: "LEÑA cinco" -> "LEÑA5".
   codigos: [LEÑA5]
 
@@ -250,6 +296,7 @@ esquemas:
 
 extraccion:
   metodos: [reglas, llm]
+  metodo: reglas                 # el que usa src/engine.py; "llm" cuando exista src/extraccion_llm.py
   # Marcadores de src/extraccion_reglas.py. La transcripción no trae hablantes: una pregunta se
   # reconoce por sus palabras clave y su respuesta son las oraciones siguientes, hasta la próxima
   # pregunta ("?") o hasta `ventana_respuesta` oraciones.

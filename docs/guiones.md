@@ -20,7 +20,7 @@ Son 10 clips de unos 3 minutos cada uno: 5 entrevistas (Task 1) y 5 llamadas a u
 - La transcripción de referencia es el texto del guión sin las etiquetas "A:" y "B:". Si improvisan o cambian una palabra, corrijan el guión después de grabar para que coincida con el audio.
 - Los números están escritos en letras a propósito: así se dicen, y así debe quedar la referencia.
 - Si algún clip dura menos de 2 minutos, hablen más pausado. El límite de la tarea es de 2 a 4 minutos.
-- Graben con el celular entre los dos, en un cuarto sin eco. Nombren los archivos `e1.m4a` … `e5.m4a` y `l1.m4a` … `l5.m4a`.
+- Graben con el celular entre los dos, en un cuarto sin eco. Los archivos se llaman `task 1-1` … `task 1-5` (entrevistas E1 a E5) y `task 2-1` … `task 2-5` (llamadas L1 a L5); el mapeo a los clips `e1` … `l5` está en `config.yaml → audios.archivos`.
 
 **Ajustes que debes hacer tú**
 
