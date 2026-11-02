@@ -189,6 +189,13 @@ normalizacion:
   unidades_y_medio: [año, años, mes, meses, hora, horas]
   # Una corrida de al menos tantos dígitos sueltos es un dictado y se une: "nueve ocho siete" -> 987.
   min_digitos_dictado: 3
+  # Cifras mixtas: Whisper escribe "10 mil" y "1.5 millones" donde el guion dice "diez mil" y
+  # "un millón y medio". Un multiplicador en palabra detrás de una cifra o de una de estas cantidades
+  # se aparta de text2num y luego se multiplica: "10 mil" -> 10000, "1.5 millones" -> 1500000,
+  # "medio millón" -> 500000. Una cifra menor que el multiplicador justo detrás se suma:
+  # "10 mil 500" -> 10500, "2 millones 500 mil" -> 2500000.
+  multiplicadores: {mil: 1000, millón: 1000000, millon: 1000000, millones: 1000000}
+  cantidades_palabra: {un: 1, una: 1, medio: 0.5}
   # Códigos que se dicen separados y se escriben juntos: "LEÑA cinco" -> "LEÑA5".
   codigos: [LEÑA5]
 

@@ -44,10 +44,11 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 - **Ordinales y "por ciento"** no se convierten: "tres cuartos de pollo" → 3 cuartos, "primero de diciembre" igual.
 - **"y medio"** solo tras número + unidad de tiempo: "cuatro años y medio" → 4.5 años. "medio pollo" y "litro y medio" son tamaños y no se tocan.
 - **Dictados**: tres o más dígitos sueltos seguidos se unen ("nueve ocho siete" → 987).
+- **Cifras mixtas**: Whisper escribe "10 mil" donde el guion dice "diez mil"; text2num leía "mil" suelto y daba "10 1000", dos errores de WER por una palabra bien oída. Ahora un multiplicador ("mil", "millón", "millones") detrás de una cifra, de "un", "una" o "medio" se multiplica: "10 mil" → 10000, "1.5 millones" y "1,5 millones" → 1500000, "medio millón" → 500000, "un millón y medio" → 1500000. Una cifra menor que el multiplicador justo detrás se suma: "10 mil 500" → 10500, "2 millones 500 mil" → 2500000.
 - **Códigos**: "LEÑA cinco" → LEÑA5.
 - **Autocorrecciones**: se convierten los dos números; elegir el final es trabajo de la extracción.
 - **Para comparar textos** (WER, CER, verificación): números a dígitos, `%` → "por ciento", minúsculas, separador de miles fuera y coma decimal a punto, sin puntuación (salvo el punto decimal), espacios colapsados. Las tildes se mantienen (`quitar_tildes: false`).
-- **Limitaciones**: "entre nueve y diez mil" da 9 y 10000, no 9000; "año y medio" sin número delante no llega a 1.5; un teléfono escrito sin espacios no coincide con el dictado por grupos.
+- **Limitaciones**: "entre nueve y diez mil" da 9 y 10000, no 9000; "año y medio" sin número delante no llega a 1.5; un teléfono escrito sin espacios no coincide con el dictado por grupos; una cifra pequeña justo detrás de "mil" se suma aunque no sea parte del número ("10 mil 2 veces" → 10002 veces).
 
 ## Diagnóstico de un total que no cuadra
 
