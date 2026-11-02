@@ -1,0 +1,1931 @@
+{
+ "clip": "e3",
+ "archivo": "Task 1-3.m4a",
+ "corrida": "large-v3_float16_cuda_hotwords",
+ "fecha": "2026-11-01T22:57:24+00:00",
+ "texto": "Hola, buenas tardes. Gracias por venir hasta la oficina. Buenas tardes. Antes de empezar, quería preguntar algo para no hacerles perder tiempo. ¿El rango salarial de aviso es fijo? Hay cierta flexibilidad. ¿Cuál sería tu pretensión? Estoy entre 9 y 10 mil soles, idealmente 9.500. Bien, eso entra en lo que tenemos. Cuéntame qué haces hoy. Hoy soy jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur. Manejo un equipo de tres personas. ¿Y cuántos años de experiencia tienes en total? En infraestructura, 8. Casi 9 porque cumplo 9 en marzo, pero digamos 8. ¿Qué stack manejan? Todo está en AWS. Los clústeres corren en Kubernetes, la infraestructura la definimos con Terraform. Los despliegues van por Jenkins y el monitoreo lo tenemos en Grafana. Antes usábamos Nagios, pero lo pagamos el año pasado. Este puesto tiene reuniones con un proveedor en Estados Unidos. ¿Cómo andas de inglés? Básico, la verdad. Leo documentación técnica, eso sí, porque todo está en inglés, pero conversar me cuesta bastante. Estoy llevando clases los sábados. Ok, lo tomamos en cuenta. ¿Por qué quieres cambiar de trabajo? Porque mi empresa en infraestructura ya está estable y quiero un reto más grande. Ustedes tienen tráfico de varios países y eso me interesa. Mmm, tiene sentido. Una pregunta técnica rápida. Si un despliegue falla en producción a las 2 de la mañana, ¿qué haces primero? Primero reviso si el rollback automático funcionó. Si no, hago rollback manual a la versión anterior. Confirmo en Grafana que las métricas vuelven a la normalidad y recién después investigo la causa. Al día siguiente escribimos el postmortem. Muy bien, ¿y cuándo podrías incorporarte? Tengo que entregar una migración a fin de mes. A partir del 1 de diciembre estaría libre. Perfecto, te contactaremos la próxima semana. Gracias, quedo atento.",
+ "palabras": [
+  {
+   "word": " Hola,",
+   "start": 0.4,
+   "end": 0.86,
+   "probability": 0.9976
+  },
+  {
+   "word": " buenas",
+   "start": 0.92,
+   "end": 1.1,
+   "probability": 1.0
+  },
+  {
+   "word": " tardes.",
+   "start": 1.1,
+   "end": 1.66,
+   "probability": 1.0
+  },
+  {
+   "word": " Gracias",
+   "start": 1.66,
+   "end": 2.08,
+   "probability": 1.0
+  },
+  {
+   "word": " por",
+   "start": 2.08,
+   "end": 2.3,
+   "probability": 1.0
+  },
+  {
+   "word": " venir",
+   "start": 2.3,
+   "end": 2.56,
+   "probability": 1.0
+  },
+  {
+   "word": " hasta",
+   "start": 2.56,
+   "end": 2.76,
+   "probability": 0.9995
+  },
+  {
+   "word": " la",
+   "start": 2.76,
+   "end": 2.94,
+   "probability": 1.0
+  },
+  {
+   "word": " oficina.",
+   "start": 2.94,
+   "end": 3.3,
+   "probability": 1.0
+  },
+  {
+   "word": " Buenas",
+   "start": 3.66,
+   "end": 4.22,
+   "probability": 0.9998
+  },
+  {
+   "word": " tardes.",
+   "start": 4.22,
+   "end": 4.66,
+   "probability": 1.0
+  },
+  {
+   "word": " Antes",
+   "start": 4.66,
+   "end": 5.16,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 5.16,
+   "end": 5.3,
+   "probability": 1.0
+  },
+  {
+   "word": " empezar,",
+   "start": 5.3,
+   "end": 5.56,
+   "probability": 1.0
+  },
+  {
+   "word": " quería",
+   "start": 5.7,
+   "end": 5.96,
+   "probability": 1.0
+  },
+  {
+   "word": " preguntar",
+   "start": 5.96,
+   "end": 6.42,
+   "probability": 0.9968
+  },
+  {
+   "word": " algo",
+   "start": 6.42,
+   "end": 6.56,
+   "probability": 1.0
+  },
+  {
+   "word": " para",
+   "start": 6.56,
+   "end": 6.8,
+   "probability": 1.0
+  },
+  {
+   "word": " no",
+   "start": 6.8,
+   "end": 7.0,
+   "probability": 1.0
+  },
+  {
+   "word": " hacerles",
+   "start": 7.0,
+   "end": 7.34,
+   "probability": 0.998
+  },
+  {
+   "word": " perder",
+   "start": 7.34,
+   "end": 7.58,
+   "probability": 0.999
+  },
+  {
+   "word": " tiempo.",
+   "start": 7.58,
+   "end": 7.84,
+   "probability": 0.9868
+  },
+  {
+   "word": " ¿El",
+   "start": 8.14,
+   "end": 8.66,
+   "probability": 0.9973
+  },
+  {
+   "word": " rango",
+   "start": 8.66,
+   "end": 8.9,
+   "probability": 0.9988
+  },
+  {
+   "word": " salarial",
+   "start": 8.9,
+   "end": 9.28,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 9.28,
+   "end": 9.46,
+   "probability": 0.7842
+  },
+  {
+   "word": " aviso",
+   "start": 9.46,
+   "end": 9.76,
+   "probability": 0.9824
+  },
+  {
+   "word": " es",
+   "start": 9.76,
+   "end": 9.92,
+   "probability": 1.0
+  },
+  {
+   "word": " fijo?",
+   "start": 9.92,
+   "end": 10.22,
+   "probability": 1.0
+  },
+  {
+   "word": " Hay",
+   "start": 10.52,
+   "end": 10.98,
+   "probability": 1.0
+  },
+  {
+   "word": " cierta",
+   "start": 10.98,
+   "end": 11.26,
+   "probability": 1.0
+  },
+  {
+   "word": " flexibilidad.",
+   "start": 11.26,
+   "end": 11.78,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿Cuál",
+   "start": 12.12,
+   "end": 12.5,
+   "probability": 1.0
+  },
+  {
+   "word": " sería",
+   "start": 12.5,
+   "end": 12.7,
+   "probability": 0.9995
+  },
+  {
+   "word": " tu",
+   "start": 12.7,
+   "end": 12.86,
+   "probability": 1.0
+  },
+  {
+   "word": " pretensión?",
+   "start": 12.86,
+   "end": 13.4,
+   "probability": 0.9997
+  },
+  {
+   "word": " Estoy",
+   "start": 14.14,
+   "end": 14.7,
+   "probability": 0.9995
+  },
+  {
+   "word": " entre",
+   "start": 14.7,
+   "end": 15.02,
+   "probability": 0.9995
+  },
+  {
+   "word": " 9",
+   "start": 15.02,
+   "end": 15.34,
+   "probability": 0.9814
+  },
+  {
+   "word": " y",
+   "start": 15.34,
+   "end": 15.66,
+   "probability": 0.9526
+  },
+  {
+   "word": " 10",
+   "start": 15.66,
+   "end": 15.9,
+   "probability": 1.0
+  },
+  {
+   "word": " mil",
+   "start": 15.9,
+   "end": 16.04,
+   "probability": 0.8931
+  },
+  {
+   "word": " soles,",
+   "start": 16.04,
+   "end": 16.34,
+   "probability": 0.9998
+  },
+  {
+   "word": " idealmente",
+   "start": 16.46,
+   "end": 17.22,
+   "probability": 0.9998
+  },
+  {
+   "word": " 9",
+   "start": 17.22,
+   "end": 17.54,
+   "probability": 0.999
+  },
+  {
+   "word": ".500.",
+   "start": 17.54,
+   "end": 18.0,
+   "probability": 0.7482
+  },
+  {
+   "word": " Bien,",
+   "start": 18.46,
+   "end": 19.02,
+   "probability": 1.0
+  },
+  {
+   "word": " eso",
+   "start": 19.2,
+   "end": 19.72,
+   "probability": 0.9995
+  },
+  {
+   "word": " entra",
+   "start": 19.72,
+   "end": 20.0,
+   "probability": 1.0
+  },
+  {
+   "word": " en",
+   "start": 20.0,
+   "end": 20.24,
+   "probability": 1.0
+  },
+  {
+   "word": " lo",
+   "start": 20.24,
+   "end": 20.36,
+   "probability": 1.0
+  },
+  {
+   "word": " que",
+   "start": 20.36,
+   "end": 20.44,
+   "probability": 1.0
+  },
+  {
+   "word": " tenemos.",
+   "start": 20.44,
+   "end": 20.72,
+   "probability": 0.9995
+  },
+  {
+   "word": " Cuéntame",
+   "start": 21.24,
+   "end": 21.8,
+   "probability": 0.9998
+  },
+  {
+   "word": " qué",
+   "start": 21.8,
+   "end": 21.94,
+   "probability": 0.8242
+  },
+  {
+   "word": " haces",
+   "start": 21.94,
+   "end": 22.22,
+   "probability": 1.0
+  },
+  {
+   "word": " hoy.",
+   "start": 22.22,
+   "end": 22.44,
+   "probability": 1.0
+  },
+  {
+   "word": " Hoy",
+   "start": 23.1,
+   "end": 23.66,
+   "probability": 0.998
+  },
+  {
+   "word": " soy",
+   "start": 23.66,
+   "end": 23.88,
+   "probability": 0.9897
+  },
+  {
+   "word": " jefe",
+   "start": 23.88,
+   "end": 24.14,
+   "probability": 0.9976
+  },
+  {
+   "word": " de",
+   "start": 24.14,
+   "end": 24.24,
+   "probability": 1.0
+  },
+  {
+   "word": " infraestructura",
+   "start": 24.24,
+   "end": 24.86,
+   "probability": 0.9998
+  },
+  {
+   "word": " en",
+   "start": 24.86,
+   "end": 25.06,
+   "probability": 0.9995
+  },
+  {
+   "word": " una",
+   "start": 25.06,
+   "end": 25.18,
+   "probability": 0.9995
+  },
+  {
+   "word": " empresa",
+   "start": 25.18,
+   "end": 25.5,
+   "probability": 0.9995
+  },
+  {
+   "word": " de",
+   "start": 25.5,
+   "end": 25.58,
+   "probability": 0.9995
+  },
+  {
+   "word": " logística,",
+   "start": 25.58,
+   "end": 26.1,
+   "probability": 0.9997
+  },
+  {
+   "word": " Transportes",
+   "start": 26.22,
+   "end": 27.0,
+   "probability": 0.9985
+  },
+  {
+   "word": " Pacífico",
+   "start": 27.0,
+   "end": 27.48,
+   "probability": 0.9972
+  },
+  {
+   "word": " Sur.",
+   "start": 27.48,
+   "end": 27.62,
+   "probability": 1.0
+  },
+  {
+   "word": " Manejo",
+   "start": 27.78,
+   "end": 28.34,
+   "probability": 0.999
+  },
+  {
+   "word": " un",
+   "start": 28.34,
+   "end": 28.46,
+   "probability": 1.0
+  },
+  {
+   "word": " equipo",
+   "start": 28.46,
+   "end": 28.68,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 28.68,
+   "end": 28.86,
+   "probability": 1.0
+  },
+  {
+   "word": " tres",
+   "start": 28.86,
+   "end": 29.02,
+   "probability": 0.8687
+  },
+  {
+   "word": " personas.",
+   "start": 29.02,
+   "end": 29.3,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿Y",
+   "start": 29.3,
+   "end": 30.08,
+   "probability": 0.9211
+  },
+  {
+   "word": " cuántos",
+   "start": 30.08,
+   "end": 30.36,
+   "probability": 0.9797
+  },
+  {
+   "word": " años",
+   "start": 30.36,
+   "end": 30.54,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 30.54,
+   "end": 30.68,
+   "probability": 0.9995
+  },
+  {
+   "word": " experiencia",
+   "start": 30.68,
+   "end": 30.94,
+   "probability": 0.9995
+  },
+  {
+   "word": " tienes",
+   "start": 30.94,
+   "end": 31.3,
+   "probability": 0.9966
+  },
+  {
+   "word": " en",
+   "start": 31.3,
+   "end": 31.48,
+   "probability": 0.999
+  },
+  {
+   "word": " total?",
+   "start": 31.48,
+   "end": 31.7,
+   "probability": 0.9985
+  },
+  {
+   "word": " En",
+   "start": 32.28,
+   "end": 32.58,
+   "probability": 0.8989
+  },
+  {
+   "word": " infraestructura,",
+   "start": 32.58,
+   "end": 33.24,
+   "probability": 0.9951
+  },
+  {
+   "word": " 8.",
+   "start": 33.24,
+   "end": 33.58,
+   "probability": 0.7593
+  },
+  {
+   "word": " Casi",
+   "start": 33.86,
+   "end": 34.5,
+   "probability": 0.9995
+  },
+  {
+   "word": " 9",
+   "start": 34.5,
+   "end": 34.68,
+   "probability": 0.9985
+  },
+  {
+   "word": " porque",
+   "start": 34.68,
+   "end": 35.08,
+   "probability": 0.8901
+  },
+  {
+   "word": " cumplo",
+   "start": 35.08,
+   "end": 35.5,
+   "probability": 0.9937
+  },
+  {
+   "word": " 9",
+   "start": 35.5,
+   "end": 35.68,
+   "probability": 0.9917
+  },
+  {
+   "word": " en",
+   "start": 35.68,
+   "end": 35.96,
+   "probability": 0.998
+  },
+  {
+   "word": " marzo,",
+   "start": 35.96,
+   "end": 36.28,
+   "probability": 0.9958
+  },
+  {
+   "word": " pero",
+   "start": 36.36,
+   "end": 36.58,
+   "probability": 1.0
+  },
+  {
+   "word": " digamos",
+   "start": 36.58,
+   "end": 36.84,
+   "probability": 0.998
+  },
+  {
+   "word": " 8.",
+   "start": 36.84,
+   "end": 37.12,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿Qué",
+   "start": 37.6,
+   "end": 38.06,
+   "probability": 0.9983
+  },
+  {
+   "word": " stack",
+   "start": 38.06,
+   "end": 38.24,
+   "probability": 0.9839
+  },
+  {
+   "word": " manejan?",
+   "start": 38.24,
+   "end": 38.78,
+   "probability": 0.9939
+  },
+  {
+   "word": " Todo",
+   "start": 39.18,
+   "end": 39.52,
+   "probability": 0.9995
+  },
+  {
+   "word": " está",
+   "start": 39.52,
+   "end": 39.74,
+   "probability": 0.9966
+  },
+  {
+   "word": " en",
+   "start": 39.74,
+   "end": 40.14,
+   "probability": 1.0
+  },
+  {
+   "word": " AWS.",
+   "start": 40.14,
+   "end": 40.6,
+   "probability": 1.0
+  },
+  {
+   "word": " Los",
+   "start": 41.12,
+   "end": 41.7,
+   "probability": 1.0
+  },
+  {
+   "word": " clústeres",
+   "start": 41.7,
+   "end": 42.24,
+   "probability": 0.9867
+  },
+  {
+   "word": " corren",
+   "start": 42.24,
+   "end": 42.58,
+   "probability": 0.9998
+  },
+  {
+   "word": " en",
+   "start": 42.58,
+   "end": 42.76,
+   "probability": 1.0
+  },
+  {
+   "word": " Kubernetes,",
+   "start": 42.76,
+   "end": 43.14,
+   "probability": 0.9741
+  },
+  {
+   "word": " la",
+   "start": 43.6,
+   "end": 43.84,
+   "probability": 1.0
+  },
+  {
+   "word": " infraestructura",
+   "start": 43.84,
+   "end": 44.46,
+   "probability": 1.0
+  },
+  {
+   "word": " la",
+   "start": 44.46,
+   "end": 44.54,
+   "probability": 0.9995
+  },
+  {
+   "word": " definimos",
+   "start": 44.54,
+   "end": 44.96,
+   "probability": 1.0
+  },
+  {
+   "word": " con",
+   "start": 44.96,
+   "end": 45.1,
+   "probability": 0.9976
+  },
+  {
+   "word": " Terraform.",
+   "start": 45.1,
+   "end": 45.56,
+   "probability": 0.9951
+  },
+  {
+   "word": " Los",
+   "start": 45.78,
+   "end": 46.26,
+   "probability": 1.0
+  },
+  {
+   "word": " despliegues",
+   "start": 46.26,
+   "end": 46.74,
+   "probability": 0.9999
+  },
+  {
+   "word": " van",
+   "start": 46.74,
+   "end": 46.88,
+   "probability": 1.0
+  },
+  {
+   "word": " por",
+   "start": 46.88,
+   "end": 47.08,
+   "probability": 1.0
+  },
+  {
+   "word": " Jenkins",
+   "start": 47.08,
+   "end": 47.36,
+   "probability": 0.999
+  },
+  {
+   "word": " y",
+   "start": 47.36,
+   "end": 47.68,
+   "probability": 0.998
+  },
+  {
+   "word": " el",
+   "start": 47.68,
+   "end": 47.8,
+   "probability": 1.0
+  },
+  {
+   "word": " monitoreo",
+   "start": 47.8,
+   "end": 48.34,
+   "probability": 1.0
+  },
+  {
+   "word": " lo",
+   "start": 48.34,
+   "end": 48.4,
+   "probability": 1.0
+  },
+  {
+   "word": " tenemos",
+   "start": 48.4,
+   "end": 48.66,
+   "probability": 1.0
+  },
+  {
+   "word": " en",
+   "start": 48.66,
+   "end": 49.02,
+   "probability": 1.0
+  },
+  {
+   "word": " Grafana.",
+   "start": 49.02,
+   "end": 49.44,
+   "probability": 0.9993
+  },
+  {
+   "word": " Antes",
+   "start": 49.68,
+   "end": 50.32,
+   "probability": 1.0
+  },
+  {
+   "word": " usábamos",
+   "start": 50.32,
+   "end": 50.94,
+   "probability": 0.9998
+  },
+  {
+   "word": " Nagios,",
+   "start": 50.94,
+   "end": 51.4,
+   "probability": 0.4431
+  },
+  {
+   "word": " pero",
+   "start": 51.58,
+   "end": 51.92,
+   "probability": 1.0
+  },
+  {
+   "word": " lo",
+   "start": 51.92,
+   "end": 52.1,
+   "probability": 1.0
+  },
+  {
+   "word": " pagamos",
+   "start": 52.1,
+   "end": 52.44,
+   "probability": 0.9255
+  },
+  {
+   "word": " el",
+   "start": 52.44,
+   "end": 52.6,
+   "probability": 0.9902
+  },
+  {
+   "word": " año",
+   "start": 52.6,
+   "end": 52.72,
+   "probability": 1.0
+  },
+  {
+   "word": " pasado.",
+   "start": 52.72,
+   "end": 52.98,
+   "probability": 1.0
+  },
+  {
+   "word": " Este",
+   "start": 53.44,
+   "end": 54.04,
+   "probability": 0.9683
+  },
+  {
+   "word": " puesto",
+   "start": 54.04,
+   "end": 54.3,
+   "probability": 0.999
+  },
+  {
+   "word": " tiene",
+   "start": 54.3,
+   "end": 54.58,
+   "probability": 1.0
+  },
+  {
+   "word": " reuniones",
+   "start": 54.58,
+   "end": 55.16,
+   "probability": 1.0
+  },
+  {
+   "word": " con",
+   "start": 55.16,
+   "end": 55.4,
+   "probability": 1.0
+  },
+  {
+   "word": " un",
+   "start": 55.4,
+   "end": 55.58,
+   "probability": 0.9995
+  },
+  {
+   "word": " proveedor",
+   "start": 55.58,
+   "end": 56.04,
+   "probability": 0.9998
+  },
+  {
+   "word": " en",
+   "start": 56.04,
+   "end": 56.2,
+   "probability": 0.9995
+  },
+  {
+   "word": " Estados",
+   "start": 56.2,
+   "end": 56.42,
+   "probability": 0.999
+  },
+  {
+   "word": " Unidos.",
+   "start": 56.42,
+   "end": 56.84,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿Cómo",
+   "start": 57.12,
+   "end": 57.66,
+   "probability": 0.9995
+  },
+  {
+   "word": " andas",
+   "start": 57.66,
+   "end": 58.0,
+   "probability": 0.9961
+  },
+  {
+   "word": " de",
+   "start": 58.0,
+   "end": 58.12,
+   "probability": 1.0
+  },
+  {
+   "word": " inglés?",
+   "start": 58.12,
+   "end": 58.32,
+   "probability": 0.9995
+  },
+  {
+   "word": " Básico,",
+   "start": 59.14,
+   "end": 59.62,
+   "probability": 0.9453
+  },
+  {
+   "word": " la",
+   "start": 59.62,
+   "end": 59.78,
+   "probability": 0.999
+  },
+  {
+   "word": " verdad.",
+   "start": 59.78,
+   "end": 60.0,
+   "probability": 1.0
+  },
+  {
+   "word": " Leo",
+   "start": 60.22,
+   "end": 60.68,
+   "probability": 0.9653
+  },
+  {
+   "word": " documentación",
+   "start": 60.68,
+   "end": 61.34,
+   "probability": 0.9988
+  },
+  {
+   "word": " técnica,",
+   "start": 61.34,
+   "end": 61.68,
+   "probability": 0.9995
+  },
+  {
+   "word": " eso",
+   "start": 61.86,
+   "end": 62.08,
+   "probability": 0.999
+  },
+  {
+   "word": " sí,",
+   "start": 62.08,
+   "end": 62.26,
+   "probability": 0.9995
+  },
+  {
+   "word": " porque",
+   "start": 62.32,
+   "end": 62.54,
+   "probability": 0.9995
+  },
+  {
+   "word": " todo",
+   "start": 62.54,
+   "end": 62.84,
+   "probability": 1.0
+  },
+  {
+   "word": " está",
+   "start": 62.84,
+   "end": 62.98,
+   "probability": 0.9995
+  },
+  {
+   "word": " en",
+   "start": 62.98,
+   "end": 63.08,
+   "probability": 1.0
+  },
+  {
+   "word": " inglés,",
+   "start": 63.08,
+   "end": 63.28,
+   "probability": 0.9995
+  },
+  {
+   "word": " pero",
+   "start": 63.44,
+   "end": 63.92,
+   "probability": 0.9995
+  },
+  {
+   "word": " conversar",
+   "start": 63.92,
+   "end": 64.44,
+   "probability": 0.9988
+  },
+  {
+   "word": " me",
+   "start": 64.44,
+   "end": 64.54,
+   "probability": 0.9995
+  },
+  {
+   "word": " cuesta",
+   "start": 64.54,
+   "end": 64.8,
+   "probability": 1.0
+  },
+  {
+   "word": " bastante.",
+   "start": 64.8,
+   "end": 65.18,
+   "probability": 0.9995
+  },
+  {
+   "word": " Estoy",
+   "start": 65.36,
+   "end": 65.74,
+   "probability": 0.9995
+  },
+  {
+   "word": " llevando",
+   "start": 65.74,
+   "end": 66.02,
+   "probability": 0.7827
+  },
+  {
+   "word": " clases",
+   "start": 66.02,
+   "end": 66.4,
+   "probability": 1.0
+  },
+  {
+   "word": " los",
+   "start": 66.4,
+   "end": 66.58,
+   "probability": 0.9995
+  },
+  {
+   "word": " sábados.",
+   "start": 66.58,
+   "end": 66.9,
+   "probability": 0.9998
+  },
+  {
+   "word": " Ok,",
+   "start": 67.26,
+   "end": 67.74,
+   "probability": 0.9858
+  },
+  {
+   "word": " lo",
+   "start": 67.9,
+   "end": 68.2,
+   "probability": 1.0
+  },
+  {
+   "word": " tomamos",
+   "start": 68.2,
+   "end": 68.6,
+   "probability": 1.0
+  },
+  {
+   "word": " en",
+   "start": 68.6,
+   "end": 68.74,
+   "probability": 1.0
+  },
+  {
+   "word": " cuenta.",
+   "start": 68.74,
+   "end": 69.02,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿Por",
+   "start": 69.32,
+   "end": 69.8,
+   "probability": 1.0
+  },
+  {
+   "word": " qué",
+   "start": 69.8,
+   "end": 69.9,
+   "probability": 1.0
+  },
+  {
+   "word": " quieres",
+   "start": 69.9,
+   "end": 70.16,
+   "probability": 1.0
+  },
+  {
+   "word": " cambiar",
+   "start": 70.16,
+   "end": 70.4,
+   "probability": 0.9995
+  },
+  {
+   "word": " de",
+   "start": 70.4,
+   "end": 70.64,
+   "probability": 1.0
+  },
+  {
+   "word": " trabajo?",
+   "start": 70.64,
+   "end": 70.88,
+   "probability": 1.0
+  },
+  {
+   "word": " Porque",
+   "start": 71.56,
+   "end": 72.04,
+   "probability": 0.9995
+  },
+  {
+   "word": " mi",
+   "start": 72.04,
+   "end": 72.18,
+   "probability": 0.9956
+  },
+  {
+   "word": " empresa",
+   "start": 72.18,
+   "end": 72.48,
+   "probability": 0.9976
+  },
+  {
+   "word": " en",
+   "start": 72.48,
+   "end": 72.64,
+   "probability": 0.9741
+  },
+  {
+   "word": " infraestructura",
+   "start": 72.64,
+   "end": 73.26,
+   "probability": 0.8991
+  },
+  {
+   "word": " ya",
+   "start": 73.26,
+   "end": 73.46,
+   "probability": 1.0
+  },
+  {
+   "word": " está",
+   "start": 73.46,
+   "end": 73.66,
+   "probability": 1.0
+  },
+  {
+   "word": " estable",
+   "start": 73.66,
+   "end": 74.26,
+   "probability": 1.0
+  },
+  {
+   "word": " y",
+   "start": 74.26,
+   "end": 74.62,
+   "probability": 0.9966
+  },
+  {
+   "word": " quiero",
+   "start": 74.62,
+   "end": 74.88,
+   "probability": 0.998
+  },
+  {
+   "word": " un",
+   "start": 74.88,
+   "end": 75.02,
+   "probability": 1.0
+  },
+  {
+   "word": " reto",
+   "start": 75.02,
+   "end": 75.28,
+   "probability": 0.9939
+  },
+  {
+   "word": " más",
+   "start": 75.28,
+   "end": 75.38,
+   "probability": 1.0
+  },
+  {
+   "word": " grande.",
+   "start": 75.38,
+   "end": 75.58,
+   "probability": 1.0
+  },
+  {
+   "word": " Ustedes",
+   "start": 76.06,
+   "end": 76.54,
+   "probability": 0.9995
+  },
+  {
+   "word": " tienen",
+   "start": 76.54,
+   "end": 76.72,
+   "probability": 1.0
+  },
+  {
+   "word": " tráfico",
+   "start": 76.72,
+   "end": 77.24,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 77.24,
+   "end": 77.28,
+   "probability": 0.9995
+  },
+  {
+   "word": " varios",
+   "start": 77.28,
+   "end": 77.48,
+   "probability": 0.999
+  },
+  {
+   "word": " países",
+   "start": 77.48,
+   "end": 77.82,
+   "probability": 1.0
+  },
+  {
+   "word": " y",
+   "start": 77.82,
+   "end": 78.02,
+   "probability": 0.9995
+  },
+  {
+   "word": " eso",
+   "start": 78.02,
+   "end": 78.22,
+   "probability": 1.0
+  },
+  {
+   "word": " me",
+   "start": 78.22,
+   "end": 78.34,
+   "probability": 1.0
+  },
+  {
+   "word": " interesa.",
+   "start": 78.34,
+   "end": 78.72,
+   "probability": 1.0
+  },
+  {
+   "word": " Mmm,",
+   "start": 78.72,
+   "end": 79.54,
+   "probability": 0.0608
+  },
+  {
+   "word": " tiene",
+   "start": 79.8,
+   "end": 80.1,
+   "probability": 0.998
+  },
+  {
+   "word": " sentido.",
+   "start": 80.1,
+   "end": 80.46,
+   "probability": 1.0
+  },
+  {
+   "word": " Una",
+   "start": 80.72,
+   "end": 81.16,
+   "probability": 0.9995
+  },
+  {
+   "word": " pregunta",
+   "start": 81.16,
+   "end": 81.52,
+   "probability": 1.0
+  },
+  {
+   "word": " técnica",
+   "start": 81.52,
+   "end": 81.92,
+   "probability": 1.0
+  },
+  {
+   "word": " rápida.",
+   "start": 81.92,
+   "end": 82.5,
+   "probability": 0.9998
+  },
+  {
+   "word": " Si",
+   "start": 82.66,
+   "end": 83.24,
+   "probability": 0.9971
+  },
+  {
+   "word": " un",
+   "start": 83.24,
+   "end": 83.48,
+   "probability": 1.0
+  },
+  {
+   "word": " despliegue",
+   "start": 83.48,
+   "end": 84.0,
+   "probability": 0.9995
+  },
+  {
+   "word": " falla",
+   "start": 84.0,
+   "end": 84.54,
+   "probability": 0.9998
+  },
+  {
+   "word": " en",
+   "start": 84.54,
+   "end": 84.56,
+   "probability": 1.0
+  },
+  {
+   "word": " producción",
+   "start": 84.56,
+   "end": 84.88,
+   "probability": 0.9995
+  },
+  {
+   "word": " a",
+   "start": 84.88,
+   "end": 85.44,
+   "probability": 1.0
+  },
+  {
+   "word": " las",
+   "start": 85.44,
+   "end": 85.58,
+   "probability": 1.0
+  },
+  {
+   "word": " 2",
+   "start": 85.58,
+   "end": 85.74,
+   "probability": 0.9521
+  },
+  {
+   "word": " de",
+   "start": 85.74,
+   "end": 85.86,
+   "probability": 0.999
+  },
+  {
+   "word": " la",
+   "start": 85.86,
+   "end": 85.96,
+   "probability": 1.0
+  },
+  {
+   "word": " mañana,",
+   "start": 85.96,
+   "end": 86.3,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿qué",
+   "start": 86.56,
+   "end": 87.08,
+   "probability": 0.9998
+  },
+  {
+   "word": " haces",
+   "start": 87.08,
+   "end": 87.28,
+   "probability": 0.9988
+  },
+  {
+   "word": " primero?",
+   "start": 87.28,
+   "end": 87.62,
+   "probability": 1.0
+  },
+  {
+   "word": " Primero",
+   "start": 88.5,
+   "end": 89.08,
+   "probability": 0.9998
+  },
+  {
+   "word": " reviso",
+   "start": 89.08,
+   "end": 89.48,
+   "probability": 0.6875
+  },
+  {
+   "word": " si",
+   "start": 89.48,
+   "end": 89.64,
+   "probability": 1.0
+  },
+  {
+   "word": " el",
+   "start": 89.64,
+   "end": 89.76,
+   "probability": 1.0
+  },
+  {
+   "word": " rollback",
+   "start": 89.76,
+   "end": 90.12,
+   "probability": 0.9915
+  },
+  {
+   "word": " automático",
+   "start": 90.12,
+   "end": 91.44,
+   "probability": 0.9995
+  },
+  {
+   "word": " funcionó.",
+   "start": 91.44,
+   "end": 91.98,
+   "probability": 1.0
+  },
+  {
+   "word": " Si",
+   "start": 92.14,
+   "end": 92.6,
+   "probability": 0.9995
+  },
+  {
+   "word": " no,",
+   "start": 92.6,
+   "end": 92.82,
+   "probability": 1.0
+  },
+  {
+   "word": " hago",
+   "start": 92.96,
+   "end": 93.58,
+   "probability": 0.9995
+  },
+  {
+   "word": " rollback",
+   "start": 93.58,
+   "end": 94.0,
+   "probability": 0.9863
+  },
+  {
+   "word": " manual",
+   "start": 94.0,
+   "end": 94.28,
+   "probability": 1.0
+  },
+  {
+   "word": " a",
+   "start": 94.28,
+   "end": 94.6,
+   "probability": 1.0
+  },
+  {
+   "word": " la",
+   "start": 94.6,
+   "end": 94.72,
+   "probability": 1.0
+  },
+  {
+   "word": " versión",
+   "start": 94.72,
+   "end": 94.94,
+   "probability": 1.0
+  },
+  {
+   "word": " anterior.",
+   "start": 94.94,
+   "end": 95.2,
+   "probability": 1.0
+  },
+  {
+   "word": " Confirmo",
+   "start": 95.68,
+   "end": 96.26,
+   "probability": 0.998
+  },
+  {
+   "word": " en",
+   "start": 96.26,
+   "end": 96.34,
+   "probability": 0.9858
+  },
+  {
+   "word": " Grafana",
+   "start": 96.34,
+   "end": 96.66,
+   "probability": 0.9823
+  },
+  {
+   "word": " que",
+   "start": 96.66,
+   "end": 96.9,
+   "probability": 1.0
+  },
+  {
+   "word": " las",
+   "start": 96.9,
+   "end": 97.02,
+   "probability": 1.0
+  },
+  {
+   "word": " métricas",
+   "start": 97.02,
+   "end": 97.48,
+   "probability": 1.0
+  },
+  {
+   "word": " vuelven",
+   "start": 97.48,
+   "end": 97.82,
+   "probability": 0.9971
+  },
+  {
+   "word": " a",
+   "start": 97.82,
+   "end": 97.92,
+   "probability": 1.0
+  },
+  {
+   "word": " la",
+   "start": 97.92,
+   "end": 98.02,
+   "probability": 1.0
+  },
+  {
+   "word": " normalidad",
+   "start": 98.02,
+   "end": 98.58,
+   "probability": 0.9995
+  },
+  {
+   "word": " y",
+   "start": 98.58,
+   "end": 98.84,
+   "probability": 0.9966
+  },
+  {
+   "word": " recién",
+   "start": 98.84,
+   "end": 99.28,
+   "probability": 0.9983
+  },
+  {
+   "word": " después",
+   "start": 99.28,
+   "end": 99.48,
+   "probability": 1.0
+  },
+  {
+   "word": " investigo",
+   "start": 99.48,
+   "end": 100.08,
+   "probability": 0.9968
+  },
+  {
+   "word": " la",
+   "start": 100.08,
+   "end": 100.16,
+   "probability": 1.0
+  },
+  {
+   "word": " causa.",
+   "start": 100.16,
+   "end": 100.36,
+   "probability": 1.0
+  },
+  {
+   "word": " Al",
+   "start": 100.58,
+   "end": 100.96,
+   "probability": 0.9995
+  },
+  {
+   "word": " día",
+   "start": 100.96,
+   "end": 101.12,
+   "probability": 1.0
+  },
+  {
+   "word": " siguiente",
+   "start": 101.12,
+   "end": 101.4,
+   "probability": 1.0
+  },
+  {
+   "word": " escribimos",
+   "start": 101.4,
+   "end": 102.14,
+   "probability": 0.9849
+  },
+  {
+   "word": " el",
+   "start": 102.14,
+   "end": 102.3,
+   "probability": 0.9995
+  },
+  {
+   "word": " postmortem.",
+   "start": 102.3,
+   "end": 102.86,
+   "probability": 0.8193
+  },
+  {
+   "word": " Muy",
+   "start": 102.86,
+   "end": 103.96,
+   "probability": 0.9771
+  },
+  {
+   "word": " bien,",
+   "start": 103.96,
+   "end": 104.2,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿y",
+   "start": 104.36,
+   "end": 104.84,
+   "probability": 0.9587
+  },
+  {
+   "word": " cuándo",
+   "start": 104.84,
+   "end": 105.34,
+   "probability": 0.9977
+  },
+  {
+   "word": " podrías",
+   "start": 105.34,
+   "end": 105.74,
+   "probability": 0.9995
+  },
+  {
+   "word": " incorporarte?",
+   "start": 105.74,
+   "end": 106.44,
+   "probability": 0.999
+  },
+  {
+   "word": " Tengo",
+   "start": 106.92,
+   "end": 107.52,
+   "probability": 0.9995
+  },
+  {
+   "word": " que",
+   "start": 107.52,
+   "end": 107.66,
+   "probability": 1.0
+  },
+  {
+   "word": " entregar",
+   "start": 107.66,
+   "end": 108.06,
+   "probability": 0.9998
+  },
+  {
+   "word": " una",
+   "start": 108.06,
+   "end": 108.36,
+   "probability": 0.999
+  },
+  {
+   "word": " migración",
+   "start": 108.36,
+   "end": 108.86,
+   "probability": 0.999
+  },
+  {
+   "word": " a",
+   "start": 108.86,
+   "end": 109.02,
+   "probability": 0.999
+  },
+  {
+   "word": " fin",
+   "start": 109.02,
+   "end": 109.16,
+   "probability": 0.9995
+  },
+  {
+   "word": " de",
+   "start": 109.16,
+   "end": 109.28,
+   "probability": 1.0
+  },
+  {
+   "word": " mes.",
+   "start": 109.28,
+   "end": 109.46,
+   "probability": 1.0
+  },
+  {
+   "word": " A",
+   "start": 109.6,
+   "end": 110.16,
+   "probability": 0.9995
+  },
+  {
+   "word": " partir",
+   "start": 110.16,
+   "end": 110.46,
+   "probability": 1.0
+  },
+  {
+   "word": " del",
+   "start": 110.46,
+   "end": 110.72,
+   "probability": 1.0
+  },
+  {
+   "word": " 1",
+   "start": 110.72,
+   "end": 110.9,
+   "probability": 0.7388
+  },
+  {
+   "word": " de",
+   "start": 110.9,
+   "end": 111.12,
+   "probability": 0.9565
+  },
+  {
+   "word": " diciembre",
+   "start": 111.12,
+   "end": 111.5,
+   "probability": 0.9946
+  },
+  {
+   "word": " estaría",
+   "start": 111.5,
+   "end": 111.98,
+   "probability": 0.9844
+  },
+  {
+   "word": " libre.",
+   "start": 111.98,
+   "end": 112.16,
+   "probability": 0.9976
+  },
+  {
+   "word": " Perfecto,",
+   "start": 112.94,
+   "end": 113.54,
+   "probability": 0.9978
+  },
+  {
+   "word": " te",
+   "start": 113.54,
+   "end": 113.88,
+   "probability": 0.9995
+  },
+  {
+   "word": " contactaremos",
+   "start": 113.88,
+   "end": 114.5,
+   "probability": 0.9773
+  },
+  {
+   "word": " la",
+   "start": 114.5,
+   "end": 114.72,
+   "probability": 0.9995
+  },
+  {
+   "word": " próxima",
+   "start": 114.72,
+   "end": 114.94,
+   "probability": 1.0
+  },
+  {
+   "word": " semana.",
+   "start": 114.94,
+   "end": 115.32,
+   "probability": 1.0
+  },
+  {
+   "word": " Gracias,",
+   "start": 115.64,
+   "end": 116.16,
+   "probability": 0.999
+  },
+  {
+   "word": " quedo",
+   "start": 116.32,
+   "end": 116.7,
+   "probability": 0.9019
+  },
+  {
+   "word": " atento.",
+   "start": 116.7,
+   "end": 116.9,
+   "probability": 0.9995
+  }
+ ],
+ "segmentos": [
+  {
+   "start": 0.4,
+   "end": 3.3,
+   "text": "Hola, buenas tardes. Gracias por venir hasta la oficina."
+  },
+  {
+   "start": 3.66,
+   "end": 10.22,
+   "text": "Buenas tardes. Antes de empezar, quería preguntar algo para no hacerles perder tiempo. ¿El rango salarial de aviso es fijo?"
+  },
+  {
+   "start": 10.52,
+   "end": 13.4,
+   "text": "Hay cierta flexibilidad. ¿Cuál sería tu pretensión?"
+  },
+  {
+   "start": 14.14,
+   "end": 18.0,
+   "text": "Estoy entre 9 y 10 mil soles, idealmente 9.500."
+  },
+  {
+   "start": 18.46,
+   "end": 22.44,
+   "text": "Bien, eso entra en lo que tenemos. Cuéntame qué haces hoy."
+  },
+  {
+   "start": 23.1,
+   "end": 29.3,
+   "text": "Hoy soy jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur. Manejo un equipo de tres personas."
+  },
+  {
+   "start": 29.3,
+   "end": 31.7,
+   "text": "¿Y cuántos años de experiencia tienes en total?"
+  },
+  {
+   "start": 32.28,
+   "end": 37.12,
+   "text": "En infraestructura, 8. Casi 9 porque cumplo 9 en marzo, pero digamos 8."
+  },
+  {
+   "start": 37.6,
+   "end": 38.78,
+   "text": "¿Qué stack manejan?"
+  },
+  {
+   "start": 39.18,
+   "end": 45.56,
+   "text": "Todo está en AWS. Los clústeres corren en Kubernetes, la infraestructura la definimos con Terraform."
+  },
+  {
+   "start": 45.78,
+   "end": 52.98,
+   "text": "Los despliegues van por Jenkins y el monitoreo lo tenemos en Grafana. Antes usábamos Nagios, pero lo pagamos el año pasado."
+  },
+  {
+   "start": 53.44,
+   "end": 58.32,
+   "text": "Este puesto tiene reuniones con un proveedor en Estados Unidos. ¿Cómo andas de inglés?"
+  },
+  {
+   "start": 59.14,
+   "end": 66.9,
+   "text": "Básico, la verdad. Leo documentación técnica, eso sí, porque todo está en inglés, pero conversar me cuesta bastante. Estoy llevando clases los sábados."
+  },
+  {
+   "start": 67.26,
+   "end": 70.88,
+   "text": "Ok, lo tomamos en cuenta. ¿Por qué quieres cambiar de trabajo?"
+  },
+  {
+   "start": 71.56,
+   "end": 78.72,
+   "text": "Porque mi empresa en infraestructura ya está estable y quiero un reto más grande. Ustedes tienen tráfico de varios países y eso me interesa."
+  },
+  {
+   "start": 78.72,
+   "end": 87.62,
+   "text": "Mmm, tiene sentido. Una pregunta técnica rápida. Si un despliegue falla en producción a las 2 de la mañana, ¿qué haces primero?"
+  },
+  {
+   "start": 88.5,
+   "end": 102.86,
+   "text": "Primero reviso si el rollback automático funcionó. Si no, hago rollback manual a la versión anterior. Confirmo en Grafana que las métricas vuelven a la normalidad y recién después investigo la causa. Al día siguiente escribimos el postmortem."
+  },
+  {
+   "start": 102.86,
+   "end": 106.44,
+   "text": "Muy bien, ¿y cuándo podrías incorporarte?"
+  },
+  {
+   "start": 106.92,
+   "end": 112.16,
+   "text": "Tengo que entregar una migración a fin de mes. A partir del 1 de diciembre estaría libre."
+  },
+  {
+   "start": 112.94,
+   "end": 115.32,
+   "text": "Perfecto, te contactaremos la próxima semana."
+  },
+  {
+   "start": 115.64,
+   "end": 116.9,
+   "text": "Gracias, quedo atento."
+  }
+ ],
+ "idioma": "es",
+ "duracion_audio_s": 118.377,
+ "modelo": "large-v3",
+ "device": "cuda",
+ "compute_type": "float16",
+ "glosario": "hotwords",
+ "tiempo_s": 15.863,
+ "segundos_por_minuto": 8.04,
+ "tiempo_carga_s": 3.051,
+ "vram_base_mb": 556.2,
+ "vram_pico_mb": 4726.2,
+ "versiones": {
+  "faster_whisper": "1.2.1",
+  "ctranslate2": "4.8.4"
+ }
+}

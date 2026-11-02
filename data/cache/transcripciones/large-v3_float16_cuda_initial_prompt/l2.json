@@ -1,0 +1,1466 @@
+{
+ "clip": "l2",
+ "archivo": "Task 2-2.m4a",
+ "corrida": "large-v3_float16_cuda_initial_prompt",
+ "fecha": "2026-11-01T22:55:21+00:00",
+ "texto": "La Leña Dorada, buenas tardes, ¿en qué le puedo ayudar? Buenas tardes, quiero pedir dos medios pollos, por favor. Dos medios pollos, muy bien, ¿algo más? Espera, espera, si un medio cuesta 36, dos medios me salen 72, ¿cuánto está el entero? El entero está 78. Entonces, mejor un pollo entero en vez de los dos medios, sale más barato. Claro, le cambio, un pollo entero en vez de los dos medios, ¿algo más? Una porción de anticuchos. Una porción de anticuchos son tres palitos a 18 soles, ¿algo de tomar? Una gaseosa de litro y medio. Una gaseosa de litro y medio, 9 soles, ¿papas? No, papas no, gracias. Ah, tengo un código de la aplicación. Leña 5. Perfecto, con el código le descontamos 5 soles. Dirección de entrega. Avenida Las Gardeñas, 1580, en Pueblo Libre, es una casa de dos pisos con reja negra. Avenida Las Gardeñas, 1580, casa de dos pisos con reja negra, ¿cómo va a pagar? En efectivo, pago con un billete de 100. Muy bien. Pasado, lleva vuelto. Entonces, le confirmo, un pollo entero, una porción de anticuchos y una gaseosa de litro y medio. El total es 95 soles. 95, ok. Le llega en unos 40 minutos. Perfecto, muchas gracias. Gracias por su pedido. Buenas. Gracias. Bravo, Luis.",
+ "palabras": [
+  {
+   "word": " La",
+   "start": 0.14,
+   "end": 0.56,
+   "probability": 0.9834
+  },
+  {
+   "word": " Leña",
+   "start": 0.56,
+   "end": 0.88,
+   "probability": 0.6992
+  },
+  {
+   "word": " Dorada,",
+   "start": 0.88,
+   "end": 1.32,
+   "probability": 0.9966
+  },
+  {
+   "word": " buenas",
+   "start": 1.42,
+   "end": 2.02,
+   "probability": 0.998
+  },
+  {
+   "word": " tardes,",
+   "start": 2.02,
+   "end": 2.64,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿en",
+   "start": 2.66,
+   "end": 3.22,
+   "probability": 0.9973
+  },
+  {
+   "word": " qué",
+   "start": 3.22,
+   "end": 3.38,
+   "probability": 0.9995
+  },
+  {
+   "word": " le",
+   "start": 3.38,
+   "end": 3.52,
+   "probability": 0.9995
+  },
+  {
+   "word": " puedo",
+   "start": 3.52,
+   "end": 3.7,
+   "probability": 1.0
+  },
+  {
+   "word": " ayudar?",
+   "start": 3.7,
+   "end": 4.0,
+   "probability": 1.0
+  },
+  {
+   "word": " Buenas",
+   "start": 4.46,
+   "end": 5.12,
+   "probability": 0.9988
+  },
+  {
+   "word": " tardes,",
+   "start": 5.12,
+   "end": 5.56,
+   "probability": 1.0
+  },
+  {
+   "word": " quiero",
+   "start": 5.58,
+   "end": 6.22,
+   "probability": 0.9966
+  },
+  {
+   "word": " pedir",
+   "start": 6.22,
+   "end": 6.52,
+   "probability": 0.999
+  },
+  {
+   "word": " dos",
+   "start": 6.52,
+   "end": 6.92,
+   "probability": 0.9414
+  },
+  {
+   "word": " medios",
+   "start": 6.92,
+   "end": 7.24,
+   "probability": 0.998
+  },
+  {
+   "word": " pollos,",
+   "start": 7.24,
+   "end": 7.72,
+   "probability": 0.9973
+  },
+  {
+   "word": " por",
+   "start": 7.72,
+   "end": 7.82,
+   "probability": 1.0
+  },
+  {
+   "word": " favor.",
+   "start": 7.82,
+   "end": 8.08,
+   "probability": 1.0
+  },
+  {
+   "word": " Dos",
+   "start": 8.61,
+   "end": 8.96,
+   "probability": 0.9966
+  },
+  {
+   "word": " medios",
+   "start": 8.96,
+   "end": 9.52,
+   "probability": 1.0
+  },
+  {
+   "word": " pollos,",
+   "start": 9.52,
+   "end": 10.2,
+   "probability": 0.9998
+  },
+  {
+   "word": " muy",
+   "start": 10.2,
+   "end": 10.6,
+   "probability": 0.9995
+  },
+  {
+   "word": " bien,",
+   "start": 10.6,
+   "end": 10.88,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿algo",
+   "start": 11.0,
+   "end": 11.84,
+   "probability": 0.9995
+  },
+  {
+   "word": " más?",
+   "start": 11.84,
+   "end": 12.04,
+   "probability": 1.0
+  },
+  {
+   "word": " Espera,",
+   "start": 12.58,
+   "end": 13.28,
+   "probability": 0.8853
+  },
+  {
+   "word": " espera,",
+   "start": 13.28,
+   "end": 13.44,
+   "probability": 0.9712
+  },
+  {
+   "word": " si",
+   "start": 13.56,
+   "end": 14.48,
+   "probability": 0.9976
+  },
+  {
+   "word": " un",
+   "start": 14.48,
+   "end": 14.7,
+   "probability": 1.0
+  },
+  {
+   "word": " medio",
+   "start": 14.7,
+   "end": 15.0,
+   "probability": 1.0
+  },
+  {
+   "word": " cuesta",
+   "start": 15.0,
+   "end": 15.52,
+   "probability": 1.0
+  },
+  {
+   "word": " 36,",
+   "start": 15.52,
+   "end": 16.08,
+   "probability": 0.7002
+  },
+  {
+   "word": " dos",
+   "start": 16.62,
+   "end": 17.1,
+   "probability": 0.9995
+  },
+  {
+   "word": " medios",
+   "start": 17.1,
+   "end": 17.56,
+   "probability": 1.0
+  },
+  {
+   "word": " me",
+   "start": 17.56,
+   "end": 17.82,
+   "probability": 1.0
+  },
+  {
+   "word": " salen",
+   "start": 17.82,
+   "end": 18.16,
+   "probability": 0.9983
+  },
+  {
+   "word": " 72,",
+   "start": 18.16,
+   "end": 18.7,
+   "probability": 0.9995
+  },
+  {
+   "word": " ¿cuánto",
+   "start": 19.34,
+   "end": 20.38,
+   "probability": 0.9988
+  },
+  {
+   "word": " está",
+   "start": 20.38,
+   "end": 20.48,
+   "probability": 0.9922
+  },
+  {
+   "word": " el",
+   "start": 20.48,
+   "end": 20.56,
+   "probability": 0.999
+  },
+  {
+   "word": " entero?",
+   "start": 20.56,
+   "end": 20.86,
+   "probability": 0.9998
+  },
+  {
+   "word": " El",
+   "start": 21.43,
+   "end": 21.78,
+   "probability": 0.9985
+  },
+  {
+   "word": " entero",
+   "start": 21.78,
+   "end": 22.28,
+   "probability": 1.0
+  },
+  {
+   "word": " está",
+   "start": 22.28,
+   "end": 22.74,
+   "probability": 0.9995
+  },
+  {
+   "word": " 78.",
+   "start": 22.74,
+   "end": 23.26,
+   "probability": 0.9668
+  },
+  {
+   "word": " Entonces,",
+   "start": 24.22,
+   "end": 24.92,
+   "probability": 0.9985
+  },
+  {
+   "word": " mejor",
+   "start": 24.92,
+   "end": 25.46,
+   "probability": 0.998
+  },
+  {
+   "word": " un",
+   "start": 25.46,
+   "end": 25.72,
+   "probability": 1.0
+  },
+  {
+   "word": " pollo",
+   "start": 25.72,
+   "end": 25.92,
+   "probability": 0.9976
+  },
+  {
+   "word": " entero",
+   "start": 25.92,
+   "end": 26.28,
+   "probability": 1.0
+  },
+  {
+   "word": " en",
+   "start": 26.28,
+   "end": 26.46,
+   "probability": 0.9995
+  },
+  {
+   "word": " vez",
+   "start": 26.46,
+   "end": 26.66,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 26.66,
+   "end": 26.76,
+   "probability": 1.0
+  },
+  {
+   "word": " los",
+   "start": 26.76,
+   "end": 26.96,
+   "probability": 0.9976
+  },
+  {
+   "word": " dos",
+   "start": 26.96,
+   "end": 27.18,
+   "probability": 1.0
+  },
+  {
+   "word": " medios,",
+   "start": 27.18,
+   "end": 27.5,
+   "probability": 1.0
+  },
+  {
+   "word": " sale",
+   "start": 27.72,
+   "end": 28.08,
+   "probability": 0.6416
+  },
+  {
+   "word": " más",
+   "start": 28.08,
+   "end": 28.28,
+   "probability": 1.0
+  },
+  {
+   "word": " barato.",
+   "start": 28.28,
+   "end": 28.58,
+   "probability": 1.0
+  },
+  {
+   "word": " Claro,",
+   "start": 28.58,
+   "end": 29.84,
+   "probability": 0.8706
+  },
+  {
+   "word": " le",
+   "start": 29.92,
+   "end": 30.56,
+   "probability": 0.9893
+  },
+  {
+   "word": " cambio,",
+   "start": 30.56,
+   "end": 30.96,
+   "probability": 0.9985
+  },
+  {
+   "word": " un",
+   "start": 31.18,
+   "end": 31.78,
+   "probability": 0.9443
+  },
+  {
+   "word": " pollo",
+   "start": 31.78,
+   "end": 32.24,
+   "probability": 0.9993
+  },
+  {
+   "word": " entero",
+   "start": 32.24,
+   "end": 32.72,
+   "probability": 0.9995
+  },
+  {
+   "word": " en",
+   "start": 32.72,
+   "end": 33.04,
+   "probability": 0.9941
+  },
+  {
+   "word": " vez",
+   "start": 33.04,
+   "end": 33.32,
+   "probability": 0.9995
+  },
+  {
+   "word": " de",
+   "start": 33.32,
+   "end": 33.64,
+   "probability": 0.9995
+  },
+  {
+   "word": " los",
+   "start": 33.64,
+   "end": 33.8,
+   "probability": 0.998
+  },
+  {
+   "word": " dos",
+   "start": 33.8,
+   "end": 33.98,
+   "probability": 0.9521
+  },
+  {
+   "word": " medios,",
+   "start": 33.98,
+   "end": 34.3,
+   "probability": 0.9976
+  },
+  {
+   "word": " ¿algo",
+   "start": 34.52,
+   "end": 35.14,
+   "probability": 0.922
+  },
+  {
+   "word": " más?",
+   "start": 35.14,
+   "end": 35.38,
+   "probability": 0.9966
+  },
+  {
+   "word": " Una",
+   "start": 36.22,
+   "end": 36.6,
+   "probability": 0.9526
+  },
+  {
+   "word": " porción",
+   "start": 36.6,
+   "end": 36.86,
+   "probability": 0.9993
+  },
+  {
+   "word": " de",
+   "start": 36.86,
+   "end": 37.02,
+   "probability": 0.9971
+  },
+  {
+   "word": " anticuchos.",
+   "start": 37.02,
+   "end": 37.54,
+   "probability": 0.9979
+  },
+  {
+   "word": " Una",
+   "start": 37.9,
+   "end": 38.66,
+   "probability": 0.9688
+  },
+  {
+   "word": " porción",
+   "start": 38.66,
+   "end": 39.1,
+   "probability": 0.9973
+  },
+  {
+   "word": " de",
+   "start": 39.1,
+   "end": 39.32,
+   "probability": 0.9995
+  },
+  {
+   "word": " anticuchos",
+   "start": 39.32,
+   "end": 40.16,
+   "probability": 1.0
+  },
+  {
+   "word": " son",
+   "start": 40.16,
+   "end": 40.62,
+   "probability": 0.9819
+  },
+  {
+   "word": " tres",
+   "start": 40.62,
+   "end": 41.22,
+   "probability": 0.7222
+  },
+  {
+   "word": " palitos",
+   "start": 41.22,
+   "end": 41.82,
+   "probability": 0.9988
+  },
+  {
+   "word": " a",
+   "start": 41.82,
+   "end": 42.3,
+   "probability": 0.9976
+  },
+  {
+   "word": " 18",
+   "start": 42.3,
+   "end": 42.76,
+   "probability": 0.8262
+  },
+  {
+   "word": " soles,",
+   "start": 42.76,
+   "end": 43.38,
+   "probability": 0.9998
+  },
+  {
+   "word": " ¿algo",
+   "start": 43.5,
+   "end": 44.3,
+   "probability": 0.999
+  },
+  {
+   "word": " de",
+   "start": 44.3,
+   "end": 44.42,
+   "probability": 0.999
+  },
+  {
+   "word": " tomar?",
+   "start": 44.42,
+   "end": 44.62,
+   "probability": 0.9995
+  },
+  {
+   "word": " Una",
+   "start": 45.3,
+   "end": 46.0,
+   "probability": 0.9971
+  },
+  {
+   "word": " gaseosa",
+   "start": 46.0,
+   "end": 46.48,
+   "probability": 0.9989
+  },
+  {
+   "word": " de",
+   "start": 46.48,
+   "end": 46.62,
+   "probability": 0.9932
+  },
+  {
+   "word": " litro",
+   "start": 46.62,
+   "end": 46.96,
+   "probability": 0.9988
+  },
+  {
+   "word": " y",
+   "start": 46.96,
+   "end": 47.0,
+   "probability": 0.9995
+  },
+  {
+   "word": " medio.",
+   "start": 47.0,
+   "end": 47.22,
+   "probability": 1.0
+  },
+  {
+   "word": " Una",
+   "start": 47.64,
+   "end": 48.4,
+   "probability": 0.979
+  },
+  {
+   "word": " gaseosa",
+   "start": 48.4,
+   "end": 48.96,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 48.96,
+   "end": 49.5,
+   "probability": 0.9995
+  },
+  {
+   "word": " litro",
+   "start": 49.5,
+   "end": 50.02,
+   "probability": 0.9998
+  },
+  {
+   "word": " y",
+   "start": 50.02,
+   "end": 50.1,
+   "probability": 1.0
+  },
+  {
+   "word": " medio,",
+   "start": 50.1,
+   "end": 50.44,
+   "probability": 1.0
+  },
+  {
+   "word": " 9",
+   "start": 50.56,
+   "end": 50.96,
+   "probability": 0.8428
+  },
+  {
+   "word": " soles,",
+   "start": 50.96,
+   "end": 51.52,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿papas?",
+   "start": 51.62,
+   "end": 52.6,
+   "probability": 0.9994
+  },
+  {
+   "word": " No,",
+   "start": 52.86,
+   "end": 53.62,
+   "probability": 0.9971
+  },
+  {
+   "word": " papas",
+   "start": 53.68,
+   "end": 54.5,
+   "probability": 0.999
+  },
+  {
+   "word": " no,",
+   "start": 54.5,
+   "end": 54.62,
+   "probability": 1.0
+  },
+  {
+   "word": " gracias.",
+   "start": 54.72,
+   "end": 55.12,
+   "probability": 0.9995
+  },
+  {
+   "word": " Ah,",
+   "start": 55.62,
+   "end": 56.0,
+   "probability": 0.9756
+  },
+  {
+   "word": " tengo",
+   "start": 56.2,
+   "end": 56.84,
+   "probability": 0.998
+  },
+  {
+   "word": " un",
+   "start": 56.84,
+   "end": 57.0,
+   "probability": 1.0
+  },
+  {
+   "word": " código",
+   "start": 57.0,
+   "end": 57.3,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 57.3,
+   "end": 57.46,
+   "probability": 0.9297
+  },
+  {
+   "word": " la",
+   "start": 57.46,
+   "end": 57.56,
+   "probability": 0.999
+  },
+  {
+   "word": " aplicación.",
+   "start": 57.56,
+   "end": 58.06,
+   "probability": 0.9998
+  },
+  {
+   "word": " Leña",
+   "start": 58.06,
+   "end": 58.74,
+   "probability": 0.6863
+  },
+  {
+   "word": " 5.",
+   "start": 58.74,
+   "end": 59.0,
+   "probability": 0.9492
+  },
+  {
+   "word": " Perfecto,",
+   "start": 60.02,
+   "end": 60.64,
+   "probability": 0.9678
+  },
+  {
+   "word": " con",
+   "start": 60.64,
+   "end": 61.1,
+   "probability": 0.9995
+  },
+  {
+   "word": " el",
+   "start": 61.1,
+   "end": 61.3,
+   "probability": 1.0
+  },
+  {
+   "word": " código",
+   "start": 61.3,
+   "end": 61.7,
+   "probability": 0.998
+  },
+  {
+   "word": " le",
+   "start": 61.7,
+   "end": 61.96,
+   "probability": 0.998
+  },
+  {
+   "word": " descontamos",
+   "start": 61.96,
+   "end": 62.68,
+   "probability": 0.9998
+  },
+  {
+   "word": " 5",
+   "start": 62.68,
+   "end": 62.96,
+   "probability": 0.9224
+  },
+  {
+   "word": " soles.",
+   "start": 62.96,
+   "end": 63.44,
+   "probability": 0.999
+  },
+  {
+   "word": " Dirección",
+   "start": 64.2,
+   "end": 64.82,
+   "probability": 0.9866
+  },
+  {
+   "word": " de",
+   "start": 64.82,
+   "end": 64.94,
+   "probability": 1.0
+  },
+  {
+   "word": " entrega.",
+   "start": 64.94,
+   "end": 65.36,
+   "probability": 0.9993
+  },
+  {
+   "word": " Avenida",
+   "start": 66.44,
+   "end": 67.06,
+   "probability": 0.9443
+  },
+  {
+   "word": " Las",
+   "start": 67.06,
+   "end": 67.44,
+   "probability": 0.9956
+  },
+  {
+   "word": " Gardeñas,",
+   "start": 67.44,
+   "end": 67.94,
+   "probability": 0.7755
+  },
+  {
+   "word": " 1580,",
+   "start": 68.18,
+   "end": 69.28,
+   "probability": 0.9985
+  },
+  {
+   "word": " en",
+   "start": 69.6,
+   "end": 69.9,
+   "probability": 0.9736
+  },
+  {
+   "word": " Pueblo",
+   "start": 69.9,
+   "end": 70.16,
+   "probability": 0.9963
+  },
+  {
+   "word": " Libre,",
+   "start": 70.16,
+   "end": 70.56,
+   "probability": 0.9993
+  },
+  {
+   "word": " es",
+   "start": 70.6,
+   "end": 71.06,
+   "probability": 0.9941
+  },
+  {
+   "word": " una",
+   "start": 71.06,
+   "end": 71.24,
+   "probability": 0.9995
+  },
+  {
+   "word": " casa",
+   "start": 71.24,
+   "end": 71.5,
+   "probability": 0.9995
+  },
+  {
+   "word": " de",
+   "start": 71.5,
+   "end": 71.68,
+   "probability": 1.0
+  },
+  {
+   "word": " dos",
+   "start": 71.68,
+   "end": 71.84,
+   "probability": 0.7246
+  },
+  {
+   "word": " pisos",
+   "start": 71.84,
+   "end": 72.22,
+   "probability": 1.0
+  },
+  {
+   "word": " con",
+   "start": 72.22,
+   "end": 72.4,
+   "probability": 0.998
+  },
+  {
+   "word": " reja",
+   "start": 72.4,
+   "end": 72.64,
+   "probability": 0.9976
+  },
+  {
+   "word": " negra.",
+   "start": 72.64,
+   "end": 73.04,
+   "probability": 0.9998
+  },
+  {
+   "word": " Avenida",
+   "start": 73.9,
+   "end": 74.52,
+   "probability": 0.9668
+  },
+  {
+   "word": " Las",
+   "start": 74.52,
+   "end": 75.1,
+   "probability": 1.0
+  },
+  {
+   "word": " Gardeñas,",
+   "start": 75.1,
+   "end": 76.02,
+   "probability": 1.0
+  },
+  {
+   "word": " 1580,",
+   "start": 76.32,
+   "end": 77.52,
+   "probability": 0.9998
+  },
+  {
+   "word": " casa",
+   "start": 77.84,
+   "end": 78.38,
+   "probability": 0.9995
+  },
+  {
+   "word": " de",
+   "start": 78.38,
+   "end": 78.64,
+   "probability": 1.0
+  },
+  {
+   "word": " dos",
+   "start": 78.64,
+   "end": 78.8,
+   "probability": 1.0
+  },
+  {
+   "word": " pisos",
+   "start": 78.8,
+   "end": 79.3,
+   "probability": 1.0
+  },
+  {
+   "word": " con",
+   "start": 79.3,
+   "end": 79.62,
+   "probability": 0.998
+  },
+  {
+   "word": " reja",
+   "start": 79.62,
+   "end": 79.94,
+   "probability": 1.0
+  },
+  {
+   "word": " negra,",
+   "start": 79.94,
+   "end": 80.42,
+   "probability": 1.0
+  },
+  {
+   "word": " ¿cómo",
+   "start": 80.46,
+   "end": 81.22,
+   "probability": 0.9792
+  },
+  {
+   "word": " va",
+   "start": 81.22,
+   "end": 81.34,
+   "probability": 0.9985
+  },
+  {
+   "word": " a",
+   "start": 81.34,
+   "end": 81.46,
+   "probability": 1.0
+  },
+  {
+   "word": " pagar?",
+   "start": 81.46,
+   "end": 81.74,
+   "probability": 1.0
+  },
+  {
+   "word": " En",
+   "start": 82.24,
+   "end": 82.82,
+   "probability": 0.9971
+  },
+  {
+   "word": " efectivo,",
+   "start": 82.82,
+   "end": 83.32,
+   "probability": 0.9998
+  },
+  {
+   "word": " pago",
+   "start": 83.36,
+   "end": 83.92,
+   "probability": 0.9966
+  },
+  {
+   "word": " con",
+   "start": 83.92,
+   "end": 84.14,
+   "probability": 1.0
+  },
+  {
+   "word": " un",
+   "start": 84.14,
+   "end": 84.32,
+   "probability": 0.9995
+  },
+  {
+   "word": " billete",
+   "start": 84.32,
+   "end": 84.66,
+   "probability": 0.9995
+  },
+  {
+   "word": " de",
+   "start": 84.66,
+   "end": 84.74,
+   "probability": 0.981
+  },
+  {
+   "word": " 100.",
+   "start": 84.74,
+   "end": 84.94,
+   "probability": 0.9575
+  },
+  {
+   "word": " Muy",
+   "start": 85.84,
+   "end": 86.46,
+   "probability": 0.9834
+  },
+  {
+   "word": " bien.",
+   "start": 86.46,
+   "end": 86.68,
+   "probability": 1.0
+  },
+  {
+   "word": " Pasado,",
+   "start": 88.06,
+   "end": 88.16,
+   "probability": 0.4965
+  },
+  {
+   "word": " lleva",
+   "start": 88.3,
+   "end": 88.8,
+   "probability": 0.9214
+  },
+  {
+   "word": " vuelto.",
+   "start": 88.8,
+   "end": 89.34,
+   "probability": 0.9521
+  },
+  {
+   "word": " Entonces,",
+   "start": 89.36,
+   "end": 90.24,
+   "probability": 0.9985
+  },
+  {
+   "word": " le",
+   "start": 90.32,
+   "end": 90.82,
+   "probability": 0.9985
+  },
+  {
+   "word": " confirmo,",
+   "start": 90.82,
+   "end": 91.62,
+   "probability": 0.9995
+  },
+  {
+   "word": " un",
+   "start": 91.68,
+   "end": 92.14,
+   "probability": 0.9907
+  },
+  {
+   "word": " pollo",
+   "start": 92.14,
+   "end": 92.62,
+   "probability": 0.9995
+  },
+  {
+   "word": " entero,",
+   "start": 92.62,
+   "end": 93.04,
+   "probability": 1.0
+  },
+  {
+   "word": " una",
+   "start": 93.16,
+   "end": 93.98,
+   "probability": 0.9995
+  },
+  {
+   "word": " porción",
+   "start": 93.98,
+   "end": 94.54,
+   "probability": 1.0
+  },
+  {
+   "word": " de",
+   "start": 94.54,
+   "end": 94.98,
+   "probability": 1.0
+  },
+  {
+   "word": " anticuchos",
+   "start": 94.98,
+   "end": 95.84,
+   "probability": 0.9997
+  },
+  {
+   "word": " y",
+   "start": 95.84,
+   "end": 96.24,
+   "probability": 0.8682
+  },
+  {
+   "word": " una",
+   "start": 96.24,
+   "end": 96.86,
+   "probability": 1.0
+  },
+  {
+   "word": " gaseosa",
+   "start": 96.86,
+   "end": 97.42,
+   "probability": 0.9993
+  },
+  {
+   "word": " de",
+   "start": 97.42,
+   "end": 97.8,
+   "probability": 0.9922
+  },
+  {
+   "word": " litro",
+   "start": 97.8,
+   "end": 98.32,
+   "probability": 0.9993
+  },
+  {
+   "word": " y",
+   "start": 98.32,
+   "end": 98.38,
+   "probability": 1.0
+  },
+  {
+   "word": " medio.",
+   "start": 98.38,
+   "end": 98.62,
+   "probability": 1.0
+  },
+  {
+   "word": " El",
+   "start": 99.02,
+   "end": 99.52,
+   "probability": 0.9995
+  },
+  {
+   "word": " total",
+   "start": 99.52,
+   "end": 99.8,
+   "probability": 1.0
+  },
+  {
+   "word": " es",
+   "start": 99.8,
+   "end": 100.26,
+   "probability": 1.0
+  },
+  {
+   "word": " 95",
+   "start": 100.26,
+   "end": 101.22,
+   "probability": 0.8208
+  },
+  {
+   "word": " soles.",
+   "start": 101.22,
+   "end": 101.9,
+   "probability": 0.9998
+  },
+  {
+   "word": " 95,",
+   "start": 102.66,
+   "end": 103.16,
+   "probability": 0.9409
+  },
+  {
+   "word": " ok.",
+   "start": 103.48,
+   "end": 103.94,
+   "probability": 0.9946
+  },
+  {
+   "word": " Le",
+   "start": 104.48,
+   "end": 104.98,
+   "probability": 0.9946
+  },
+  {
+   "word": " llega",
+   "start": 104.98,
+   "end": 105.3,
+   "probability": 0.9976
+  },
+  {
+   "word": " en",
+   "start": 105.3,
+   "end": 105.82,
+   "probability": 1.0
+  },
+  {
+   "word": " unos",
+   "start": 105.82,
+   "end": 106.44,
+   "probability": 1.0
+  },
+  {
+   "word": " 40",
+   "start": 106.44,
+   "end": 107.52,
+   "probability": 0.9971
+  },
+  {
+   "word": " minutos.",
+   "start": 107.52,
+   "end": 108.22,
+   "probability": 1.0
+  },
+  {
+   "word": " Perfecto,",
+   "start": 109.1,
+   "end": 110.1,
+   "probability": 0.998
+  },
+  {
+   "word": " muchas",
+   "start": 110.1,
+   "end": 111.22,
+   "probability": 0.9995
+  },
+  {
+   "word": " gracias.",
+   "start": 111.22,
+   "end": 111.52,
+   "probability": 1.0
+  },
+  {
+   "word": " Gracias",
+   "start": 112.96,
+   "end": 113.46,
+   "probability": 0.998
+  },
+  {
+   "word": " por",
+   "start": 113.46,
+   "end": 113.98,
+   "probability": 0.998
+  },
+  {
+   "word": " su",
+   "start": 113.98,
+   "end": 114.66,
+   "probability": 0.9985
+  },
+  {
+   "word": " pedido.",
+   "start": 114.66,
+   "end": 115.5,
+   "probability": 0.9998
+  },
+  {
+   "word": " Buenas.",
+   "start": 116.14,
+   "end": 117.14,
+   "probability": 0.9846
+  },
+  {
+   "word": " Gracias.",
+   "start": 117.16,
+   "end": 117.72,
+   "probability": 0.4065
+  },
+  {
+   "word": " Bravo,",
+   "start": 118.06,
+   "end": 118.3,
+   "probability": 0.0328
+  },
+  {
+   "word": " Luis.",
+   "start": 118.3,
+   "end": 118.52,
+   "probability": 0.5767
+  }
+ ],
+ "segmentos": [
+  {
+   "start": 0.14,
+   "end": 4.0,
+   "text": "La Leña Dorada, buenas tardes, ¿en qué le puedo ayudar?"
+  },
+  {
+   "start": 4.46,
+   "end": 8.08,
+   "text": "Buenas tardes, quiero pedir dos medios pollos, por favor."
+  },
+  {
+   "start": 8.61,
+   "end": 12.04,
+   "text": "Dos medios pollos, muy bien, ¿algo más?"
+  },
+  {
+   "start": 12.58,
+   "end": 20.86,
+   "text": "Espera, espera, si un medio cuesta 36, dos medios me salen 72, ¿cuánto está el entero?"
+  },
+  {
+   "start": 21.43,
+   "end": 23.26,
+   "text": "El entero está 78."
+  },
+  {
+   "start": 24.22,
+   "end": 28.58,
+   "text": "Entonces, mejor un pollo entero en vez de los dos medios, sale más barato."
+  },
+  {
+   "start": 28.58,
+   "end": 35.38,
+   "text": "Claro, le cambio, un pollo entero en vez de los dos medios, ¿algo más?"
+  },
+  {
+   "start": 36.22,
+   "end": 37.54,
+   "text": "Una porción de anticuchos."
+  },
+  {
+   "start": 37.9,
+   "end": 44.62,
+   "text": "Una porción de anticuchos son tres palitos a 18 soles, ¿algo de tomar?"
+  },
+  {
+   "start": 45.3,
+   "end": 47.22,
+   "text": "Una gaseosa de litro y medio."
+  },
+  {
+   "start": 47.64,
+   "end": 52.6,
+   "text": "Una gaseosa de litro y medio, 9 soles, ¿papas?"
+  },
+  {
+   "start": 52.86,
+   "end": 55.12,
+   "text": "No, papas no, gracias."
+  },
+  {
+   "start": 55.62,
+   "end": 58.06,
+   "text": "Ah, tengo un código de la aplicación."
+  },
+  {
+   "start": 58.06,
+   "end": 59.0,
+   "text": "Leña 5."
+  },
+  {
+   "start": 60.02,
+   "end": 63.44,
+   "text": "Perfecto, con el código le descontamos 5 soles."
+  },
+  {
+   "start": 64.2,
+   "end": 65.36,
+   "text": "Dirección de entrega."
+  },
+  {
+   "start": 66.44,
+   "end": 73.04,
+   "text": "Avenida Las Gardeñas, 1580, en Pueblo Libre, es una casa de dos pisos con reja negra."
+  },
+  {
+   "start": 73.9,
+   "end": 81.74,
+   "text": "Avenida Las Gardeñas, 1580, casa de dos pisos con reja negra, ¿cómo va a pagar?"
+  },
+  {
+   "start": 82.24,
+   "end": 84.94,
+   "text": "En efectivo, pago con un billete de 100."
+  },
+  {
+   "start": 85.84,
+   "end": 86.68,
+   "text": "Muy bien."
+  },
+  {
+   "start": 88.06,
+   "end": 89.34,
+   "text": "Pasado, lleva vuelto."
+  },
+  {
+   "start": 89.36,
+   "end": 98.62,
+   "text": "Entonces, le confirmo, un pollo entero, una porción de anticuchos y una gaseosa de litro y medio."
+  },
+  {
+   "start": 99.02,
+   "end": 101.9,
+   "text": "El total es 95 soles."
+  },
+  {
+   "start": 102.66,
+   "end": 103.94,
+   "text": "95, ok."
+  },
+  {
+   "start": 104.48,
+   "end": 108.22,
+   "text": "Le llega en unos 40 minutos."
+  },
+  {
+   "start": 109.1,
+   "end": 111.52,
+   "text": "Perfecto, muchas gracias."
+  },
+  {
+   "start": 112.96,
+   "end": 115.5,
+   "text": "Gracias por su pedido."
+  },
+  {
+   "start": 116.14,
+   "end": 117.14,
+   "text": "Buenas."
+  },
+  {
+   "start": 117.16,
+   "end": 117.72,
+   "text": "Gracias."
+  },
+  {
+   "start": 118.06,
+   "end": 118.52,
+   "text": "Bravo, Luis."
+  }
+ ],
+ "idioma": "es",
+ "duracion_audio_s": 120.425,
+ "modelo": "large-v3",
+ "device": "cuda",
+ "compute_type": "float16",
+ "glosario": "initial_prompt",
+ "tiempo_s": 12.254,
+ "segundos_por_minuto": 6.106,
+ "tiempo_carga_s": 3.0,
+ "vram_base_mb": 556.2,
+ "vram_pico_mb": 4502.2,
+ "versiones": {
+  "faster_whisper": "1.2.1",
+  "ctranslate2": "4.8.4"
+ }
+}
