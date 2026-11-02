@@ -20,6 +20,13 @@ Los 10 audios del corpus (5 entrevistas y 5 llamadas) **no están en este reposi
 - **Nombres:** los archivos conservan su nombre original: `task 1-1` … `task 1-5` (entrevistas E1 a E5) y `task 2-1` … `task 2-5` (llamadas L1 a L5). La extensión puede variar. El mapeo a los clips `e1 … l5` está en `config.yaml → audios.archivos`.
 - **En Colab:** `notebooks/02_transcripcion_gpu.ipynb` monta Drive y busca esos 10 archivos dentro de `MyDrive`, en cualquier subcarpeta. Se detiene si falta o se repite alguno, y muestra la carpeta que encontró.
 - **Copia local (opcional):** con los nombres originales, en `data/audio/`. `.gitignore` excluye los formatos de audio para que nunca se suban.
+- **Duraciones:** medidas desde cada archivo en `notebooks/02_transcripcion_gpu.ipynb` (sección 2) y guardadas en `data/resultados/duraciones.csv`. Los 10 clips suman 21.7 min y van de 1.97 a 2.38 min.
+- **Desviación conocida: E3 dura 1.97 min (118.4 s).** Le faltan 1.6 s para el mínimo de 2 minutos (`proyecto.duracion_clip_min`), un 1.4 % de ese mínimo. No se regrabó por tres razones:
+  - El guion de E3 se grabó completo, tal como está en `docs/guiones.md`, con todos sus campos y trampas.
+  - Regrabar obligaría a repetir las 7 corridas de E3 en Colab. Esas corridas ya son la evidencia de la caché, de las mediciones y del notebook 02.
+  - Alargarlo 1.6 s no cambia ninguna conclusión.
+
+  El notebook 01 lo marca con `en_rango = False`.
 
 ## Comandos
 
@@ -89,3 +96,5 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 ## Consentimiento y datos inventados
 
 ## Limitaciones
+
+- E3 dura 1.97 min, 1.6 s por debajo del mínimo de 2 minutos (ver "Audios").
