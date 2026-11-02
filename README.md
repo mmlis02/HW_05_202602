@@ -61,6 +61,25 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 - **Decisión:** solo señal de ASR → `asr`; señales de los dos lados → `indeterminado`; solo de hablante → `hablante`; ninguna → `indeterminado`.
 - **Sin probabilidades** (transcripciones de referencia), la regla solo puede concluir `hablante` o `indeterminado`.
 
+## Glosario de transcripción
+
+`config.yaml → asr.glosario_mecanismo: hotwords`; los términos están en `asr.glosario` (tecnologías y restaurante). Medido en `notebooks/02_transcripcion_gpu.ipynb` (sección 8) y recalculado desde la caché en `notebooks/06_resultados.ipynb` (sección 1.7).
+
+- **Qué hace cada mecanismo** en faster-whisper 1.2.1: `initial_prompt` es contexto solo para la primera ventana de 30 s y después se diluye; `hotwords` se antepone al prompt de cada ventana.
+- **Resultado** (`large-v3` float16, 10 clips):
+
+  | Mecanismo | WER del corpus | Diferencia media por clip (IC 95 % pareado) | Términos bien transcritos |
+  |---|---|---|---|
+  | sin glosario | 3.56 % | — | 39 de 40 (pierde Nagios) |
+  | `initial_prompt` | 3.90 % | +0.31 pts (−0.93 a +1.70) | 39 de 40 (pierde Plin) |
+  | `hotwords` | 3.63 % | +0.42 pts (−0.83 a +1.71) | 40 de 40 |
+
+- **Por qué `hotwords`.** Ningún mecanismo mejora el WER de forma significativa: los dos intervalos contienen el 0. La diferencia está en los términos del glosario:
+  - `initial_prompt` escribe «Plim» en L4, y `metodo_pago` queda vacío en lugar de `plin`.
+  - Sin glosario, Nagios sale «nacos» en E3. Nagios no es un valor de `tecnologias`: es la trampa de E3, una herramienta que el candidato dejó de usar. Con «nacos» la trampa desaparece y el acierto del campo no prueba la regla.
+  - Con `hotwords`, Nagios llega bien transcrito y la extracción lo excluye igual. Además, es el único mecanismo que no pierde ningún término.
+- **Riesgo.** Los clips que empeoran con un glosario no fallan en los términos: Whisper repite una frase entera. Con `hotwords`, L4 repite la dirección (WER 8.7 %); con `initial_prompt`, E1 repite una oración (6.5 %).
+
 ## Resultados Task 1
 
 ## Resultados Task 2

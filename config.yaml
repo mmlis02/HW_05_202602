@@ -83,7 +83,11 @@ asr:
   word_timestamps: true          # la probabilidad por palabra alimenta la regla de diagnóstico
   # faster-whisper 1.2.1 acepta initial_prompt, hotwords o los dos (ver 02_transcripcion_gpu, sección 8).
   # El motor usa este; el notebook 02 compara los dos contra no pasar glosario.
-  glosario_mecanismo: initial_prompt
+  # Por defecto hotwords: ninguno de los dos mejora el WER de forma significativa (IC 95 % pareado
+  # con el 0 dentro), pero hotwords es el único que transcribe bien los 40 términos del glosario dichos
+  # en el corpus. initial_prompt escribe "Plim" en L4 y metodo_pago queda vacío; sin glosario, Nagios
+  # (la tecnología abandonada de E3) sale "nacos" y la trampa no llega a probarse. Ver README, "Glosario".
+  glosario_mecanismo: hotwords
   glosario_mecanismos_comparacion: [initial_prompt, hotwords]
   # Corrida rápida antes de la completa: un clip de cada tarea.
   clips_prueba_rapida: [e1, l1]
