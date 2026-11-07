@@ -53,6 +53,11 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 - **Dictados**: tres o más dígitos sueltos seguidos se unen ("nueve ocho siete" → 987).
 - **Cifras mixtas**: Whisper escribe "10 mil" donde el guion dice "diez mil"; text2num leía "mil" suelto y daba "10 1000", dos errores de WER por una palabra bien oída. Ahora un multiplicador ("mil", "millón", "millones") detrás de una cifra, de "un", "una" o "medio" se multiplica: "10 mil" → 10000, "1.5 millones" y "1,5 millones" → 1500000, "medio millón" → 500000, "un millón y medio" → 1500000. Una cifra menor que el multiplicador justo detrás se suma: "10 mil 500" → 10500, "2 millones 500 mil" → 2500000.
 - **Códigos**: "LEÑA cinco" → LEÑA5.
+- **Formato de Whisper** (versión 2; casos en la sección 1.5 del notebook 03). Corrige cómo escribe Whisper, no lo que oye, y lo ven igual la extracción, la verificación y el WER:
+  - **Separador de miles**: un punto o una coma seguidos de exactamente tres dígitos son de miles ("6.500" → 6500); "4.5" sigue siendo decimal. Caso ambiguo: un decimal de tres cifras ("2.125 kilos") se lee como 2125. En el corpus no hay ninguno.
+  - **Símbolos de moneda**: "$1.800" → "1800 dólares", "S/ 6500" → "6500 soles". `$` es dólar porque el corpus es de Lima: el sol se escribe `S/` y `$` se usa para el dólar. En México o Chile sería el peso.
+  - **Guion entre letras**: "semi-senior" → "semi senior", la forma del ground truth. "front-end" queda "front end", que no es "frontend".
+  - **Direcciones**: se acepta una coma o un punto entre el nombre de la vía y el número ("Calle Los Cedros, 245").
 - **Autocorrecciones**: se convierten los dos números; elegir el final es trabajo de la extracción.
 - **Para comparar textos** (WER, CER, verificación): números a dígitos, `%` → "por ciento", minúsculas, separador de miles fuera y coma decimal a punto, sin puntuación (salvo el punto decimal), espacios colapsados. Las tildes se mantienen (`quitar_tildes: false`).
 - **Limitaciones**: "entre nueve y diez mil" da 9 y 10000, no 9000; "año y medio" sin número delante no llega a 1.5; un teléfono escrito sin espacios no coincide con el dictado por grupos; una cifra pequeña justo detrás de "mil" se suma aunque no sea parte del número ("10 mil 2 veces" → 10002 veces).
@@ -77,9 +82,9 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 
   | Mecanismo | WER del corpus | Diferencia media por clip (IC 95 % pareado) | Términos bien transcritos |
   |---|---|---|---|
-  | sin glosario | 3.56 % | — | 39 de 40 (pierde Nagios) |
-  | `initial_prompt` | 3.90 % | +0.31 pts (−0.93 a +1.70) | 39 de 40 (pierde Plin) |
-  | `hotwords` | 3.63 % | +0.42 pts (−0.83 a +1.71) | 40 de 40 |
+  | sin glosario | 3.52 % | — | 39 de 40 (pierde Nagios) |
+  | `initial_prompt` | 3.87 % | +0.31 pts (−0.93 a +1.70) | 39 de 40 (pierde Plin) |
+  | `hotwords` | 3.59 % | +0.42 pts (−0.83 a +1.71) | 40 de 40 |
 
 - **Por qué `hotwords`.** Ningún mecanismo mejora el WER de forma significativa: los dos intervalos contienen el 0. La diferencia está en los términos del glosario:
   - `initial_prompt` escribe «Plim» en L4, y `metodo_pago` queda vacío en lugar de `plin`.
@@ -89,48 +94,46 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
 
 ## Resultados Task 1
 
-Corrida principal: la configuración por defecto del motor, `large-v3` en float16 con glosario `hotwords`, sobre la T4 de Colab y los 10 clips. Todo se calcula desde `data/cache/`, sin transcribir: `notebooks/06_resultados.ipynb`, secciones 1 a 3. Las otras 6 corridas aparecen ahí como comparación.
+Corrida principal: la configuración por defecto del motor, `large-v3` en float16 con glosario `hotwords`, sobre la T4 de Colab y los 10 clips. Todo se calcula desde `data/cache/`, sin transcribir: `notebooks/06_resultados.ipynb`, secciones 1 a 5. Las otras 6 corridas aparecen ahí como comparación.
 
 ### Capa de transcripción
 
 | WER | IC 95 % del WER por clip | CER | Velocidad | VRAM pico |
 |---|---|---|---|---|
-| 3.63 % | 2.71 % a 5.64 % | 2.57 % | 7.8 s por minuto de audio | 5558 MB (5002 MB de la corrida) |
+| 3.59 % | 2.63 % a 5.64 % | 2.52 % | 7.8 s por minuto de audio | 5558 MB (5002 MB de la corrida) |
 
 ### Capa de registro
 
-Exactitud por campo con intervalo de Wilson al 95 %. El techo es la misma extracción sobre las referencias (el texto del guion), que acierta 60 de 60.
+Exactitud por campo con intervalo de Wilson al 95 %, con la versión 2 de las reglas. El techo es la misma extracción sobre las referencias (el texto del guion), que acierta 60 de 60.
 
 | Campo | Aciertos | IC 95 % | | Campo | Aciertos | IC 95 % |
 |---|---|---|---|---|---|---|
 | `anios_experiencia` | 5/5 | 0.57 a 1 | | `items` | 5/5 | 0.57 a 1 |
-| `ultimo_puesto` | 3/5 | 0.23 a 0.88 | | `promocion` | 5/5 | 0.57 a 1 |
+| `ultimo_puesto` | 4/5 | 0.38 a 0.96 | | `promocion` | 5/5 | 0.57 a 1 |
 | `tecnologias` | 5/5 | 0.57 a 1 | | `descuento` | 5/5 | 0.57 a 1 |
-| `pretension_salarial` | **1/5** | 0.04 a 0.62 | | `direccion_entrega` | **1/5** | 0.04 a 0.62 |
+| `pretension_salarial` | 4/5 | 0.38 a 0.96 | | `direccion_entrega` | **3/5** | 0.23 a 0.88 |
 | `disponibilidad` | 5/5 | 0.57 a 1 | | `metodo_pago` | 5/5 | 0.57 a 1 |
 | `nivel_ingles` | 5/5 | 0.57 a 1 | | `total_dicho` | 5/5 | 0.57 a 1 |
 
-- **Total:** 50 de 60 campos, contra 60 de 60 del techo.
+- **Total:** 56 de 60 campos (IC 95 %: 0.84 a 0.97), contra 60 de 60 del techo.
+- **Versión 1.** La primera evaluación con audio real (PR #7) daba 50 de 60. Casi todos sus fallos venían de cómo escribe Whisper ("6.500", "$1.800", "semi-senior", "Calle Los Cedros, 245"), y de ahí salió la corrección de formato. La versión 1 sigue en las secciones 2 a 4 del notebook 06, y sus tablas, en `data/resultados/*_v1.csv`.
 - **`nivel_ingles`:** macro F1 = 1.0.
-- **Numéricos:** `anios_experiencia`, `total_dicho` y `descuento` tienen error absoluto 0. `pretension_salarial` no da valor en 3 de 5 clips y, donde da, el error medio es 250 soles (E3 sale 10000 en lugar de 9500).
-- **Verificación:** 49 campos correctos quedan `verificado` y 1 `sin_verificar` (los 2.5 años de E4, que nunca se dicen). De los 10 errados, 6 quedan `no_mencionado` y **4 quedan `verificado`**: el valor equivocado aparece literal en la transcripción, y la verificación comprueba presencia, no corrección.
-- **Por qué se pierden los 10 campos.** Casi ninguno es una palabra mal oída: son diferencias de formato entre cómo escribe Whisper y cómo están escritos los guiones.
-  - **Separador de miles:** "6.500" y "$1.800" se leen como 6.5 y 1.8 y caen bajo el monto mínimo (pretensión de E1, E2 y E3).
-  - **Guion:** "semi-senior" y "front-end" cortan el cargo (E1 y E4).
-  - **Coma o punto junto al número:** "Calle Los Cedros, 245" no encaja en el patrón de dirección (L1, L2 y L5).
-  - **Palabra mal oída:** "Girón" por "Jirón" en L3, el único fallo de oído.
-  - **Lo que se dijo:** en E5 el salario actual y la pretensión quedaron en una sola oración.
-
-  Las reglas no se corrigieron en esta evaluación.
+- **Numéricos:** `anios_experiencia`, `total_dicho` y `descuento` tienen error absoluto 0. `pretension_salarial` también, salvo E5, que no da valor.
+- **Verificación:** 55 campos correctos quedan `verificado` y 1 `sin_verificar` (los 2.5 años de E4, que nunca se dicen). De los 4 errados, 2 quedan `no_mencionado` y **2 quedan `verificado`**: la verificación comprueba presencia, no corrección.
+- **Por qué fallan los 4 que quedan.**
+  - **E4, `ultimo_puesto`:** Whisper escribe "front-end" y el ground truth, "frontend". El guion equivale al espacio, no a la palabra unida.
+  - **E5, `pretension_salarial`:** el salario actual y la pretensión se dijeron en una sola oración, y la regla descarta la oración entera.
+  - **L3, `direccion_entrega`:** "Girón" por "Jirón". Es un error de oído y no se corrige.
+  - **L5, `direccion_entrega`:** Whisper pone un punto después del número ("2271. Bloque C."), los complementos quedan en otra oración, y además oye "San Juan del Urigancho".
 
 ### ¿Se puede saber si el registro sirve mirando solo el WER?
 
-No. En la corrida principal:
-- **E1 tiene el WER más bajo (1.08 %) y el peor registro (4 de 6).** "6.500" y "semi-senior" no cuentan como error en el WER, porque la normalización quita el separador y el guion, pero rompen dos campos.
-- **L4 tiene el WER más alto (8.67 %) y el único registro perfecto (6 de 6).** Su WER viene de una frase entera que Whisper repite, y esa frase no toca ningún campo.
+No clip por clip, aunque con la versión 2 se acercan más. En la corrida principal:
+- **L4 tiene el WER más alto (8.67 %) y el registro perfecto (6 de 6).** Su WER viene de una frase entera que Whisper repite, y esa frase no toca ningún campo.
 - **L4 con `initial_prompt`** tiene menos WER que con `hotwords` (7.14 % contra 8.67 %), pero un solo error, "Plim" por "Plin", deja vacío `metodo_pago`.
+- **El caso de WER bajo y registro roto desapareció.** En la versión 1 era E1: el WER más bajo (1.08 %) y 4 de 6, por "6.500" y "semi-senior". Con la versión 2, E1 da 6 de 6 y no queda ningún clip así en las 7 corridas. Ese caso era un defecto de las reglas, no del ASR, y el WER no podía verlo porque la normalización borra el formato.
 
-La correlación de Spearman entre el WER y los campos correctos es −0.29 sobre los 62 puntos, y dentro de `large-v3` cambia de signo (+0.33). **Quien reporte solo el WER puede elegir entre un modelo peor y uno mejor, pero no puede afirmar que el registro sea utilizable: eso se mide campo por campo.** El gráfico está en `data/resultados/wer_contra_registro.png`.
+La correlación de Spearman entre el WER y los campos correctos pasa de −0.29 a −0.54 sobre los 62 puntos y, dentro de `large-v3`, de +0.33 a −0.31. **El WER sirve para elegir entre un modelo peor y uno mejor, pero no para afirmar que el registro de un clip es utilizable: eso se mide campo por campo.** El gráfico está en `data/resultados/wer_contra_registro.png`, y el de la versión 1, en `wer_contra_registro_v1.png`.
 
 ## Resultados Task 2
 
@@ -140,4 +143,5 @@ La correlación de Spearman entre el WER y los campos correctos es −0.29 sobre
 
 ## Limitaciones
 
+- La normalización asume que `$` es dólar y que un punto seguido de tres dígitos es de miles. Las dos reglas valen para este corpus de Lima, pero no en general (ver "Normalización de números").
 - E3 dura 1.97 min, 1.6 s por debajo del mínimo de 2 minutos (ver "Audios").
