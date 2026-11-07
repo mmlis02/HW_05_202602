@@ -38,6 +38,11 @@ rutas:
   registro_por_clip: data/resultados/registro_por_clip.csv            # WER y campos correctos por corrida y clip (06)
   validacion_audio: data/resultados/validacion_audio.csv              # validación de las llamadas por corrida (06)
   figura_wer_registro: data/resultados/wer_contra_registro.png        # gráfico WER contra registro (06)
+  # Las mismas tablas con la versión 1 de las reglas (PR #7); el notebook 06 comprueba que las reproduce.
+  registro_por_campo_v1: data/resultados/registro_por_campo_v1.csv
+  registro_por_clip_v1: data/resultados/registro_por_clip_v1.csv
+  validacion_audio_v1: data/resultados/validacion_audio_v1.csv
+  figura_wer_registro_v1: data/resultados/wer_contra_registro_v1.png
   modelos_dir: models                          # pesos descargados, no se commitean
 
 archivos:
