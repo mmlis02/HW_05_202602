@@ -34,6 +34,10 @@ rutas:
   # definitivos se recalculan desde la caché, sin transcribir, en 06_resultados (sección 1).
   metricas_transcripcion: data/resultados/metricas_transcripcion.csv  # WER y CER definitivos por corrida (06)
   metricas_por_clip: data/resultados/metricas_por_clip.csv            # WER y CER definitivos por corrida y clip (06)
+  registro_por_campo: data/resultados/registro_por_campo.csv          # exactitud por campo y corrida, con audio real (06)
+  registro_por_clip: data/resultados/registro_por_clip.csv            # WER y campos correctos por corrida y clip (06)
+  validacion_audio: data/resultados/validacion_audio.csv              # validación de las llamadas por corrida (06)
+  figura_wer_registro: data/resultados/wer_contra_registro.png        # gráfico WER contra registro (06)
   modelos_dir: models                          # pesos descargados, no se commitean
 
 archivos:
