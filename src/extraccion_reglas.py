@@ -1,8 +1,9 @@
 """Extracción por reglas (expresiones regulares) para los esquemas de config.yaml.
 
 La entrada es una transcripción sin hablantes ni turnos, como la entrega Whisper. Se parte en
-oraciones; cada una se guarda tal cual (para la evidencia) y con los números en dígitos
-(src.normalizacion.palabras_a_numeros, para buscar valores). Cada campo devuelve
+oraciones; cada una se guarda tal cual (para la evidencia) y convertida con
+src.normalizacion.palabras_a_numeros (para buscar valores): números en dígitos, sin separador de miles,
+símbolos de moneda en palabras ("$1.800" -> "1800 dólares") y guiones entre letras como espacio. Cada campo devuelve
 {"valor": ..., "evidencia": oración original de la que sale}. Los marcadores están en
 config.yaml -> extraccion.reglas y el vocabulario en config.yaml -> esquemas y asr.glosario.
 
@@ -16,8 +17,9 @@ Reglas generales
 Entrevista
 - pretension_salarial: montos >= monto_minimo en la respuesta a la pregunta salarial, sin las
   oraciones de salario actual ("gano", "estoy ganando"). Si una oración dice "idealmente", vale su
-  monto; si no, el último. Moneda: un alias en la oración del monto, si no en las demás oraciones de
-  la respuesta (primero las anteriores) y si no moneda_por_defecto.
+  monto; si no, el último. Moneda: un alias en la oración del monto (ya convertida: "$" llega como
+  "dólares"), si no en las demás oraciones de la respuesta (primero las anteriores) y si no
+  moneda_por_defecto.
 - anios_experiencia: duraciones en la respuesta a la pregunta de experiencia. Se descartan las
   aproximadas ("casi cinco") y las parciales ("los últimos dos"). Vale la última. Si una oración suma
   tramos ("un año y medio en ... y otro año en ..."), se suman. Si solo se dice el año de inicio
@@ -30,7 +32,8 @@ Entrevista
 - nivel_ingles: la última palabra de nivel en la respuesta a la pregunta por el inglés; si no hay, el
   último código MCER (C1 -> avanzado). Sin pregunta reconocible, se busca en todo el texto.
 - ultimo_puesto: frase que empieza en un cargo (lista cargos) y llega hasta una palabra de corte o un
-  signo de puntuación. Se descartan los cargos pasados ("empecé como") y los ofrecidos ("buscamos").
+  signo de puntuación. Se lee de la oración convertida, así que "semi-senior" llega como "semi senior" y
+  no corta el cargo. Se descartan los cargos pasados ("empecé como") y los ofrecidos ("buscamos").
   Vale la frase más larga, que es la más específica.
 
 Pedido
@@ -44,7 +47,8 @@ Pedido
   código?" -> "No, ninguno."): el valor queda nulo (descuento 0) y esa respuesta es la evidencia de
   que la ausencia se dijo. Si tampoco la hay, el campo queda nulo y sin evidencia.
 - direccion_entrega: la última dirección con tipo de vía y número (la corregida, si hubo corrección);
-  si esa mención no trae distrito, se toma de otra mención de la misma vía.
+  si esa mención no trae distrito, se toma de otra mención de la misma vía. Entre el nombre de la vía
+  y el número se acepta un signo de puntuacion_via_numero ("Calle Los Cedros, 245").
 - metodo_pago: el primer alias en la respuesta a la pregunta de pago; si no hay, el último del texto.
 - total_dicho: el último número después de "total".
 
@@ -67,7 +71,7 @@ from functools import cache
 import pandas as pd
 
 from src.config import cargar_config
-from src.normalizacion import normalizar_texto, palabras_a_numeros
+from src.normalizacion import normalizar_texto, palabras_a_numeros, reglas_vigentes
 
 MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto",
          "septiembre", "octubre", "noviembre", "diciembre"]
@@ -171,7 +175,7 @@ def _pretension(oraciones, e, correccion):
     i, monto, _ = ([c for c in candidatos if c[2]] or candidatos)[-1]
     orden = [i] + [j for j in reversed(indices) if j < i] + [j for j in indices if j > i]
     moneda = next((cod for j in orden for cod, alias in esquema["alias"]["moneda"].items()
-                   if _contiene(oraciones[j][0], alias)), esquema["moneda_por_defecto"])
+                   if _contiene(oraciones[j][1], alias)), esquema["moneda_por_defecto"])
     return _campo({"monto": _numero(monto), "moneda": moneda}, oraciones[i][0])
 
 
@@ -250,13 +254,13 @@ def _nivel_ingles(oraciones, e):
 def _puesto(oraciones, e):
     fin = {p.lower() for p in e["cargo_fin"]}
     candidatos = []
-    for original, _ in oraciones:
-        for m in re.finditer(_patron(e["cargos"]), original, re.IGNORECASE):
-            antes = original[: m.start()]
+    for original, conv in oraciones:
+        for m in re.finditer(_patron(e["cargos"]), conv, re.IGNORECASE):
+            antes = conv[: m.start()]
             if _contiene(antes, e["cargo_pasado"]) or _contiene(antes, e["cargo_ofrecido"]):
                 continue
             palabras = [m[0]]
-            for siguiente in re.match(r"(?:\s+[^\W_]+)*", original[m.end():])[0].split():
+            for siguiente in re.match(r"(?:\s+[^\W_]+)*", conv[m.end():])[0].split():
                 if siguiente.lower() in fin or len(palabras) >= e["cargo_max_palabras"]:
                     break
                 palabras.append(siguiente)
@@ -367,8 +371,10 @@ def _promocion(oraciones, p, negacion):
 def _direccion(oraciones, p):
     via, comp = _patron(p["tipos_via"]), _patron(p["complementos_direccion"])
     mayuscula = r"[A-ZÁÉÍÓÚÑ][^\W\d_]*"
+    puntuacion = reglas_vigentes()["puntuacion_via_numero"]
+    separador = f"[{re.escape(puntuacion)}]?" if puntuacion else ""
     patron = re.compile(
-        rf"(?i:({via}))\.?\s+((?:[^\W\d_]+\s+){{1,5}}?)(\d+)"
+        rf"(?i:({via}))\.?\s+((?:[^\W\d_]+\s+){{0,4}}?[^\W\d_]+){separador}\s+(\d+)"
         rf"((?:,?\s*(?i:{comp})\s+[^\W_]+)*)"
         rf"(?:,?\s*en\s+({mayuscula}(?:\s+(?:de|del|la|las|los|{mayuscula}))*))?"
     )
