@@ -38,6 +38,11 @@ rutas:
   registro_por_clip: data/resultados/registro_por_clip.csv            # WER y campos correctos por corrida y clip (06)
   validacion_audio: data/resultados/validacion_audio.csv              # validación de las llamadas por corrida (06)
   figura_wer_registro: data/resultados/wer_contra_registro.png        # gráfico WER contra registro (06)
+  # Las mismas tablas con la versión 1 de las reglas (PR #7); el notebook 06 comprueba que las reproduce.
+  registro_por_campo_v1: data/resultados/registro_por_campo_v1.csv
+  registro_por_clip_v1: data/resultados/registro_por_clip_v1.csv
+  validacion_audio_v1: data/resultados/validacion_audio_v1.csv
+  figura_wer_registro_v1: data/resultados/wer_contra_registro_v1.png
   modelos_dir: models                          # pesos descargados, no se commitean
 
 archivos:
@@ -210,6 +215,30 @@ normalizacion:
   cantidades_palabra: {un: 1, una: 1, medio: 0.5}
   # Códigos que se dicen separados y se escriben juntos: "LEÑA cinco" -> "LEÑA5".
   codigos: [LEÑA5]
+  # Formato de Whisper (versión 2 de las reglas). Corrige cómo escribe, no lo que oye: con audio real
+  # estos formatos rompían campos que el WER no veía (notebook 06, sección 5). palabras_a_numeros los
+  # aplica primero, así que llegan igual a la extracción, a la verificación y al WER.
+  # Separador de miles también al extraer: "6.500" -> 6500. Antes solo lo quitaba normalizar_texto.
+  separador_miles: true
+  # Símbolo pegado a la cifra -> cifra + la primera palabra: "$1.800" -> "1800 dólares".
+  # Si la moneda ya se dice detrás ("$1.500 dólares"), no se repite.
+  simbolos_moneda:
+    "US$": [dólares, dólar]
+    "$": [dólares, dólar]
+    "S/.": [soles, sol]
+    "S/": [soles, sol]
+  # Guion entre letras -> espacio: "semi-senior" -> "semi senior". Entre cifras ("2-3") no se toca.
+  guion_entre_letras: true
+  # Puntuación aceptada entre el nombre de la vía y el número: "Calle Los Cedros, 245".
+  # La usa la extracción de direccion_entrega.
+  puntuacion_via_numero: ",."
+  # La versión 1 (las reglas del PR #7) son estas mismas reglas con el formato de Whisper apagado.
+  # El notebook 06 la reproduce con src.normalizacion.con_reglas(version_1).
+  version_1:
+    separador_miles: false
+    simbolos_moneda: {}
+    guion_entre_letras: false
+    puntuacion_via_numero: ""
 
 esquemas:
   entrevista:
