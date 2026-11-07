@@ -128,10 +128,16 @@ Exactitud por campo con intervalo de Wilson al 95 %, con la versión 2 de las re
 
 ### ¿Se puede saber si el registro sirve mirando solo el WER?
 
-No clip por clip, aunque con la versión 2 se acercan más. En la corrida principal:
+No clip por clip, aunque con la versión 2 se acercan más. Los casos se buscan con criterios explícitos (`notebooks/06_resultados.ipynb`, secciones 3.1, 5.6 y 5.6.1):
+
+- **WER alto y registro perfecto:** WER en el cuartil superior de los 62 puntos y 6 de 6 campos.
+- **WER bajo y registro roto:** WER por debajo de la mediana de su corrida y al menos un campo errado. Primero van los que pierden un campo crítico (`pretension_salarial`, `anios_experiencia` o `total_dicho`).
+
+En la corrida principal:
 - **L4 tiene el WER más alto (8.67 %) y el registro perfecto (6 de 6).** Su WER viene de una frase entera que Whisper repite, y esa frase no toca ningún campo.
 - **L4 con `initial_prompt`** tiene menos WER que con `hotwords` (7.14 % contra 8.67 %), pero un solo error, "Plim" por "Plin", deja vacío `metodo_pago`.
-- **El caso de WER bajo y registro roto desapareció.** En la versión 1 era E1: el WER más bajo (1.08 %) y 4 de 6, por "6.500" y "semi-senior". Con la versión 2, E1 da 6 de 6 y no queda ningún clip así en las 7 corridas. Ese caso era un defecto de las reglas, no del ASR, y el WER no podía verlo porque la normalización borra el formato.
+- **E5 es el caso de WER bajo y registro roto de la versión 2.** Su WER es 2.50 %, debajo de la mediana de la corrida (3.41 %), y pierde `pretension_salarial`, el dato crítico. El guion dice "Hoy gano seis mil doscientos. Mi pretensión es de siete mil", en dos oraciones. La transcripción dice "Actualmente gano 6200, pero mi pretensión es de 7000", en una. La regla descarta la oración del salario actual, y con ella la pretensión. El WER cuenta esa diferencia como 2 errores entre unas 280 palabras, y el punto perdido no lo cuenta. Es el único clip de la corrida que cumple. E4 pierde `ultimo_puesto`, pero su WER (5.86 %) está por encima de la mediana.
+- **E1 era el caso de la versión 1, y explica por qué la normalización del WER esconde errores de formato.** Tiene el WER más bajo (1.08 %) y daba 4 de 6: "6.500" y "semi-senior" no cuentan como error en el WER, porque la normalización quita el separador y el guion, pero rompían dos campos. Con la versión 2 de las reglas, E1 da 6 de 6.
 
 La correlación de Spearman entre el WER y los campos correctos pasa de −0.29 a −0.54 sobre los 62 puntos y, dentro de `large-v3`, de +0.33 a −0.31. **El WER sirve para elegir entre un modelo peor y uno mejor, pero no para afirmar que el registro de un clip es utilizable: eso se mide campo por campo.** El gráfico está en `data/resultados/wer_contra_registro.png`, y el de la versión 1, en `wer_contra_registro_v1.png`.
 
