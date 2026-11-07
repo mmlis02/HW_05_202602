@@ -1,6 +1,6 @@
 corrida,clip,modelo,precision,device,glosario,wer_antes,wer,cer_antes,cer,duracion_min,tiempo_s,s_por_min_audio,vram_pico_mb
 large-v3_float16_cuda_hotwords,e1,large-v3,float16,cuda,hotwords,0.0108,0.0108,0.0052,0.0052,2.38,19.315,8.126,4694.2
-large-v3_float16_cuda_hotwords,e2,large-v3,float16,cuda,hotwords,0.012,0.012,0.0063,0.0063,2.11,16.273,7.699,4726.2
+large-v3_float16_cuda_hotwords,e2,large-v3,float16,cuda,hotwords,0.012,0.009,0.0063,0.0021,2.11,16.273,7.699,4726.2
 large-v3_float16_cuda_hotwords,e3,large-v3,float16,cuda,hotwords,0.0336,0.0268,0.013,0.0119,1.97,15.863,8.04,4726.2
 large-v3_float16_cuda_hotwords,e4,large-v3,float16,cuda,hotwords,0.0586,0.0586,0.0415,0.0415,2.14,13.897,6.509,4726.2
 large-v3_float16_cuda_hotwords,e5,large-v3,float16,cuda,hotwords,0.025,0.025,0.0183,0.0183,2.23,13.993,6.278,4726.2
@@ -10,7 +10,7 @@ large-v3_float16_cuda_hotwords,l3,large-v3,float16,cuda,hotwords,0.0725,0.0725,0
 large-v3_float16_cuda_hotwords,l4,large-v3,float16,cuda,hotwords,0.0867,0.0867,0.0726,0.0726,2.36,13.787,5.839,4758.2
 large-v3_float16_cuda_hotwords,l5,large-v3,float16,cuda,hotwords,0.037,0.037,0.0277,0.0277,2.17,28.854,13.293,5558.2
 large-v3_float16_cuda_initial_prompt,e1,large-v3,float16,cuda,initial_prompt,0.0647,0.0647,0.0489,0.0489,2.38,17.535,7.377,4566.2
-large-v3_float16_cuda_initial_prompt,e2,large-v3,float16,cuda,initial_prompt,0.015,0.015,0.0078,0.0078,2.11,15.462,7.315,4534.2
+large-v3_float16_cuda_initial_prompt,e2,large-v3,float16,cuda,initial_prompt,0.015,0.012,0.0078,0.0037,2.11,15.462,7.315,4534.2
 large-v3_float16_cuda_initial_prompt,e3,large-v3,float16,cuda,initial_prompt,0.0403,0.0336,0.0169,0.0158,1.97,14.522,7.361,4502.2
 large-v3_float16_cuda_initial_prompt,e4,large-v3,float16,cuda,initial_prompt,0.0352,0.0352,0.0235,0.0235,2.14,20.209,9.465,5366.2
 large-v3_float16_cuda_initial_prompt,e5,large-v3,float16,cuda,initial_prompt,0.0286,0.0286,0.0215,0.0215,2.23,13.036,5.849,4502.2
@@ -20,7 +20,7 @@ large-v3_float16_cuda_initial_prompt,l3,large-v3,float16,cuda,initial_prompt,0.0
 large-v3_float16_cuda_initial_prompt,l4,large-v3,float16,cuda,initial_prompt,0.0714,0.0714,0.0471,0.0471,2.36,18.519,7.843,5366.2
 large-v3_float16_cuda_initial_prompt,l5,large-v3,float16,cuda,initial_prompt,0.0317,0.0317,0.0219,0.0219,2.17,38.11,17.557,5462.2
 large-v3_float16_cuda_sin-glosario,e1,large-v3,float16,cuda,sin,0.0189,0.0189,0.0108,0.0108,2.38,16.022,6.741,4566.2
-large-v3_float16_cuda_sin-glosario,e2,large-v3,float16,cuda,sin,0.0419,0.0419,0.0303,0.0303,2.11,14.79,6.997,4566.2
+large-v3_float16_cuda_sin-glosario,e2,large-v3,float16,cuda,sin,0.0419,0.0389,0.0303,0.0261,2.11,14.79,6.997,4566.2
 large-v3_float16_cuda_sin-glosario,e3,large-v3,float16,cuda,sin,0.0537,0.047,0.0265,0.0254,1.97,13.796,6.992,4534.2
 large-v3_float16_cuda_sin-glosario,e4,large-v3,float16,cuda,sin,0.0352,0.0352,0.0228,0.0228,2.14,25.485,11.936,5366.2
 large-v3_float16_cuda_sin-glosario,e5,large-v3,float16,cuda,sin,0.0321,0.0321,0.0228,0.0228,2.23,13.102,5.878,4470.2
@@ -30,7 +30,7 @@ large-v3_float16_cuda_sin-glosario,l3,large-v3,float16,cuda,sin,0.0674,0.0674,0.
 large-v3_float16_cuda_sin-glosario,l4,large-v3,float16,cuda,sin,0.0408,0.0408,0.032,0.032,2.36,11.967,5.068,4470.2
 large-v3_float16_cuda_sin-glosario,l5,large-v3,float16,cuda,sin,0.0265,0.0265,0.0191,0.0191,2.17,11.48,5.289,4470.2
 large-v3_int8_cuda_sin-glosario,e1,large-v3,int8_float16,cuda,sin,0.0216,0.0216,0.0113,0.0113,2.38,16.572,6.972,3062.2
-large-v3_int8_cuda_sin-glosario,e2,large-v3,int8_float16,cuda,sin,0.0419,0.0419,0.0303,0.0303,2.11,15.323,7.249,3062.2
+large-v3_int8_cuda_sin-glosario,e2,large-v3,int8_float16,cuda,sin,0.0419,0.0389,0.0303,0.0261,2.11,15.323,7.249,3062.2
 large-v3_int8_cuda_sin-glosario,e3,large-v3,int8_float16,cuda,sin,0.057,0.0503,0.0226,0.0214,1.97,13.749,6.969,3062.2
 large-v3_int8_cuda_sin-glosario,e4,large-v3,int8_float16,cuda,sin,0.0352,0.0352,0.0235,0.0235,2.14,19.546,9.155,3862.2
 large-v3_int8_cuda_sin-glosario,e5,large-v3,int8_float16,cuda,sin,0.0286,0.0286,0.0228,0.0228,2.23,12.883,5.78,2998.2

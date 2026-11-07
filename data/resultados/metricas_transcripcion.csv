@@ -1,8 +1,8 @@
 corrida,modelo,precision,device,glosario,clips,wer_antes,wer,ic95_wer_clip,cer_antes,cer,s_por_min_audio,vram_pico_mb,vram_corrida_mb
-large-v3_float16_cuda_sin-glosario,large-v3,float16,cuda,sin,10,0.0363,0.0356,"(0.0292, 0.0452)",0.0253,0.0252,6.6,5366.2,4810.0
-large-v3_int8_cuda_sin-glosario,large-v3,int8_float16,cuda,sin,10,0.0414,0.0406,"(0.0332, 0.0531)",0.028,0.0279,6.38,3862.2,3306.0
-large-v3_float16_cuda_initial_prompt,large-v3,float16,cuda,initial_prompt,10,0.0398,0.039,"(0.0296, 0.0506)",0.0263,0.0261,8.12,5462.2,4906.0
-large-v3_float16_cuda_hotwords,large-v3,float16,cuda,hotwords,10,0.0371,0.0363,"(0.0271, 0.0564)",0.0259,0.0257,7.81,5558.2,5002.0
+large-v3_float16_cuda_sin-glosario,large-v3,float16,cuda,sin,10,0.0363,0.0352,"(0.029, 0.0449)",0.0253,0.0246,6.6,5366.2,4810.0
+large-v3_int8_cuda_sin-glosario,large-v3,int8_float16,cuda,sin,10,0.0414,0.0402,"(0.033, 0.0528)",0.028,0.0273,6.38,3862.2,3306.0
+large-v3_float16_cuda_initial_prompt,large-v3,float16,cuda,initial_prompt,10,0.0398,0.0387,"(0.029, 0.0505)",0.0263,0.0256,8.12,5462.2,4906.0
+large-v3_float16_cuda_hotwords,large-v3,float16,cuda,hotwords,10,0.0371,0.0359,"(0.0263, 0.0564)",0.0259,0.0252,7.81,5558.2,5002.0
 small_float16_cuda_sin-glosario,small,float16,cuda,sin,10,0.0576,0.0557,"(0.0439, 0.069)",0.0216,0.021,1.91,1334.2,778.0
 small_int8_cuda_sin-glosario,small,int8_float16,cuda,sin,10,0.0588,0.0568,"(0.0458, 0.0702)",0.0229,0.0223,1.97,1046.2,490.0
 small_int8_cpu_sin-glosario,small,int8_float32,cpu,sin,2,0.0446,0.0446,"(0.0233, 0.0593)",0.0141,0.0141,31.92,556.2,0.0
