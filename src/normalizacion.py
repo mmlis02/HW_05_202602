@@ -1,9 +1,24 @@
 """Normalización de texto y de números dichos en palabras.
 
 Todos los parámetros viven en config.yaml -> normalizacion. Las dos funciones aceptan `reglas`
-para probar otra configuración sin editar el archivo.
+para probar otra configuración sin editar el archivo. Quien normaliza sin pasar `reglas` (la
+extracción, la verificación y la validación) usa reglas_vigentes(), que dentro de un bloque
+con_reglas(cambios) incluye esos cambios: así el notebook 06 reproduce la versión 1 de las reglas.
 
 palabras_a_numeros(texto): números en palabras a dígitos dentro de texto corrido.
+    0. Formato de Whisper (versión 2). Corrige cómo escribe Whisper, no lo que oye:
+       - Símbolo de moneda pegado a la cifra -> cifra + palabra (simbolos_moneda): "$1.800" ->
+         "1800 dólares", "S/ 6500" -> "6500 soles". Si la palabra ya va detrás, no se repite.
+         $ es dólar porque el corpus es de Lima: en Perú el sol se escribe S/ y $ se usa para el
+         dólar, y Whisper escribe $ donde se dice "dólares". En México o Chile $ sería el peso.
+       - Separador de miles (separador_miles): un punto o una coma seguidos de exactamente tres
+         dígitos es de miles: "6.500" -> 6500, "1.000.000" -> 1000000; "4.5" sigue siendo decimal.
+         Es la misma regla que ya aplicaba normalizar_texto; ahora la ve también la extracción.
+         Caso ambiguo: un decimal con exactamente tres cifras ("2.125 kilos") se lee como miles
+         (2125). En el corpus no hay ninguno: los montos son enteros y las duraciones van con un
+         decimal ("4.5 años"). Whisper escribe los decimales con punto, así que el punto no basta.
+       - Guion entre letras -> espacio (guion_entre_letras): "semi-senior" -> "semi senior", la
+         forma del ground truth. Entre cifras ("2-3 semanas") no se toca.
     1. Alias. Formas que text2num no reconoce se reescriben antes: "veintiún" -> "veintiuno"
        (apócope) y "veintitres" -> "veintitrés". Así "ciento veintiún soles" llega a 121.
     2. Palabras protegidas. Los ordinales ("cuarto", "segunda", "primero") y "por ciento" se apartan
@@ -37,6 +52,7 @@ palabras_a_numeros(texto): números en palabras a dígitos dentro de texto corri
 
 normalizar_texto(texto): la regla única para comparar referencia y transcripción.
     1. palabras_a_numeros, antes de quitar la puntuación (las comas separan grupos de un dictado).
+       Incluye el formato de Whisper del paso 0: "$1.800" y "mil ochocientos dólares" quedan iguales.
     2. "%" -> " por ciento", para que "15%" y "quince por ciento" queden iguales.
     3. Minúsculas.
     4. Formato de cifras: el separador de miles se quita ("6.500" -> "6500") y la coma decimal pasa a
@@ -48,6 +64,7 @@ normalizar_texto(texto): la regla única para comparar referencia y transcripci�
 
 import re
 import unicodedata
+from contextlib import contextmanager
 from decimal import Decimal
 from functools import cache
 
@@ -56,9 +73,31 @@ from text_to_num import alpha2digit, text2num
 from src.config import cargar_config
 
 
+_cambios: dict = {}
+
+
 @cache
 def _reglas_config() -> dict:
     return cargar_config()["normalizacion"]
+
+
+def reglas_vigentes() -> dict:
+    """config.yaml -> normalizacion, con los cambios del bloque con_reglas en curso, si lo hay."""
+    return {**_reglas_config(), **_cambios}
+
+
+@contextmanager
+def con_reglas(cambios: dict):
+    """Dentro del bloque, todo lo que normaliza sin pasar `reglas` usa estos cambios.
+
+    with con_reglas(cfg["normalizacion"]["version_1"]): ...  extrae y verifica con la versión 1.
+    """
+    global _cambios
+    anteriores, _cambios = _cambios, {**_cambios, **cambios}
+    try:
+        yield
+    finally:
+        _cambios = anteriores
 
 
 def palabras_a_numeros(texto: str, reglas: dict | None = None) -> str:
@@ -66,7 +105,12 @@ def palabras_a_numeros(texto: str, reglas: dict | None = None) -> str:
 
     "mi pretensión es seis mil quinientos soles" -> "mi pretensión es 6500 soles".
     """
-    r = reglas or _reglas_config()
+    r = reglas or reglas_vigentes()
+    texto = _simbolos_moneda(texto, r["simbolos_moneda"])
+    if r["separador_miles"]:
+        texto = _separador_miles(texto)
+    if r["guion_entre_letras"]:
+        texto = re.sub(r"(?<=[^\W\d_])-(?=[^\W\d_])", " ", texto)
     for forma, canonica in r["alias"].items():
         texto = re.sub(rf"\b{re.escape(forma)}\b", canonica, texto, flags=re.IGNORECASE)
     texto, apartadas = _proteger(texto, r["palabras_protegidas"], r["articulos"],
@@ -81,13 +125,13 @@ def palabras_a_numeros(texto: str, reglas: dict | None = None) -> str:
 
 def normalizar_texto(texto: str, reglas: dict | None = None) -> str:
     """Regla única para comparar referencia y transcripción (WER, CER y verificación literal)."""
-    r = reglas or _reglas_config()
+    r = reglas or reglas_vigentes()
     if r["palabras_a_numeros"]:
         texto = palabras_a_numeros(texto, r)
     texto = texto.replace("%", " por ciento")
     if r["minusculas"]:
         texto = texto.lower()
-    texto = re.sub(r"(?<=\d)[.,](?=\d{3}(?!\d))", "", texto)
+    texto = _separador_miles(texto)
     texto = re.sub(r"(?<=\d),(?=\d)", ".", texto)
     if r["quitar_tildes"]:
         texto = _quitar_tildes(texto)
@@ -97,6 +141,20 @@ def normalizar_texto(texto: str, reglas: dict | None = None) -> str:
     if r["colapsar_espacios"]:
         texto = " ".join(texto.split())
     return texto
+
+
+def _simbolos_moneda(texto: str, simbolos: dict) -> str:
+    """"$1.800" -> "1800 dólares"; del símbolo más largo al más corto, para que "US$" no quede en "US"."""
+    for simbolo, palabras in sorted(simbolos.items(), key=lambda s: len(s[0]), reverse=True):
+        nombres = "|".join(re.escape(p) for p in palabras)
+        texto = re.sub(rf"(?<!\w){re.escape(simbolo)}\s?(\d+(?:[.,]\d+)*)(\s+(?:{nombres})\b)?",
+                       lambda m: m[1] + (m[2] or f" {palabras[0]}"), texto, flags=re.IGNORECASE)
+    return texto
+
+
+def _separador_miles(texto: str) -> str:
+    """Un punto o una coma seguidos de exactamente tres dígitos son de miles: "6.500" -> "6500"."""
+    return re.sub(r"(?<=\d)[.,](?=\d{3}(?!\d))", "", texto)
 
 
 def _proteger(texto: str, palabras: list[str], articulos: list[str], multiplicadores: dict,
