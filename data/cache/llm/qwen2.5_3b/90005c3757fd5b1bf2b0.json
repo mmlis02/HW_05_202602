@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "90005c3757fd5b1bf2b0",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4.5, \"evidencia\": \"cuatro años y medio\"},\n  \"ultimo_puesto\": {\"valor\": \"desarrolladora full-stack\", \"evidencia\": \"Trabajo como desarrolladora full-stack en una consultora.\"},\n  \"tecnologias\": [\n    {\"valor\": \"JavaScript\", \"evidencia\": \"Trabajo como desarrolladora full-stack en una consultora.\"},\n    {\"valor\": \"HTML/CSS\", \"evidencia\": \"Trabajo como desarrolladora full-stack en una consultora.\"},\n    {\"valor\": \"React\", \"evidencia\": \"Trabajo como desarrolladora full-stack en una consultora.\"},\n    {\"valor\": \"Node.js\", \"evidencia\": \"Trabajo como desarrolladora full-stack en una consultora.\"},\n    {\"valor\": \"MySQL\", \"evidencia\": \"Trabajo como desarrolladora full-stack en una consultora.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": null, \"evidencia\": null},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 10.63,
+ "carga_s": 0.0,
+ "tokens_entrada": 441,
+ "tokens_salida": 262,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:13:04"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "e145e18d31fe15394ac8",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": \"Me gustaría llegar a cuatro mil quinientos soles.\"\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": \"Hoy cobro tres mil. Me gustaría llegar a cuatro mil quinientos soles.\"\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"null\",\n      \"evidencia\": \"Hoy cobro tres mil. Me gustaría llegar a cuatro mil quinientos soles.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": {\n      \"monto\": 4500,\n      \"moneda\": \"PEN\"\n    },\n    \"evidencia\": \"Me gustaría llegar a cuatro mil quinientos soles.\"\n  },\n  \"disponibilidad\": {\n    \"valor\": null,\n    \"evidencia\": \"Hoy cobro tres mil. Me gustaría llegar a cuatro mil quinientos soles.\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": \"Hoy cobro tres mil. Me gustaría llegar a cuatro mil quinientos soles.\"\n  }\n}",
+ "tiempo_s": 13.24,
+ "carga_s": 3.81,
+ "tokens_entrada": 469,
+ "tokens_salida": 270,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T15:58:03"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "2eea3fd97ae850708f77",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": \"Unos $1.500 dólares mensuales.\"\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": \"Unos $1.500 dólares mensuales.\"\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"null\",\n      \"evidencia\": \"Unos $1.500 dólares mensuales.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": {\n      \"monto\": 1500,\n      \"moneda\": \"USD\"\n    },\n    \"evidencia\": \"Unos $1.500 dólares mensuales.\"\n  },\n  \"disponibilidad\": {\n    \"valor\": null,\n    \"evidencia\": \"Unos $1.500 dólares mensuales.\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": \"Unos $1.500 dólares mensuales.\"\n  }\n}",
+ "tiempo_s": 7.89,
+ "carga_s": 0.0,
+ "tokens_entrada": 463,
+ "tokens_salida": 235,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:00:51"
+}

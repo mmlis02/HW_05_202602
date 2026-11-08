@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "cd96c8f0281fdd3e53d7",
+ "respuesta": "{\"items\": [], \"promocion\": {\"valor\": null, \"evidencia\": null}, \"descuento\": {\"valor\": 0, \"evidencia\": null}, \"direccion_entrega\": {\"valor\": null, \"evidencia\": null}, \"metodo_pago\": {\"valor\": \"yape\", \"evidencia\": \"¿o aceptan Plin?\"}, \"total_dicho\": {\"valor\": null, \"evidencia\": null}}",
+ "tiempo_s": 15.7,
+ "carga_s": 0.49,
+ "tokens_entrada": 534,
+ "tokens_salida": 100,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:39:05"
+}

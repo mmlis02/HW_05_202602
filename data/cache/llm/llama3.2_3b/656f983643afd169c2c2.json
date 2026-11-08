@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "656f983643afd169c2c2",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"Java\",\n      \"evidencia\": \"Uso Java con Spring Boot.\"\n    },\n    {\n      \"valor\": \"React\",\n      \"evidencia\": \"Antes usaba Angular, pero lo reemplazamos por React.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"disponibilidad\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 5.58,
+ "carga_s": 0.0,
+ "tokens_entrada": 633,
+ "tokens_salida": 191,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:21:16"
+}

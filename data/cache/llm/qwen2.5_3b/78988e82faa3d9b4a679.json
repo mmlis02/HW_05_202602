@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "78988e82faa3d9b4a679",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 3, \"evidencia\": \"Me desempeño como arquitecto de soluciones desde hace tres años.\"},\n  \"ultimo_puesto\": {\"valor\": \"arquitecto de soluciones\", \"evidencia\": \"Me desempeño como arquitecto de soluciones desde hace tres años.\"},\n  \"tecnologias\": [],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": null, \"evidencia\": null},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 12.82,
+ "carga_s": 0.76,
+ "tokens_entrada": 447,
+ "tokens_salida": 149,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:08:52"
+}

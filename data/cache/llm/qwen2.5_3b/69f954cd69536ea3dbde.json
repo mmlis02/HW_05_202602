@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "69f954cd69536ea3dbde",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4.5, \"evidencia\": \"Casi cinco. Bueno, si cuento solo lo formal, con contrato, seré en cuatro años y medio.\"},\n  \"ultimo_puesto\": {\"valor\": \"desarrollador backend semi-signor\", \"evidencia\": \"Antes estuve en una consultora. Ahora trabajo en Credito Agil como desarrollador backend semi-signor.\"},\n  \"tecnologias\": [\n    {\"valor\": \"Python\", \"evidencia\": \"Principalmente Python. Con Django para las APIs, la base de datos es Postgre SQL y todo lo desplegamos en contenedores con Docker.\"},\n    {\"valor\": \"Django\", \"evidencia\": \"Con Django para las APIs\"},\n    {\"valor\": \"Postgre SQL\", \"evidencia\": \"la base de datos es Postgre SQL\"},\n    {\"valor\": \"Docker\", \"evidencia\": \"Con todo lo desplegamos en contenedores con Docker.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 6500, \"moneda\": \"PEN\"}, \"evidencia\": \"Ahora estoy ganando 5.800. Por el cambio y por la responsabilidad del puesto, mi pretensión sería de 6.500 soles mensuales.\"},\n  \"disponibilidad\": {\"valor\": \"2026-11-17\", \"evidencia\": \"Tendría que avisarle mi trabajo y entregar un par de cosas pendientes. Creo que en dos semanas podría estar disponible.\"},\n  \"nivel_ingles\": {\"valor\": \"intermedio\", \"evidencia\": \"Diría que tengo un nivel intermedio.\"}\n}",
+ "tiempo_s": 16.46,
+ "carga_s": 0.02,
+ "tokens_entrada": 1206,
+ "tokens_salida": 391,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:25:45"
+}

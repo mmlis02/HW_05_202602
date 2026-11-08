@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "de3582a6de0a4d230fa1",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": 3.5,\n    \"evidencia\": \"Tengo 3.5 años programando.\"\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"programando\",\n      \"evidencia\": \"Tengo 3.5 años programando.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"disponibilidad\": {\n    \"valor\": \"2026-10-31\",\n    \"evidencia\": \"Fecha de la grabación: 2026-10-31.\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 9.21,
+ "carga_s": 0.0,
+ "tokens_entrada": 618,
+ "tokens_salida": 201,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:28:43"
+}

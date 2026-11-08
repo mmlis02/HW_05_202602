@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "179d43937e07a879c86e",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 2, \"evidencia\": \"Trabajo en desarrollo desde dos mil diecinueve.\"},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [{\"valor\": \"Python\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"Git\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"Docker\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"AWS\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"Django\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"HTML\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"CSS\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"JavaScript\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"React\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"Node.js\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"MongoDB\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"Express.js\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"SQL\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"GitLab\", \"evidencia\": \"desde dos mil diecinueve.\"},\n                  {\"valor\": \"Jest\", \"evidencia\": \"desde dos mil diecinueve.\"}],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": \"2026-10-31\", \"evidencia\": \"Fecha de grabación\"},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 17.73,
+ "carga_s": 0.0,
+ "tokens_entrada": 619,
+ "tokens_salida": 468,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:26:38"
+}

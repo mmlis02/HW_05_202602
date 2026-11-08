@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "37628cb7a387b861cfd8",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4.5, \"evidencia\": \"Casi cinco años. Bueno, si cuento solo lo formal, con contrato, serían cuatro años y medio.\"},\n  \"ultimo_puesto\": {\"valor\": \"desarrollador backend semi senior\", \"evidencia\": \"Antes estuve en una consultora. Ahora trabajo en Crédito Ágil como desarrollador backend semi senior.\"},\n  \"tecnologias\": [\n    {\"valor\": \"Python\", \"evidencia\": \"Principalmente Python, con Django para las APIs.\"},\n    {\"valor\": \"Django\", \"evidencia\": \"Principalmente Python, con Django para las APIs.\"},\n    {\"valor\": \"PostgreSQL\", \"evidencia\": \"La base de datos es PostgreSQL.\"},\n    {\"valor\": \"Docker\", \"evidencia\": \"Todo lo desplegamos en contenedores con Docker.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 6000, \"moneda\": \"PEN\"}, \"evidencia\": \"Ahora estoy ganando cinco mil ochocientos. Por el cambio y por las responsabilidades del puesto, mi pretensión sería de seis mil quinientos soles mensuales.\"},\n  \"disponibilidad\": {\"valor\": \"2026-11-07\", \"evidencia\": \"Tendría que avisar en mi trabajo y entregar un par de cosas pendientes. Creo que en dos semanas podría estar disponible.\"},\n  \"nivel_ingles\": {\"valor\": \"intermedio\", \"evidencia\": \"Leo documentación sin problema, eso todos los días. Escribir correos también. Lo que me cuesta un poco más es hablar, sobre todo en reuniones largas. Diría que tengo un nivel intermedio.\"}\n}",
+ "tiempo_s": 54.61,
+ "carga_s": 28.65,
+ "tokens_entrada": 1199,
+ "tokens_salida": 403,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:49:58"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "a999f2b8cadb24d6ced6",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un pollo entero\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos medios pollos\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una porción de anticuchos\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"1.5 litros\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una gaseosa de litro y medio\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"promo app\",\n    \"evidencia\": \"LEÑA cinco\"\n  },\n  \"descuento\": {\n    \"valor\": 5,\n    \"evidencia\": \"con el código le descontamos cinco soles\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Avenida Las Gardenias mil quinientos ochenta, casa de dos pisos con reja negra\",\n    \"evidencia\": \"Avenida Las Gardenias mil quinientos ochenta, en Pueblo Libre. Es una casa de dos pisos con reja negra\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"¿Cómo va a pagar? En efectivo. Pago con un billete de cien.\"\n  },\n  \"total_dicho\": {\n    \"valor\": 95,\n    \"evidencia\": \"El total es noventa y cinco soles.\"\n  }\n}",
+ "tiempo_s": 52.11,
+ "carga_s": 0.98,
+ "tokens_entrada": 980,
+ "tokens_salida": 406,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:09:37"
+}

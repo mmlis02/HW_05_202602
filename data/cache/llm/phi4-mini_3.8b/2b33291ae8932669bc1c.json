@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "2b33291ae8932669bc1c",
+ "respuesta": "{\"items\": [], \"promocion\": {\"valor\": null, \"evidencia\": null}, \"descuento\": {\"valor\": 0, \"evidencia\": null}, \"direccion_entrega\": {\"valor\": \"Calle Las Begonias 1430, San Isidro\", \"evidencia\": \"Es en Calle Las Begonias 1.430, en San Isidro.\"}, \"metodo_pago\": {\"valor\": null, \"evidencia\": null}, \"total_dicho\": {\"valor\": null, \"evidencia\": null}}",
+ "tiempo_s": 26.52,
+ "carga_s": 1.05,
+ "tokens_entrada": 535,
+ "tokens_salida": 121,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:45:11"
+}

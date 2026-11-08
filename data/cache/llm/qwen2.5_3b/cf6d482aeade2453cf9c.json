@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "cf6d482aeade2453cf9c",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 8, \"evidencia\": \"En infraestructura, 8. Casi 9 porque cumplo 9 en marzo, pero digamos 8.\"},\n  \"ultimo_puesto\": {\"valor\": \"jefe de infraestructura\", \"evidencia\": \"Hoy soy jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur.\"},\n  \"tecnologias\": [\n    {\"valor\": \"AWS\", \"evidencia\": \"Todo está en AWS.\"},\n    {\"valor\": \"Kubernetes\", \"evidencia\": \"Los clústeres corren en Kubernetes, la infraestructura la definimos con Terraform.\"},\n    {\"valor\": \"Terraform\", \"evidencia\": \"La infraestructura la definimos con Terraform.\"},\n    {\"valor\": \"Jenkins\", \"evidencia\": \"Los despliegues van por Jenkins.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Nagios\", \"evidencia\": \"Antes usábamos Nagios, pero lo pagamos el año pasado.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 9500, \"moneda\": \"PEN\"}, \"evidencia\": \"Estoy entre 9 y 10 mil soles, idealmente 9.500.\"},\n  \"disponibilidad\": {\"valor\": \"2026-12-01\", \"evidencia\": \"A partir del 1 de diciembre estaría libre.\"},\n  \"nivel_ingles\": {\"valor\": \"basico\", \"evidencia\": \"Estoy llegando a clases los sábados. Al día siguiente escribimos el postmortem. Muy bien. ¿Y cuándo podrías incorporarte? Tengo que entregar una migración a fin de mes. A partir del 1 de diciembre estaría libre.\"}\n}",
+ "tiempo_s": 26.51,
+ "carga_s": 0.09,
+ "tokens_entrada": 1107,
+ "tokens_salida": 668,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:14:32"
+}

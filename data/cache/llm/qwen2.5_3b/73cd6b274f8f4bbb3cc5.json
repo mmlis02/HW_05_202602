@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "73cd6b274f8f4bbb3cc5",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa único\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa cuarto\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa medio\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa entero\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas familiar\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas personal\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada jarra\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"gaseosa personal\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica único\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica porción\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica único\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": \"descuento 0\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Avenida Arequipa 1250, departamento 801, Lince\",\n    \"evidencia\": \"Avenida Arequipa 1250, departamento 801, Lince\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"tarjeta\",\n    \"evidencia\": \"tarjeta\"\n  },\n  \"total_dicho\": {\n    \"valor\": 12.50,\n    \"evidencia\": \"total 12.50\"\n  }\n}",
+ "tiempo_s": 30.37,
+ "carga_s": 0.02,
+ "tokens_entrada": 607,
+ "tokens_salida": 727,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:29:59"
+}

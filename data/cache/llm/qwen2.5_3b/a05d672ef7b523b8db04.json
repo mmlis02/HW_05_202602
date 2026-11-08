@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "a05d672ef7b523b8db04",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4.5, \"evidencia\": \"cuatro años y medio\"},\n  \"ultimo_puesto\": {\"valor\": \"desarrollador de software\", \"evidencia\": \"Antes usaba Angular, pero lo reemplazamos por React.\"},\n  \"tecnologias\": [\n    {\"valor\": \"Java\", \"evidencia\": \"Uso Java con Spring Boot.\"},\n    {\"valor\": \"Angular\", \"evidencia\": \"Antes usaba Angular, pero lo reemplazamos por React.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": null, \"evidencia\": null},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 16.09,
+ "carga_s": 0.67,
+ "tokens_entrada": 451,
+ "tokens_salida": 185,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:08:19"
+}

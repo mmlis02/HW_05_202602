@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "entrevista",
+ "clave": "43e5e430473db144ddbe",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": null, \"evidencia\": null},\n  \"ultimo_puesto\": {\"valor\": \"desarrolladora full-stack\", \"evidencia\": \"Trabajo como desarrolladora full-stack en una consultora.\"},\n  \"tecnologias\": [{\"valor\": \"\", \"evidencia\": \"\"}],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": \"2023-04-01\", \"evidencia\": \"de inmediato\"},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 21.31,
+ "carga_s": 0.08,
+ "tokens_entrada": 544,
+ "tokens_salida": 139,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:42:53"
+}

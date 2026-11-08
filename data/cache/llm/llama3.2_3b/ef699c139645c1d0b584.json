@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "pedido",
+ "clave": "ef699c139645c1d0b584",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa (entero, medio, cuarto)\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas (familiar, personal)\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada (jarra, vaso)\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"gaseosa (1.5 litros, personal)\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica (único)\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"anticuchos (porción)\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"molejitas (único)\"\n    },\n    {\n      \"producto\": \"torta de chocolate\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"torta de chocolate (porción)\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": null\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Pasaje Las Rosas 88, piso 3, Breña\",\n    \"evidencia\": \"Pasaje Las Rosas 1.430, en San Isidro\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"es en Calle Las Begonias 1.430, en San Isidro\"\n  },\n  \"total_dicho\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 22.87,
+ "carga_s": 0.02,
+ "tokens_entrada": 614,
+ "tokens_salida": 551,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:25:33"
+}

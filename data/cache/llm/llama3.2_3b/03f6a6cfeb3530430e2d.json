@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "03f6a6cfeb3530430e2d",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": \"Actualmente soy ingeniera de datos en una aseguradora.\"\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": \"Actualmente soy ingeniera de datos en una aseguradora.\"\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"data science\",\n      \"evidencia\": \"Actualmente soy ingeniera de datos en una aseguradora.\"\n    },\n    {\n      \"valor\": \"python\",\n      \"evidencia\": \"Actualmente soy ingeniera de datos en una aseguradora.\"\n    },\n    {\n      \"valor\": \"sql\",\n      \"evidencia\": \"Actualmente soy ingeniera de datos en una aseguradora.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"disponibilidad\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 7.29,
+ "carga_s": 0.02,
+ "tokens_entrada": 453,
+ "tokens_salida": 251,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T15:59:03"
+}

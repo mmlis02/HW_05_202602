@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "2daada44391ecdce97b7",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Buenas, quiero un pollo entero y dos gaseosas personales. Le repito su pedido: un pollo entero y dos gaseosas personales.\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Le repito su pedido: un pollo entero y dos gaseosas personales.\"\n    }\n  ],\n  \"promocion\": {\"valor\": null, \"evidencia\": null},\n  \"descuento\": {\"valor\": 0, \"evidencia\": null},\n  \"direccion_entrega\": {\"valor\": null, \"evidencia\": null},\n  \"metodo_pago\": {\"valor\": null, \"evidencia\": null},\n  \"total_dicho\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 9.67,
+ "carga_s": 0.0,
+ "tokens_entrada": 619,
+ "tokens_salida": 230,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:27:28"
+}

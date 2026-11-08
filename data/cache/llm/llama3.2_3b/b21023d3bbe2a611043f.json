@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "b21023d3bbe2a611043f",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": \"Podría incorporarme en tres semanas\"\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": \"Podría incorporarme en tres semanas\"\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"null\",\n      \"evidencia\": \"Podría incorporarme en tres semanas\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": null,\n    \"evidencia\": \"Podría incorporarme en tres semanas\"\n  },\n  \"disponibilidad\": {\n    \"valor\": \"2026-11-14\",\n    \"evidencia\": \"Podría incorporarme en tres semanas\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": \"Podría incorporarme en tres semanas\"\n  }\n}",
+ "tiempo_s": 7.7,
+ "carga_s": 0.0,
+ "tokens_entrada": 458,
+ "tokens_salida": 206,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T15:58:30"
+}

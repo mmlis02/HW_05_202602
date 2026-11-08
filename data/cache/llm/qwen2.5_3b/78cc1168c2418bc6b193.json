@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "78cc1168c2418bc6b193",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un pollo entero y un medio pollo\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un pollo entero y un medio pollo\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos papas familiares\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"1.5 litros\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos gaseosas de litro y medio\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"duo familiar\",\n    \"evidencia\": \"Con el dúo familiar\"\n  },\n  \"descuento\": {\n    \"valor\": 10,\n    \"evidencia\": \"El dúo familiar 10 soles de descuento\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Avenida Los Laureles 2271, Bloque C, Departamento 504, San Juan del Urigancho\",\n    \"evidencia\": \"Avenida Los Laureles 2271, Bloque C, Departamento 504, en San Juan del Urigancho\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"yape\",\n    \"evidencia\": \"Forma de pago. Yape.\"\n  },\n  \"total_dicho\": {\n    \"valor\": 131,\n    \"evidencia\": \"Le llega en una hora aproximadamente. Hoy tenemos bastante demanda. No hay problema, gracias. Gracias a usted. 131, perfecto.\"\n  }\n}",
+ "tiempo_s": 15.64,
+ "carga_s": 0.02,
+ "tokens_entrada": 958,
+ "tokens_salida": 440,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:13:37"
+}

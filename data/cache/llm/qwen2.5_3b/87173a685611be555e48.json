@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "87173a685611be555e48",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4.5, \"evidencia\": \"cuatro años y medio\"},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": \"user\", \"evidencia\": \"de inmediato\"},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 4.55,
+ "carga_s": 0.0,
+ "tokens_entrada": 617,
+ "tokens_salida": 119,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:26:52"
+}

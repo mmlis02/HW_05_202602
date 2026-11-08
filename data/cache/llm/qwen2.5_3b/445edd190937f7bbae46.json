@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "445edd190937f7bbae46",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un pollo a la brasa entero, con unas papas familiares.\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un pollo entero de sesenta y ocho soles y una papa familiar de catorce.\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 2,\n      \"evidencia\": \"¿Alguna ensalada, algún postre? No, con eso está bien. ¿Tienen alguna promoción? Sí, como lleva pollo entero con papas familiares, aplica el dúo familiar: diez soles de descuento. ¿El pollo viene con cremas? Sí, viene con mayonesa, ketchup y ají de la casa. Que manden bastante ají, por favor. Listo, lo anoto. ¿A qué dirección se lo enviamos? Calle Los Cedros doscientos cuarenta y cinco, departamento trescientos dos, en Surco. ¿Alguna referencia? Es un edificio blanco frente a un parque, al costado de una farmacia. ¿A nombre de quién y un número de contacto? A nombre de Ramírez. El número es nueve ocho siete, seis cinco cuatro, tres dos uno. ¿Y cómo va a pagar? Con Yape. ¿Cuánto demora? Entre cuarenta y cincuenta minutos. Le mandamos el número para el Yape por mensaje. Listo, gracias. Gracias a usted, buenas noches.\"\n    }\n  ],\n  \"promocion\": {\"valor\": \"duo familiar\", \"evidencia\": \"¿Tienen alguna promoción? Sí, como lleva pollo entero con papas familiares, aplica el dúo familiar: diez soles de descuento.\"},\n  \"descuento\": {\"valor\": 10, \"evidencia\": \"¿Tienen alguna promoción? Sí, como lleva pollo entero con papas familiares, aplica el dúo familiar: diez soles de descuento.\"},\n  \"direccion_entrega\": {\"valor\": \"Calle Los Cedros doscientos cuarenta y cinco, departamento trescientos dos, Surco\", \"evidencia\": \"¿A qué dirección se lo enviamos? Calle Los Cedros doscientos cuarenta y cinco, departamento trescientos dos, en Surco.\"},\n  \"metodo_pago\": {\"valor\": \"yape\", \"evidencia\": \"¿Y cómo va a pagar? Con Yape.\"},\n  \"total_dicho\": {\"valor\": 96, \"evidencia\": \"Le confirmo el pedido: un pollo entero, una papa familiar y dos jarras de chicha morada, con el descuento del dúo familiar. El total es noventa y seis soles.\"}\n}",
+ "tiempo_s": 75.1,
+ "carga_s": 0.3,
+ "tokens_entrada": 1071,
+ "tokens_salida": 701,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:07:47"
+}

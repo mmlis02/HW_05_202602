@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "pedido",
+ "clave": "948961e46a97550c8f1b",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un pollo entero\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos gaseosas personales\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"duo familiar\",\n    \"evidencia\": \"Le repito su pedido\"\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": \"\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"\",\n    \"evidencia\": \"\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"\"\n  },\n  \"total_dicho\": {\n    \"valor\": null,\n    \"evidencia\": \"\"\n  }\n}",
+ "tiempo_s": 7.71,
+ "carga_s": 0.0,
+ "tokens_entrada": 632,
+ "tokens_salida": 219,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:21:34"
+}

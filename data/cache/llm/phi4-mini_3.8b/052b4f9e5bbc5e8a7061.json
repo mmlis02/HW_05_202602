@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "052b4f9e5bbc5e8a7061",
+ "respuesta": "{\"items\": [{\"producto\": \"pollo a la brasa\", \"tamano\": \"entero\", \"cantidad\": 1, \"evidencia\": \"pollo a la brasa (entero, medio, cuarto)\"}], \"promocion\": {\"valor\": null, \"evidencia\": null}, \"descuento\": {\"valor\": 0, \"evidencia\": \"\"}, \"direccion_entrega\": {\"valor\": \"Jirón Ucayali, 315, interior 2, en Breña\", \"evidencia\": \"Mándelo a Jirón Ucayali, 315, interior 2, en Breña.\"}, \"metodo_pago\": {\"valor\": null, \"evidencia\": \"\"}, \"total_dicho\": {\"valor\": null, \"evidencia\": \"\"}}",
+ "tiempo_s": 8.7,
+ "carga_s": 0.02,
+ "tokens_entrada": 451,
+ "tokens_salida": 176,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:18:34"
+}

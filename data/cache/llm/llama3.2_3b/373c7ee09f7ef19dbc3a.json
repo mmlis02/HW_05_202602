@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "373c7ee09f7ef19dbc3a",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"B2\",\n      \"evidencia\": \"Tengo un B2 certificado.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"disponibilidad\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"nivel_ingles\": {\n    \"valor\": \"intermedio\",\n    \"evidencia\": \"Tengo un B2 certificado.\"\n  }\n}",
+ "tiempo_s": 5.24,
+ "carga_s": 0.02,
+ "tokens_entrada": 454,
+ "tokens_salida": 170,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T15:58:49"
+}

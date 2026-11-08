@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "53917e44297dd4e63bbd",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 2,\n      \"evidencia\": \"cuarto de pollo. Mejor que sean dos cuartos de pollo.\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": \"0\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"metodo_pago\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"total_dicho\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 32.72,
+ "carga_s": 0.08,
+ "tokens_entrada": 511,
+ "tokens_salida": 226,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:09:59"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "abb309ed5b16d5e1642b",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4.5, \"evidencia\": \"cuatro años y medio\"},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [{\"valor\": \"null\", \"evidencia\": \"null\"}],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 4500, \"moneda\": \"PEN\"}, \"evidencia\": \"Me gustaría llegar a cuatro mil quinientos soles.\"},\n  \"disponibilidad\": {\"valor\": null, \"evidencia\": null},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 9.48,
+ "carga_s": 2.96,
+ "tokens_entrada": 457,
+ "tokens_salida": 155,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:02:43"
+}

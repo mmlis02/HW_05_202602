@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "2b531643b379a4e1d59a",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un pollo entero\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un medio pollo\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos papas familiares\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"1.5 litros\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos gaseosas de litro y medio\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"duo familiar\",\n    \"evidencia\": \"Como lleva pollo entero con papas familiares, tiene el dúo familiar\"\n  },\n  \"descuento\": {\n    \"valor\": 10,\n    \"evidencia\": \"diez soles de descuento\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Avenida Los Laureles dos mil doscientos setenta y uno, bloque C, departamento quinientos cuatro, en San Juan de Lehurigancho\",\n    \"evidencia\": \"Avenida Los Laureles dos mil doscientos setenta y uno, bloque C, departamento quinientos cuatro, en San Juan de Lehurigancho\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"yape\",\n    \"evidencia\": \"¿Forma de pago? Yape\"\n  },\n  \"total_dicho\": {\n    \"valor\": 131,\n    \"evidencia\": \"Le llega en una hora aproximadamente, hoy tenemos bastante demanda. No hay problema, gracias. Gracias a usted, buenas noches. Le llega en una hora aproximadamente, hoy tenemos bastante demanda. No hay problema, gracias. Gracias a usted, ciento treinta y uno, perfecto\"\n  }\n}",
+ "tiempo_s": 21.09,
+ "carga_s": 0.65,
+ "tokens_entrada": 955,
+ "tokens_salida": 480,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:10:48"
+}

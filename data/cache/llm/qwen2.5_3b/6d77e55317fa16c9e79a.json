@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "6d77e55317fa16c9e79a",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa único\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa cuarto\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa medio\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa entero\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas familiar\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas personal\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada jarra\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"gaseosa personal\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica único\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"anticuchos porción\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"mollejitas único\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": \"descuento 0\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Calle Las Begonias 1.430, San Isidro\",\n    \"evidencia\": \"Calle Las Begonias 1.430, San Isidro\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"efectivo\"\n  },\n  \"total_dicho\": {\n    \"valor\": 12.50,\n    \"evidencia\": \"total 12.50\"\n  }\n}",
+ "tiempo_s": 27.31,
+ "carga_s": 0.02,
+ "tokens_entrada": 603,
+ "tokens_salida": 713,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:30:55"
+}

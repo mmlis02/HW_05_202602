@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "00655eba3e9d02571ba4",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un pollo al abrazo entero\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un pollo entero con unas papas familiares\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Dos jarras de chicha morada\"\n    }\n  ],\n  \"promocion\": {\"valor\": \"duo familiar\", \"evidencia\": \"Como lleva pollo entero con papas familiares, aplica el dúo familiar\"},\n  \"descuento\": {\"valor\": 10, \"evidencia\": \"El descuento del dúo familiar\"},\n  \"direccion_entrega\": {\"valor\": \"Calle Los Cedros, 245, Departamento 302, Surco\", \"evidencia\": \"Calle Los Cedros, 245, Departamento 302, en Surco\"},\n  \"metodo_pago\": {\"valor\": \"yape\", \"evidencia\": \"¿Alguna referencia? Es un... Un edificio blanco frente a un parque al costado de una farmacia. Perfecto. ¿A nombre de quién y un número de contacto? A nombre de Ramírez. El número es 987-654-321. Gracias. ¿Y cómo va a pagar? Con yape. Muy bien\"},\n  \"total_dicho\": {\"valor\": 96, \"evidencia\": \"El total es 96 soles\"}\n}",
+ "tiempo_s": 15.3,
+ "carga_s": 0.0,
+ "tokens_entrada": 1071,
+ "tokens_salida": 410,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:20:14"
+}

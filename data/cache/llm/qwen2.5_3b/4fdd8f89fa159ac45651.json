@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "4fdd8f89fa159ac45651",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": null, \"evidencia\": null},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [{\"valor\": \"null\", \"evidencia\": \"null\"}],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 2000, \"moneda\": \"USD\"}, \"evidencia\": \"pido dos mil dólares mensuales\"},\n  \"disponibilidad\": {\"valor\": null, \"evidencia\": null},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 5.82,
+ "carga_s": 0.0,
+ "tokens_entrada": 617,
+ "tokens_salida": 141,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:26:14"
+}

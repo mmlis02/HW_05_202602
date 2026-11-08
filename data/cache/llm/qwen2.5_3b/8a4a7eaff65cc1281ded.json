@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "8a4a7eaff65cc1281ded",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 3, \"evidencia\": \"Trabajo como analista de datos desde 2023, o sea, tres años.\"},\n  \"ultimo_puesto\": {\"valor\": \"analista de datos senior en farmacias bienestar\", \"evidencia\": \"El cargo decía senior, pero en la práctica éramos dos analistas y yo coordinaba con el área comercial.\"},\n  \"tecnologias\": [\n    {\"valor\": \"Power BI\", \"evidencia\": \"Para los tableros, Power BI.\"},\n    {\"valor\": \"SQL Server\", \"evidencia\": \"Las consultas las hacía con SQL Server.\"},\n    {\"valor\": \"Python con pandas\", \"evidencia\": \"Para automatizar la limpieza de datos usaba Python con pandas.\"},\n    {\"valor\": \"Airflow\", \"evidencia\": \"Al final del año también armamos algunos flujos en Airflow.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 1800, \"moneda\": \"USD\"}, \"evidencia\": \"Estaba pensando en algo alrededor de $1.800 al mes.\"},\n  \"disponibilidad\": {\"valor\": \"2026-10-31\", \"evidencia\": \"Buenos días, puedo empezar de inmediato.\"},\n  \"nivel_ingles\": {\"valor\": \"avanzado\", \"evidencia\": \"Tengo un nivel avanzado. Saqué el certificado C1 hace dos años y en mi último trabajo presentaba los reportes mensuales en inglés a la gerencia de Chile y Colombia.\"}\n}",
+ "tiempo_s": 14.68,
+ "carga_s": 0.03,
+ "tokens_entrada": 1130,
+ "tokens_salida": 366,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:11:20"
+}

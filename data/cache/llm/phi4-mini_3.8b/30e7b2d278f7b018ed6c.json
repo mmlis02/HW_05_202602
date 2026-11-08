@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "30e7b2d278f7b018ed6c",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Quisiera una jarra de chicha morada y un cuarto de pollo.\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Mejor que sean dos cuartos de pollo.\"\n    }\n  ],\n  \"promocion\": {\"valor\": null, \"evidencia\": null},\n  \"descuento\": {\"valor\": 0, \"evidencia\": null},\n  \"direccion_entrega\": {\"valor\": null, \"evidencia\": null},\n  \"metodo_pago\": {\"valor\": null, \"evidencia\": null},\n  \"total_dicho\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 20.2,
+ "carga_s": 0.22,
+ "tokens_entrada": 544,
+ "tokens_salida": 203,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:37:39"
+}

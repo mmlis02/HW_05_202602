@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "dfd66e7ce3ff5fc08c5c",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un pollo entero\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Dos medios pollos\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Una porción de anticuchos\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"1.5 litros\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Una gaseosa de litro y medio\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"promo app\",\n    \"evidencia\": \"Leña 5\"\n  },\n  \"descuento\": {\n    \"valor\": 5,\n    \"evidencia\": \"Le descontamos 5 soles\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Avenida Las Gardenias, 1580, Pueblo Libre\",\n    \"evidencia\": \"Avenida Las Gardenias, 1580, en Pueblo Libre\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"¿Cómo va a pagar? En efectivo\"\n  },\n  \"total_dicho\": {\n    \"valor\": 95,\n    \"evidencia\": \"El total es 95 soles\"\n  }\n}",
+ "tiempo_s": 13.97,
+ "carga_s": 0.0,
+ "tokens_entrada": 981,
+ "tokens_salida": 373,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:18:25"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "f739f4b728f5c12532e2",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 2.5, \"evidencia\": \"un año y medio en mi primer trabajo, en una agencia y otro año en el actual\"},\n  \"ultimo_puesto\": {\"valor\": \"desarrollador front-end junior en una startup de educación\", \"evidencia\": \"Soy desarrollador front-end junior en una startup de educación\"},\n  \"tecnologias\": [\n    {\"valor\": \"React\", \"evidencia\": \"Ahora todo lo hago en React con TypeScript\"},\n    {\"valor\": \"TypeScript\", \"evidencia\": \"Ahora todo lo hago en React con TypeScript\"},\n    {\"valor\": \"Next.js\", \"evidencia\": \"El último proyecto lo migramos a Next.js\"},\n    {\"valor\": \"Figma\", \"evidencia\": \"Los diseños nos llegan en Figma\"},\n    {\"valor\": \"Jest\", \"evidencia\": \"Sí, pruebas unitarias con Jest\"},\n    {\"valor\": \"intermedio\", \"evidencia\": \"Nivel de inglés: Intermedio. Entiendo casi todo cuando leo o veo videos, pero hablando me trabo un poco.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 4800, \"moneda\": \"PEN\"}, \"evidencia\": \"Mi pretensión es 4800 soles\"},\n  \"disponibilidad\": {\"valor\": \"2026-10-32\", \"evidencia\": \"En mi contrato tengo un mes de preaviso, así que tendría que avisar y salir en un mes\"},\n  \"nivel_ingles\": {\"valor\": \"intermedio\", \"evidencia\": \"Nivel de inglés: Intermedio. Entiendo casi todo cuando leo o veo videos, pero hablando me trabo un poco.\"}\n}",
+ "tiempo_s": 15.12,
+ "carga_s": 0.03,
+ "tokens_entrada": 1049,
+ "tokens_salida": 413,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:11:52"
+}

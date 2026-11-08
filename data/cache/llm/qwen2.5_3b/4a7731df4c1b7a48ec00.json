@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "4a7731df4c1b7a48ec00",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brusa porción\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": \"0\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Jirón Ucayali, 315, interior 2, en Breña\",\n    \"evidencia\": \"Jirón Ucayali, 315, interior 2, en Breña\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"efectivo\"\n  },\n  \"total_dicho\": {\n    \"valor\": 12.50,\n    \"evidencia\": \"12.50\"\n  }\n}",
+ "tiempo_s": 28.12,
+ "carga_s": 0.02,
+ "tokens_entrada": 607,
+ "tokens_salida": 733,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:30:28"
+}

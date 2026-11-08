@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "entrevista",
+ "clave": "99e724afe1a6d7634b0c",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": null, \"evidencia\": null},\n  \"ultimo_puesto\": {\"valor\": \"ingeniera de datos\", \"evidencia\": \"Actualmente soy ingeniera de datos en una aseguradora.\"},\n  \"tecnologias\": [{\"valor\": \"ingenieria de datos\", \"evidencia\": \"Ingeniera de datos\"}],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": null, \"evidencia\": null},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 8.47,
+ "carga_s": 0.02,
+ "tokens_entrada": 391,
+ "tokens_salida": 141,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:16:07"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "606d2f12c0410983e214",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un pollo entero\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una papa familiar\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"duo familiar\",\n    \"evidencia\": \"aplica el dúo familiar\"\n  },\n  \"descuento\": {\n    \"valor\": 10,\n    \"evidencia\": \"10 soles de descuento\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Calle los cedros 245, departamento 302, Surco\",\n    \"evidencia\": \"Calle los cedros 245, departamento 302 en Surco\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"yape\",\n    \"evidencia\": \"Con yape\"\n  },\n  \"total_dicho\": {\n    \"valor\": 96,\n    \"evidencia\": \"El total es 96 soles\"\n  }\n}",
+ "tiempo_s": 12.18,
+ "carga_s": 0.0,
+ "tokens_entrada": 1058,
+ "tokens_salida": 283,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:23:58"
+}
