@@ -25,7 +25,8 @@ Qué se busca según el tipo del campo (config.yaml -> esquemas):
   grabación, dar la fecha extraída. Es una conversión de lo dicho, como "seis mil quinientos" -> 6500.
   En cambio, una suma de dos cosas dichas (E4) no es una conversión y queda sin_verificar.
 - lista_objetos (items): cada ítem por separado. Su mención ("2 jarras de chicha morada") debe aparecer,
-  y al interpretarla de nuevo debe dar el mismo producto, tamaño y cantidad. El precio es
+  y al interpretarla de nuevo, con los números en dígitos ("dos jarras" -> "2 jarras", como la evidencia de
+  una fecha), debe dar el mismo producto, tamaño y cantidad. El precio es
   verificado_carta si coincide con la carta.
 """
 
@@ -88,7 +89,7 @@ def _verificar_ausencia(evidencia, texto):
 
 def _verificar_item(item, menciones, texto):
     clave = ("producto", "tamano", "cantidad")
-    dicho = any(_aparece(m, texto) and (leido := interpretar_item(m))
+    dicho = any(_aparece(m, texto) and (leido := interpretar_item(palabras_a_numeros(m)))
                 and all(leido[k] == item[k] for k in clave) for m in menciones)
     en_carta = item["precio_unitario"] is not None and \
         item["precio_unitario"] == precio_carta(item["producto"], item["tamano"])
