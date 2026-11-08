@@ -8,7 +8,7 @@ Pasos de procesar():
    resuelto y el glosario (tecnologías + restaurante) con asr.glosario_mecanismo. Si ese mecanismo es
    null, se transcribe sin glosario.
 2. normalizar: normalizar_texto, la misma regla que usan el WER y la verificación.
-3. extraer con el método de config.yaml -> extraccion.metodo ("reglas"; "llm" más adelante).
+3. extraer con el método de config.yaml -> extraccion.metodo ("reglas" o "llm").
 4. verificar cada campo contra la transcripción.
 5. validar, solo si el esquema es "pedido": validar_total, explicar_diferencia y diagnosticar, este
    último con las palabras y su probabilidad.
