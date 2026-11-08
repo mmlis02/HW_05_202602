@@ -64,13 +64,7 @@ def llamar(transcript: str, schema: str, modelo: str | None = None) -> dict:
         version_ollama, digest y fecha.
     """
     llm = _config()["extraccion"]["llm"]
-    modelo = modelo or llm["modelo"]
-    mensajes = _mensajes(transcript, schema)
-    formato = esquema_json(schema)
-    opciones = {"temperature": llm["temperatura"], "seed": llm["semilla"], "num_ctx": llm["num_ctx"],
-                "num_predict": llm["num_predict"]}
-    clave = hashlib.sha256(json.dumps([modelo, mensajes, formato, opciones], ensure_ascii=False,
-                                      sort_keys=True).encode()).hexdigest()[:20]
+    modelo, mensajes, formato, opciones, clave = _peticion(transcript, schema, modelo)
     ruta = _ruta_cache(modelo, clave)
     if ruta.exists():
         return json.loads(ruta.read_text(encoding="utf-8"))
@@ -94,6 +88,12 @@ def llamar(transcript: str, schema: str, modelo: str | None = None) -> dict:
     ruta.parent.mkdir(parents=True, exist_ok=True)
     ruta.write_text(json.dumps(registro, ensure_ascii=False, indent=1), encoding="utf-8")
     return registro
+
+
+def en_cache(transcript: str, schema: str, modelo: str | None = None) -> bool:
+    """Si la respuesta ya está en la caché: así un notebook puede leerla sin llamar nunca a Ollama."""
+    modelo, *_, clave = _peticion(transcript, schema, modelo)
+    return _ruta_cache(modelo, clave).exists()
 
 
 def esquema_json(schema: str) -> dict:
@@ -136,6 +136,19 @@ def esquema_json(schema: str) -> dict:
     else:
         raise ValueError(f"esquema desconocido: {schema!r}")
     return {"type": "object", "properties": propiedades, "required": list(propiedades)}
+
+
+def _peticion(transcript, schema, modelo):
+    """Modelo, mensajes, esquema, opciones y la clave de caché que los resume."""
+    llm = _config()["extraccion"]["llm"]
+    modelo = modelo or llm["modelo"]
+    mensajes = _mensajes(transcript, schema)
+    formato = esquema_json(schema)
+    opciones = {"temperature": llm["temperatura"], "seed": llm["semilla"], "num_ctx": llm["num_ctx"],
+                "num_predict": llm["num_predict"]}
+    clave = hashlib.sha256(json.dumps([modelo, mensajes, formato, opciones], ensure_ascii=False,
+                                      sort_keys=True).encode()).hexdigest()[:20]
+    return modelo, mensajes, formato, opciones, clave
 
 
 def _mensajes(transcript, schema):
