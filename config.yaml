@@ -337,6 +337,9 @@ esquemas:
 extraccion:
   metodos: [reglas, llm]
   metodo: reglas                 # el que usa src/engine.py: "reglas" o "llm"
+  # Con metodo "reglas", estos campos se toman del LLM; si el LLM falla, queda el de las reglas.
+  # Es el único campo en que el LLM supera a las reglas con audio real (06_resultados, sección 6.7).
+  campos_llm: [pretension_salarial]
   # Marcadores de src/extraccion_reglas.py. La transcripción no trae hablantes: una pregunta se
   # reconoce por sus palabras clave y su respuesta son las oraciones siguientes, hasta la próxima
   # pregunta ("?") o hasta `ventana_respuesta` oraciones.

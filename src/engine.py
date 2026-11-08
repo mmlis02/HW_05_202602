@@ -8,7 +8,8 @@ Pasos de procesar():
    resuelto y el glosario (tecnologías + restaurante) con asr.glosario_mecanismo. Si ese mecanismo es
    null, se transcribe sin glosario.
 2. normalizar: normalizar_texto, la misma regla que usan el WER y la verificación.
-3. extraer con el método de config.yaml -> extraccion.metodo ("reglas" o "llm").
+3. extraer con extraer_registro: el método de config.yaml -> extraccion.metodo ("reglas" o "llm") y, si es
+   "reglas", los campos de extraccion.campos_llm con el LLM (ver extraer_registro).
 4. verificar cada campo contra la transcripción.
 5. validar, solo si el esquema es "pedido": validar_total, explicar_diferencia y diagnosticar, este
    último con las palabras y su probabilidad.
@@ -21,7 +22,7 @@ from functools import cache
 
 from src.config import cargar_config
 
-__all__ = ["procesar"]
+__all__ = ["procesar", "extraer_registro"]
 
 
 def procesar(audio_path: str, schema: str) -> dict:
@@ -67,7 +68,7 @@ def procesar(audio_path: str, schema: str) -> dict:
         salida["transcript_normalizado"] = normalizar_texto(transcripcion["texto"])
 
         paso = "extraer"
-        campos = _extractor(cfg["extraccion"]["metodo"])(transcripcion["texto"], schema)
+        campos = extraer_registro(transcripcion["texto"], schema)
         salida["campos"] = campos
 
         paso = "verificar"
@@ -85,6 +86,28 @@ def procesar(audio_path: str, schema: str) -> dict:
         salida["error"] = f"{paso}: {type(e).__name__}: {e}"
     salida["tiempo_s"] = round(time.perf_counter() - inicio, 3)
     return salida
+
+
+def extraer_registro(transcript: str, schema: str) -> dict:
+    """El registro que usa el motor: extraccion.metodo y, sobre las reglas, los campos de extraccion.campos_llm.
+
+    Con metodo "reglas", los campos de campos_llm que pertenecen al esquema se toman del LLM; si el LLM no
+    devuelve ese campo (Ollama caído, JSON inválido), se queda el de las reglas con el error del LLM en
+    "error_llm". Cada campo lleva "metodo" con el camino del que salió. La verificación no cambia.
+    """
+    extraccion = _config()["extraccion"]
+    campos = _extractor(extraccion["metodo"])(transcript, schema)
+    for dato in campos.values():
+        dato["metodo"] = extraccion["metodo"]
+    pedidos = [c for c in extraccion.get("campos_llm") or [] if c in campos]
+    if extraccion["metodo"] == "reglas" and pedidos:
+        del_llm = _extractor("llm")(transcript, schema)
+        for campo in pedidos:
+            if del_llm[campo].get("error"):
+                campos[campo]["error_llm"] = del_llm[campo]["error"]
+            else:
+                campos[campo] = {**del_llm[campo], "metodo": "llm"}
+    return campos
 
 
 def _extractor(metodo):
