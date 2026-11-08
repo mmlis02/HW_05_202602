@@ -38,6 +38,10 @@ rutas:
   registro_por_clip: data/resultados/registro_por_clip.csv            # WER y campos correctos por corrida y clip (06)
   validacion_audio: data/resultados/validacion_audio.csv              # validación de las llamadas por corrida (06)
   figura_wer_registro: data/resultados/wer_contra_registro.png        # gráfico WER contra registro (06)
+  # Piloto del LLM, ronda 1 (prompts anteriores a la revisión): por variante y modelo, y tecnologías inventadas (03).
+  llm_piloto_ronda1: data/resultados/llm_piloto_ronda1.csv
+  llm_piloto_ronda1_tecnologias: data/resultados/llm_piloto_ronda1_tecnologias.csv
+  registro_llm: data/resultados/registro_llm.csv                      # reglas contra LLM por corrida, clip y campo (06)
   # Las mismas tablas con la versión 1 de las reglas (PR #7); el notebook 06 comprueba que las reproduce.
   registro_por_campo_v1: data/resultados/registro_por_campo_v1.csv
   registro_por_clip_v1: data/resultados/registro_por_clip_v1.csv
@@ -54,6 +58,9 @@ archivos:
 # Transcripciones guardadas como JSON, una por clip y corrida: <cache_dir>/<patron_transcripcion>.
 cache:
   patron_transcripcion: "transcripciones/{corrida}/{clip}.json"
+  # Respuestas del LLM, commiteadas: los notebooks y la app no vuelven a llamar al modelo. La clave es un
+  # hash del modelo, los prompts, el esquema JSON, las opciones y la transcripción (src/extraccion_llm.py).
+  patron_llm: "llm/{modelo}/{clave}.json"
 
 # Colab. En Drive, salidas/ replica data/: al terminar, salidas/cache -> data/cache y
 # salidas/resultados -> data/resultados.
@@ -329,7 +336,7 @@ esquemas:
 
 extraccion:
   metodos: [reglas, llm]
-  metodo: reglas                 # el que usa src/engine.py; "llm" cuando exista src/extraccion_llm.py
+  metodo: reglas                 # el que usa src/engine.py: "reglas" o "llm"
   # Marcadores de src/extraccion_reglas.py. La transcripción no trae hablantes: una pregunta se
   # reconoce por sus palabras clave y su respuesta son las oraciones siguientes, hasta la próxima
   # pregunta ("?") o hasta `ventana_respuesta` oraciones.
@@ -365,44 +372,70 @@ extraccion:
       pregunta_pago: [cómo va a pagar, cómo paga, cómo desea pagar, forma de pago, método de pago]
       tipos_via: [Calle, Avenida, Av, Jirón, Jr, Pasaje, Malecón, Prolongación, Carretera]
       complementos_direccion: [departamento, dpto, interior, oficina, piso, bloque, manzana, lote, torre]
+  # Segundo camino: un LLM local en Ollama, con salida estructurada (esquema JSON). src/extraccion_llm.py.
   llm:
-    proveedor: anthropic
-    modelo: claude-haiku-5-5
+    proveedor: ollama
+    url: http://localhost:11434
+    modelo: qwen2.5:3b             # elegido en el piloto (03_extraccion, sección 4.1); justificación en el README
+    # Probados en el piloto de 03_extraccion (variantes que no son del corpus); ver README.
+    candidatos: [llama3.2:3b, qwen2.5:3b, phi4-mini:3.8b]
     temperatura: 0
-    max_tokens: 1500
-    variable_api_key: ANTHROPIC_API_KEY
+    semilla: 42
+    num_ctx: 4096                  # la entrevista más larga (E1) ocupa ~1050 tokens de entrada y ~350 de salida
+    num_predict: 2048
+    max_tecnologias: 15            # tope de la lista en el esquema JSON: sin él, un modelo puede repetir sin fin
+    max_items: 12
+    keep_alive: 10m
+    timeout_s: 600
+  # Prompts del LLM. La transcripción llega como la entrega Whisper: sin hablantes ni turnos.
+  # Ronda 2 del piloto: se agregaron "solo lo que se dice", la lista de tecnologías vacía, la moneda por
+  # defecto, el cálculo de la fecha y el formato de la dirección (03_extraccion, sección 4.1). Desde ahí
+  # quedaron fijos: el corpus no se usó para escribirlos.
   prompts:
     sistema: |
       Eres un extractor de datos. Lees la transcripción automática de una conversación en español
-      y devuelves solo un objeto JSON válido, sin texto adicional.
+      y devuelves solo el objeto JSON pedido.
       Reglas:
+      - La transcripción no indica quién habla: dedúcelo por el contenido.
       - Para cada campo devuelve "valor" y "evidencia". "evidencia" es el fragmento EXACTO de la
-        transcripción del que sale el valor, copiado carácter por carácter.
-      - No corrijas la transcripción. Si una palabra parece mal oída, cópiala tal cual.
+        transcripción del que sale el valor, copiado carácter por carácter, sin cambiar ni corregir nada.
+      - No corrijas la transcripción. Si una palabra parece mal oída, cópiala tal cual, también en el valor.
       - Si un campo no se dice, devuelve null en "valor" y en "evidencia".
-      - Si el hablante se corrige, vale lo último que dice.
+      - Si alguien se corrige ("no, perdón", "mejor"), vale lo último que dice.
+      - Los números van en dígitos.
+      - Extrae solo lo que la transcripción dice. Nunca agregues valores que no aparecen en ella.
+      - La evidencia es corta: la frase mínima que contiene el valor.
     entrevista: |
-      Transcripción de una entrevista de trabajo. A entrevista, B es el candidato.
+      Transcripción de una entrevista de trabajo entre un entrevistador y un candidato.
       Fecha de la grabación: {fecha_grabacion}.
-      Extrae del candidato:
-      - anios_experiencia: número de años de experiencia total.
-      - ultimo_puesto: cargo actual o último cargo.
-      - tecnologias: lista de tecnologías que usa hoy (no las que abandonó).
-      - pretension_salarial: {{"monto": número, "moneda": "PEN" o "USD"}}. Es lo que pide, no lo que
-        gana hoy. Si da un rango y un ideal, vale el ideal.
-      - disponibilidad: fecha absoluta AAAA-MM-DD en que puede empezar, calculada desde la fecha de grabación.
-      - nivel_ingles: una de basico, intermedio, avanzado.
+      Extrae los datos del candidato:
+      - anios_experiencia: años de experiencia total del candidato, como número (4.5 si dice "cuatro años y medio").
+      - ultimo_puesto: su cargo actual o el último, tal como lo nombra.
+      - tecnologias: las tecnologías (lenguajes, herramientas, plataformas) que la transcripción nombra y que
+        usa hoy, cada una una sola vez y con su evidencia. No incluyas las que dejó de usar. Si no nombra
+        ninguna, devuelve una lista vacía.
+      - pretension_salarial: lo que pide ganar, no lo que gana hoy: {{"monto": número, "moneda": "PEN" o "USD"}}.
+        Si da un rango y un ideal, vale el ideal. USD si dice dólares o $; PEN si dice soles o S/, o si no
+        dice moneda.
+      - disponibilidad: fecha en que puede empezar, en formato AAAA-MM-DD. "de inmediato" es la fecha de
+        grabación; "en N días/semanas/meses" o "N meses de preaviso" se suman a la fecha de grabación; un día
+        y un mes ("15 de noviembre") son la próxima fecha con ese día y mes desde la grabación.
+      - nivel_ingles: basico, intermedio o avanzado.
       Transcripción:
       {transcript}
     pedido: |
-      Transcripción de una llamada de pedido a la pollería La Leña Dorada. A es el vendedor, B el cliente.
-      Extrae el pedido FINAL (después de cualquier corrección del cliente):
-      - items: lista de {{"producto", "tamano", "cantidad", "precio_unitario"}}.
-      - promocion: nombre de la promoción aplicada o null.
-      - descuento: monto del descuento en soles (0 si no hay).
-      - direccion_entrega: dirección final con números en dígitos.
-      - metodo_pago: uno de efectivo, yape, plin, tarjeta.
-      - total_dicho: total que dice el vendedor en voz alta, aunque esté mal sumado.
+      Transcripción de una llamada de pedido a la pollería La Leña Dorada, entre el vendedor y un cliente.
+      Productos de la carta y sus tamaños: {productos}.
+      Extrae el pedido FINAL, después de cualquier corrección:
+      - items: cada producto pedido con "producto", "tamano", "cantidad" y "evidencia" (la mención de ese
+        producto en la transcripción). El precio no se pide: sale de la carta.
+      - promocion: duo familiar, promo app o null.
+      - descuento: monto del descuento en soles; 0 si no hay.
+      - direccion_entrega: la dirección final con este formato: tipo de vía, nombre y número en dígitos;
+        después cada complemento (departamento, interior, piso, bloque) con su número; al final el distrito.
+        Separados por comas, sin "en". Ejemplo: "Pasaje Las Rosas 88, piso 3, Breña".
+      - metodo_pago: efectivo, yape, plin o tarjeta.
+      - total_dicho: el total que dice el vendedor, aunque esté mal sumado.
       Transcripción:
       {transcript}
 
