@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "744c3b2bd4226ec36744",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa (entero, medio, cuarto)\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas (familiar, personal)\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada (jarra, vaso)\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"1.5 litros\",\n      \"cantidad\": 1,\n      \"evidencia\": \"gaseosa (1.5 litros, personal)\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica (único)\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"anticuchos (porción)\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"mollejitas (único)\"\n    },\n    {\n      \"producto\": \"torta de chocolate\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"torta de chocolate (porción)\"\n    }\n  ],\n  \"promocion\": {\"valor\": null, \"evidencia\": null},\n  \"descuento\": {\"valor\": 0, \"evidencia\": null},\n  \"direccion_entrega\": {\"valor\": \"Avenida Arequipa, 1250, departamento 801, en Lince, Lince\", \"evidencia\": \"La dirección es Avenida Arequipa, 1250, departamento 801, en Lince.\"},\n  \"metodo_pago\": {\"valor\": null, \"evidencia\": null},\n  \"total_dicho\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 61.81,
+ "carga_s": 0.62,
+ "tokens_entrada": 538,
+ "tokens_salida": 509,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:44:11"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "3b061b8672b277c415a2",
+ "respuesta": "{\"items\": [{\"producto\": \"pollo a la brasa\", \"tamano\": \"entero\", \"cantidad\": 1, \"evidencia\": \"no se menciona el tamaño ni la cantidad\"}], \"promocion\": {\"valor\": null, \"evidencia\": \"no se menciona ninguna promoción\"},\"descuento\": {\"valor\": 0, \"evidencia\": \"no se menciona ningún descuento\"},\"direccion_entrega\": {\"valor\": \"Jr. Huallaga trescientos diez, piso dos, en Cercado de Lima\", \"evidencia\": \"Jr. Huallaga trescientos diez, piso dos, en Cercado de Lima\"},\"metodo_pago\": {\"valor\": null, \"evidencia\": \"no se menciona el método de pago\"},\"total_dicho\": {\"valor\": null, \"evidencia\": \"no se menciona el total\"}}",
+ "tiempo_s": 12.81,
+ "carga_s": 0.04,
+ "tokens_entrada": 450,
+ "tokens_salida": 195,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:16:48"
+}

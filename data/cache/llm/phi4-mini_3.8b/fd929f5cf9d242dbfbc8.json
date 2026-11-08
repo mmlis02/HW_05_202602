@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "entrevista",
+ "clave": "fd929f5cf9d242dbfbc8",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": null, \"evidencia\": null},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [{\"valor\": \"PEN\", \"evidencia\": \"cuatro mil quinientos soles\"}],\n  \"pretension_salarial\": {\"valor\": null, \"evidencia\": null},\n  \"disponibilidad\": {\"valor\": \"2023-11-15\", \"evidencia\": \"de inmediato\"},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 58.85,
+ "carga_s": 13.32,
+ "tokens_entrada": 556,
+ "tokens_salida": 134,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:32:19"
+}

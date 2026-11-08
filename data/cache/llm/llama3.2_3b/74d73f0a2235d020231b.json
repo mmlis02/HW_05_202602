@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "pedido",
+ "clave": "74d73f0a2235d020231b",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa (entero, medio, cuarto)\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas (familiar, personal)\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada (jarra, vaso)\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"gaseosa (1.5 litros, personal)\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica (único)\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"anticuchos (porción)\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"molejitas (único)\"\n    },\n    {\n      \"producto\": \"torta de chocolate\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"torta de chocolate (porción)\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"duo familiar\",\n    \"evidencia\": \"duo familiar\"\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": \"no se menciona\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Pasaje Jirón Ucayali, 315, interior 2, Breña\",\n    \"evidencia\": \"Mándelo a Jirón Ucayali, 315, interior 2, en Breña.\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"no se menciona\"\n  },\n  \"total_dicho\": {\n    \"valor\": null,\n    \"evidencia\": \"no se menciona\"\n  }\n}",
+ "tiempo_s": 25.53,
+ "carga_s": 0.02,
+ "tokens_entrada": 618,
+ "tokens_salida": 562,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:25:10"
+}

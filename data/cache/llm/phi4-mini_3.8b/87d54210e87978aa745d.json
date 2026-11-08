@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "87d54210e87978aa745d",
+ "respuesta": "{\"items\": [{\"producto\": \"pollo a la brasa\", \"tamano\": \"entero\", \"cantidad\": 1, \"evidencia\": \"un pollo entero y dos gaseosas personales. Le repito su pedido: un pollo entero y dos gaseosas personales.\"}], \"promocion\": {\"valor\": null, \"evidencia\": null}, \"descuento\": {\"valor\": 0, \"evidencia\": null}, \"direccion_entrega\": {\"valor\": null, \"evidencia\": null}, \"metodo_pago\": {\"valor\": null, \"evidencia\": null}, \"total_dicho\": {\"valor\": null, \"evidencia\": null}}",
+ "tiempo_s": 10.15,
+ "carga_s": 0.02,
+ "tokens_entrada": 455,
+ "tokens_salida": 145,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:16:26"
+}

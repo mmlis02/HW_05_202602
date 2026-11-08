@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "01916636bd46bce8319e",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": 2,\n    \"evidencia\": \"dos mil diecinueve\"\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"Java\",\n      \"evidencia\": \"Java\"\n    },\n    {\n      \"valor\": \"Spring\",\n      \"evidencia\": \"Spring\"\n    },\n    {\n      \"valor\": \"MySQL\",\n      \"evidencia\": \"MySQL\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": {\n      \"monto\": 60000,\n      \"moneda\": \"PEN\"\n    },\n    \"evidencia\": \"seis mil soles\"\n  },\n  \"disponibilidad\": {\n    \"valor\": \"2026-11-15\",\n    \"evidencia\": \"15 de noviembre\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": \"basico\",\n    \"evidencia\": \"basico\"\n  }\n}",
+ "tiempo_s": 6.48,
+ "carga_s": 0.0,
+ "tokens_entrada": 631,
+ "tokens_salida": 238,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:20:52"
+}

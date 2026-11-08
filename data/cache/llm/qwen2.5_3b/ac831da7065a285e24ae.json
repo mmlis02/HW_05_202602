@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "ac831da7065a285e24ae",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un pollo entero\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un medio pollo\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos papas familiares\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos caciosas de litro y medio\"\n    }\n  ],\n  \"promocion\": {\"valor\": \"duo familiar\", \"evidencia\": \"el dúo familiar\"},\n  \"descuento\": {\"valor\": 10, \"evidencia\": \"10 soles de descuento\"},\n  \"direccion_entrega\": {\"valor\": \"Pasaje Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho\", \"evidencia\": \"Ha venido a los laureles 2271. Bloque C. Departamento 504. Forma de pago. Ya pe. Muy bien, le confirmo. Un pollo entero, un medio pollo, dos papas familiares y dos caciosas de litro y medio con el dúo familiar. El total es 131 soles. 2271. Bloque C. Departamento 504. Forma de pago. Ya pe. Muy bien, le confirmo. Un pollo entero, un medio pollo, dos papas familiares y dos caciosas de litro y medio con el dúo familiar. El total es 131, perfecto. Le llegué en una hora aproximadamente. Hoy tenemos bastante demanda. No hay problema, gracias. Eso es todo. Buenas noches.\"},\n  \"metodo_pago\": {\"valor\": \"tarjeta\", \"evidencia\": \"Muy bien, le confirmo. Un pollo entero, un medio pollo, dos papas familiares y dos caciosas de litro y medio con el dúo familiar. El total es 131, perfecto. Le llegué en una hora aproximadamente. Hoy tenemos bastante demanda. No hay problema, gracias. Eso es todo. Buenas noches.\"},\n  \"total_dicho\": {\"valor\": 131, \"evidencia\": \"El total es 131, perfecto. Le llegué en una hora aproximadamente. Hoy tenemos bastante demanda. No hay problema, gracias. Eso es todo. Buenas noches.\"}\n}",
+ "tiempo_s": 24.79,
+ "carga_s": 0.0,
+ "tokens_entrada": 946,
+ "tokens_salida": 637,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:25:12"
+}

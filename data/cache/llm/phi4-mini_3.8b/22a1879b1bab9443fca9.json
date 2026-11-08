@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "entrevista",
+ "clave": "22a1879b1bab9443fca9",
+ "respuesta": "{\"anios_experiencia\": {\"valor\": 3.5, \"evidencia\": \"Tengo 3.5 años programando.\"}, \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null}, \"tecnologias\": [{\"valor\": \"programación\", \"evidencia\": \"Tengo 3.5 años programando.\"}], \"pretension_salarial\": {\"valor\": null, \"evidencia\": null}, \"disponibilidad\": {\"valor\": null, \"evidencia\": null}, \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}}",
+ "tiempo_s": 6.45,
+ "carga_s": 0.02,
+ "tokens_entrada": 397,
+ "tokens_salida": 131,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:17:28"
+}

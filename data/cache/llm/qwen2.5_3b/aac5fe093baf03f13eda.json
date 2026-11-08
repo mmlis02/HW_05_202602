@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "aac5fe093baf03f13eda",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4, \"evidencia\": \"cuatro años\"},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [\n    {\"valor\": \"Python\", \"evidencia\": \"Python\"},\n    {\"valor\": \"Java\", \"evidencia\": \"Java\"},\n    {\"valor\": \"HTML\", \"evidencia\": \"HTML\"},\n    {\"valor\": \"CSS\", \"evidencia\": \"CSS\"},\n    {\"valor\": \"JavaScript\", \"evidencia\": \"JavaScript\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 1500, \"moneda\": \"PEN\"}, \"evidencia\": \"1500 PEN\"},\n  \"disponibilidad\": {\"valor\": \"2026-10-31\", \"evidencia\": \"2026-10-31\"},\n  \"nivel_ingles\": {\"valor\": \"intermedio\", \"evidencia\": \"intermedio\"}\n}",
+ "tiempo_s": 9.68,
+ "carga_s": 0.04,
+ "tokens_entrada": 447,
+ "tokens_salida": 233,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:06:01"
+}

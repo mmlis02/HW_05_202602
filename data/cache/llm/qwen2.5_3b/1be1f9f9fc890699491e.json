@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "1be1f9f9fc890699491e",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 3,\n      \"evidencia\": \"Tres cuartos de pollo, cada uno con su papa personal.\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 3,\n      \"evidencia\": \"Tres papas personales a siete.\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 3,\n      \"evidencia\": \"Tres gaseosas personales.\"\n    },\n    {\n      \"producto\": \"torta de chocolate\",\n      \"tamano\": \"único\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Dos porciones de torta de chocolate.\"\n    }\n  ],\n  \"promocion\": {\"valor\": null, \"evidencia\": \"No, ninguno.\"},\n  \"descuento\": {\"valor\": 0, \"evidencia\": \"No, ninguno.\"},\n  \"direccion_entrega\": {\"valor\": \"Girón, Los Halcones, 1034, interior 5, en Jesús María.\", \"evidencia\": \"Girón, Los Halcones, 1034, interior 5, en Jesús María.\"},\n  \"metodo_pago\": {\"valor\": \"tarjeta\", \"evidencia\": \"¿A qué dirección? Girón, Los Halcones, 1034, interior 5. No, perdón, me equivoqué. Es 1034, interior 5, en Jesús María. ¿Qué diría? 1034, interior 5, forma de Pau. Con tarjeta.\"},\n  \"total_dicho\": {\"valor\": 121, \"evidencia\": \"¿Qué es su total? Su total es 121.\"}\n}",
+ "tiempo_s": 14.38,
+ "carga_s": 0.03,
+ "tokens_entrada": 1003,
+ "tokens_salida": 436,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:13:06"
+}

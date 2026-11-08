@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "pedido",
+ "clave": "2809bd3394586d843014",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa (entero, medio, cuarto);\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas (familiar, personal);\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada (jarra, vaso);\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"gaseosa (1.5 litros, personal);\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica (único);\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"anticuchos (porción);\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"molejitas (único);\"\n    },\n    {\n      \"producto\": \"torta de chocolate\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"torta de chocolate (porción);\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"duo familiar\",\n    \"evidencia\": \"promo app o null\"\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": null\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Avenida Arequipa, 1250, departamento 801, en Lince\",\n    \"evidencia\": \"La dirección es Avenida Arequipa, 1250, departamento 801, en Lince.\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": null\n  },\n  \"total_dicho\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 21.13,
+ "carga_s": 0.02,
+ "tokens_entrada": 515,
+ "tokens_salida": 555,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:01:24"
+}

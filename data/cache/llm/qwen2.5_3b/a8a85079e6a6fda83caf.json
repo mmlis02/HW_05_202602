@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "a8a85079e6a6fda83caf",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 8, \"evidencia\": \"En infraestructura, 8. Casi 9 porque cumplo 9 en marzo, pero digamos 8.\"},\n  \"ultimo_puesto\": {\"valor\": \"jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur\", \"evidencia\": \"Hoy soy jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur.\"},\n  \"tecnologias\": [\n    {\"valor\": \"AWS\", \"evidencia\": \"Todo está en AWS.\"},\n    {\"valor\": \"Kubernetes\", \"evidencia\": \"Los clústeres corren en Kubernetes, la infraestructura la definimos con Terraform.\"},\n    {\"valor\": \"Terraform\", \"evidencia\": \"La infraestructura la definimos con Terraform.\"},\n    {\"valor\": \"Jenkins\", \"evidencia\": \"Los despliegues van por Jenkins.\"},\n    {\"valor\": \"Grafana\", \"evidencia\": \"El monitoreo lo tenemos en Grafana.\"},\n    {\"valor\": \"Nacos\", \"evidencia\": \"Antes usábamos Nacos, pero lo pagamos el año pasado.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 9500, \"moneda\": \"PEN\"}, \"evidencia\": \"Estoy entre 9 y 10 mil soles, idealmente 9.500.\"},\n  \"disponibilidad\": {\"valor\": \"2026-11-01\", \"evidencia\": \"A partir del 1 de diciembre estaría libre.\"},\n  \"nivel_ingles\": {\"valor\": \"basico\", \"evidencia\": \"Bien. Básico, la verdad.\"}\n}",
+ "tiempo_s": 14.65,
+ "carga_s": 0.02,
+ "tokens_entrada": 1110,
+ "tokens_salida": 403,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:19:45"
+}

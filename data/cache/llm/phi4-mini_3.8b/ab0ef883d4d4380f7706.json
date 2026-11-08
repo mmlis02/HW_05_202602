@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "ab0ef883d4d4380f7706",
+ "respuesta": "{\"items\": [], \"promocion\": {\"valor\": \"duo familiar\", \"evidencia\": \"duo familiar, promo app\"}, \"descuento\": {\"valor\": 0, \"evidencia\": null}, \"direccion_entrega\": {\"valor\": null, \"evidencia\": null}, \"metodo_pago\": {\"valor\": \"yape\", \"evidencia\": \"¿o aceptan Plin? Con Yape, ¿o aceptan Plin?\"},\"total_dicho\": {\"valor\": null, \"evidencia\": null}}",
+ "tiempo_s": 7.63,
+ "carga_s": 0.04,
+ "tokens_entrada": 444,
+ "tokens_salida": 120,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:16:56"
+}

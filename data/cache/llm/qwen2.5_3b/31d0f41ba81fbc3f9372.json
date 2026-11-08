@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "31d0f41ba81fbc3f9372",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un medio pollo a la brasa\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una ensalada clásica\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una de mollejitas\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una porción de anticuchos\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"vaso\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Dos vasos de hechicha morada\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"promo app\",\n    \"evidencia\": \"Leña 5. Perfecto, 5 soles de descuento.\"\n  },\n  \"descuento\": {\n    \"valor\": 5,\n    \"evidencia\": \"5 soles de descuento.\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Calle las orquídeas 418, oficina 702, Miraflores\",\n    \"evidencia\": \"Calle las orquídeas 418, oficina 702, Miraflores\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"plin\",\n    \"evidencia\": \"¿Cómo paga? Con plim.\"\n  },\n  \"total_dicho\": {\n    \"valor\": 85,\n    \"evidencia\": \"El total es 85 soles.\"\n  }\n}",
+ "tiempo_s": 18.28,
+ "carga_s": 0.03,
+ "tokens_entrada": 971,
+ "tokens_salida": 444,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:28:29"
+}

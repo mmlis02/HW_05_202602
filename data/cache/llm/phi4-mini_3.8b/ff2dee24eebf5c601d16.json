@@ -1,0 +1,14 @@
+{
+ "modelo": "phi4-mini:3.8b",
+ "esquema": "pedido",
+ "clave": "ff2dee24eebf5c601d16",
+ "respuesta": "{\"items\": [{\"producto\": \"pollo a la brasa\", \"tamano\": \"entero\", \"cantidad\": 1, \"evidencia\": \"no se menciona el tamaño ni la cantidad\"}], \"promocion\": {\"valor\": null, \"evidencia\": \"no se menciona ninguna promoción\"},\"descuento\": {\"valor\": 0, \"evidencia\": \"no se menciona ningún descuento\"},\"direccion_entrega\": {\"valor\": \"Avenida Arequipa, 1250, departamento 801, en Lince\", \"evidencia\": \"La dirección es Avenida Arequipa, 1250, departamento 801, en Lince.\"}, \"metodo_pago\": {\"valor\": null, \"evidencia\": \"no se menciona el método de pago\"},\"total_dicho\": {\"valor\": null, \"evidencia\": \"no se menciona el total\"}}",
+ "tiempo_s": 10.68,
+ "carga_s": 0.02,
+ "tokens_entrada": 448,
+ "tokens_salida": 194,
+ "memoria_mb": 2957,
+ "version_ollama": "0.40.15",
+ "digest": "78fad5d182a7c33065e153a5f8ba210754207ba9d91973f57dffa7f487363753",
+ "fecha": "2026-11-07T16:18:25"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "ea22ff7383d9d2a3e527",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4.5, \"evidencia\": \"cuatro años y medio\"},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 1500, \"moneda\": \"USD\"}, \"evidencia\": \"Unos $1.500 dólares mensuales.\"},\n  \"disponibilidad\": {\"valor\": \"2026-10-31\", \"evidencia\": \"Fecha de grabación\"},\n  \"nivel_ingles\": {\"valor\": null, \"evidencia\": null}\n}",
+ "tiempo_s": 8.13,
+ "carga_s": 0.02,
+ "tokens_entrada": 622,
+ "tokens_salida": 153,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:29:12"
+}

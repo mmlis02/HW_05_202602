@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "2f03e49ea814ddfea58d",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 6.5, \"evidencia\": \"Empecé como tester manual en 2020, así que ya van seis años, los últimos dos como líder.\"},\n  \"ultimo_puesto\": {\"valor\": \"lider técnico de QA\", \"evidencia\": \"Tengo a cargo a cuatro testers y defino la estrategia de pruebas de la tienda web y de la app.\"},\n  \"tecnologias\": [\n    {\"valor\": \"Cypress\", \"evidencia\": \"Para automatización web, Cypress.\"},\n    {\"valor\": \"Subinium\", \"evidencia\": \"Antes usábamos Subinium y todavía mantenemos algunas pruebas viejas ahí.\"},\n    {\"valor\": \"Postman\", \"evidencia\": \"Las pruebas de API las hacemos en Postman.\"},\n    {\"valor\": \"gira\", \"evidencia\": \"El seguimiento de efectos está en gira.\"},\n    {\"valor\": \"Jmitre\", \"evidencia\": \"Algo con Jmitre, pero muy puntual, una o dos veces al año antes de las campañas grandes.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 7000, \"moneda\": \"PEN\"}, \"evidencia\": \"mi pretensión es de 7.000 soles lutos mensuales.\"},\n  \"disponibilidad\": {\"valor\": \"2026-12-18\", \"evidencia\": \"Podría empezar la segunda semana de enero, el 1 es 11.\"},\n  \"nivel_ingles\": {\"valor\": \"intermedio\", \"evidencia\": \"Bien, viví dos años en Toronto por trabajo, así que lo uso de consultura, diría que avanzado.\"}\n}",
+ "tiempo_s": 17.95,
+ "carga_s": 0.03,
+ "tokens_entrada": 1060,
+ "tokens_salida": 402,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:26:56"
+}

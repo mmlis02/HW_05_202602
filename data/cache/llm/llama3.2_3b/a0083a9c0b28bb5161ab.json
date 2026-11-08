@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "a0083a9c0b28bb5161ab",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"ultimo_puesto\": {\n    \"valor\": \"analista semi-senior\",\n    \"evidencia\": \"Actualmente soy analista semi-senior en un banco.\"\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"null\",\n      \"evidencia\": \"null\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"disponibilidad\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 11.38,
+ "carga_s": 0.02,
+ "tokens_entrada": 624,
+ "tokens_salida": 171,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:24:10"
+}

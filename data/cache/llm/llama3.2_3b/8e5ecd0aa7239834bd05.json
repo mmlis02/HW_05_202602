@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "8e5ecd0aa7239834bd05",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"Java\",\n      \"evidencia\": \"hoy gano 3.900.\"\n    },\n    {\n      \"valor\": \"Spring\",\n      \"evidencia\": \"hoy gano 3.900.\"\n    },\n    {\n      \"valor\": \"MySQL\",\n      \"evidencia\": \"hoy gano 3.900.\"\n    },\n    {\n      \"valor\": \"Python\",\n      \"evidencia\": \"busco unos 4.600 soles.\"\n    },\n    {\n      \"valor\": \"Django\",\n      \"evidencia\": \"busco unos 4.600 soles.\"\n    },\n    {\n      \"valor\": \"AWS\",\n      \"evidencia\": \"busco unos 4.600 soles.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": {\n      \"monto\": 4600,\n      \"moneda\": \"PEN\"\n    },\n    \"evidencia\": \"busco unos 4.600 soles.\"\n  },\n  \"disponibilidad\": {\n    \"valor\": \"2026-11-01\",\n    \"evidencia\": \"de inmediato\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 13.28,
+ "carga_s": 0.0,
+ "tokens_entrada": 638,
+ "tokens_salida": 336,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:22:52"
+}

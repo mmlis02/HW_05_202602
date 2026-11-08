@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "e835d81bf74cf03a9a5d",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 6.5, \"evidencia\": \"Empecé como tester manual en 2020, así que ya van 6 años. Los últimos dos como líder.\"},\n  \"ultimo_puesto\": {\"valor\": \"lider técnico de QA\", \"evidencia\": \"Soy líder técnico de QA en una empresa de comercio electrónico.\"},\n  \"tecnologias\": [\n    {\"valor\": \"Cypress\", \"evidencia\": \"Para automatización web, Cypress.\"},\n    {\"valor\": \"Selenium\", \"evidencia\": \"Antes usábamos Selenium y todavía mantenemos algunas pruebas viejas ahí.\"},\n    {\"valor\": \"Postman\", \"evidencia\": \"Las pruebas de API las hacemos en Postman.\"},\n    {\"valor\": \"Jira\", \"evidencia\": \"El seguimiento de efectos está en Jira.\"},\n    {\"valor\": \"JMeter\", \"evidencia\": \"Algo con JMeter, pero muy puntual, una o dos veces al año antes de las campañas grandes.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 7000, \"moneda\": \"PEN\"}, \"evidencia\": \"mi pretensión es de 7000 soles brutos mensuales.\"},\n  \"disponibilidad\": {\"valor\": \"2026-01-11\", \"evidencia\": \"Podría empezar la segunda semana de enero, el lunes 11.\"},\n  \"nivel_ingles\": {\"valor\": \"intermedio\", \"evidencia\": \"Diría que avanzado.\"}\n}",
+ "tiempo_s": 14.11,
+ "carga_s": 0.07,
+ "tokens_entrada": 1054,
+ "tokens_salida": 366,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:12:08"
+}

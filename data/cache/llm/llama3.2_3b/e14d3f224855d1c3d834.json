@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "e14d3f224855d1c3d834",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"lenguajes\",\n      \"evidencia\": \"Me gustaría trabajar con lenguajes como Java y Python.\"\n    },\n    {\n      \"valor\": \"herramientas\",\n      \"evidencia\": \"He utilizado herramientas como Git y SVN.\"\n    },\n    {\n      \"valor\": \"plataformas\",\n      \"evidencia\": \"He trabajado con plataformas como Salesforce.\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": {\n      \"monto\": 4500,\n      \"moneda\": \"PEN\"\n    },\n    \"evidencia\": \"Me gustaría llegar a cuatro mil quinientos soles.\"\n  },\n  \"disponibilidad\": {\n    \"valor\": \"2026-11-01\",\n    \"evidencia\": \"De inmediato\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": \"intermedio\",\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 13.8,
+ "carga_s": 3.83,
+ "tokens_entrada": 640,
+ "tokens_salida": 270,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:20:34"
+}

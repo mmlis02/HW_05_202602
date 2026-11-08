@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "af8f88b13986c309c7c2",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"un pollo entero\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 2,\n      \"evidencia\": \"dos medios pollos\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una porción de anticuchos\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"1.5 litros\",\n      \"cantidad\": 1,\n      \"evidencia\": \"una gaseosa de litro y medio\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"promo app\",\n    \"evidencia\": \"Leña 5\"\n  },\n  \"descuento\": {\n    \"valor\": 5,\n    \"evidencia\": \"Leña 5\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Avenida Las Gardeñas, 1580, casa de dos pisos con reja negra, Pueblo Libre\",\n    \"evidencia\": \"Avenida Las Gardeñas, 1580, casa de dos pisos con reja negra\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"efectivo\",\n    \"evidencia\": \"¿cómo va a pagar? En efectivo\"\n  },\n  \"total_dicho\": {\n    \"valor\": 95,\n    \"evidencia\": \"El total es 95 soles\"\n  }\n}",
+ "tiempo_s": 17.57,
+ "carga_s": 0.03,
+ "tokens_entrada": 978,
+ "tokens_salida": 388,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:15:41"
+}

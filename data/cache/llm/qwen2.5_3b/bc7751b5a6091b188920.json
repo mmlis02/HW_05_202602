@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "bc7751b5a6091b188920",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Buenas, quiero un pollo entero y dos gaseosas personales. Le repito su pedido: un pollo entero y dos gaseosas personales.\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Le repito su pedido: un pollo entero y dos gaseosas personales.\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": null\n  },\n  \"direccion_entrega\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"metodo_pago\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"total_dicho\": {\n    \"valor\": 12,\n    \"evidencia\": \"Le repito su pedido: un pollo entero y dos gaseosas personales.\"\n  }\n}",
+ "tiempo_s": 18.26,
+ "carga_s": 0.36,
+ "tokens_entrada": 517,
+ "tokens_salida": 275,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:09:11"
+}

@@ -1,0 +1,865 @@
+clip,campo,valor,ground_truth,acierta,estado,error,corrida,camino
+e1,anios_experiencia,4.5,4.5,True,verificado,,referencias,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi senior""","""Desarrollador backend semi senior""",True,verificado,,referencias,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,referencias,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,referencias,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,referencias,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,referencias,reglas
+e2,anios_experiencia,3,3,True,verificado,,referencias,reglas
+e2,ultimo_puesto,"""Analista de datos senior""","""Analista de datos senior""",True,verificado,,referencias,reglas
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",True,verificado,,referencias,reglas
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,referencias,reglas
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,referencias,reglas
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,referencias,reglas
+e3,anios_experiencia,8,8,True,verificado,,referencias,reglas
+e3,ultimo_puesto,"""Jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,referencias,reglas
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",True,verificado,,referencias,reglas
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,referencias,reglas
+e3,disponibilidad,"""2026-12-01""","""2026-12-01""",True,verificado,,referencias,reglas
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,referencias,reglas
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,referencias,reglas
+e4,ultimo_puesto,"""Desarrollador frontend junior""","""Desarrollador frontend junior""",True,verificado,,referencias,reglas
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",True,verificado,,referencias,reglas
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,referencias,reglas
+e4,disponibilidad,"""2026-11-30""","""2026-11-30""",True,verificado,,referencias,reglas
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,referencias,reglas
+e5,anios_experiencia,6,6,True,verificado,,referencias,reglas
+e5,ultimo_puesto,"""Líder técnico de QA""","""Líder técnico de QA""",True,verificado,,referencias,reglas
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,referencias,reglas
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,referencias,reglas
+e5,disponibilidad,"""2027-01-11""","""2027-01-11""",True,verificado,,referencias,reglas
+e5,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,referencias,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,referencias,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,referencias,reglas
+l1,descuento,10,10,True,verificado,,referencias,reglas
+l1,direccion_entrega,"""Calle Los Cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,referencias,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,referencias,reglas
+l1,total_dicho,96,96,True,verificado,,referencias,reglas
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",True,verificado,,referencias,reglas
+l2,promocion,"""promo app""","""promo app""",True,verificado,,referencias,reglas
+l2,descuento,5,5,True,verificado,,referencias,reglas
+l2,direccion_entrega,"""Avenida Las Gardenias 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",True,verificado,,referencias,reglas
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,referencias,reglas
+l2,total_dicho,95,95,True,verificado,,referencias,reglas
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,referencias,reglas
+l3,promocion,null,null,True,verificado,,referencias,reglas
+l3,descuento,0,0,True,verificado,,referencias,reglas
+l3,direccion_entrega,"""Jirón Los Halcones 1034, interior 5, Jesús María""","""Jirón Los Halcones 1034, interior 5, Jesús María""",True,verificado,,referencias,reglas
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,referencias,reglas
+l3,total_dicho,121,121,True,verificado,,referencias,reglas
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,referencias,reglas
+l4,promocion,"""promo app""","""promo app""",True,verificado,,referencias,reglas
+l4,descuento,5,5,True,verificado,,referencias,reglas
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,referencias,reglas
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,referencias,reglas
+l4,total_dicho,85,85,True,verificado,,referencias,reglas
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,referencias,reglas
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,referencias,reglas
+l5,descuento,10,10,True,verificado,,referencias,reglas
+l5,direccion_entrega,"""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",True,verificado,,referencias,reglas
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,referencias,reglas
+l5,total_dicho,131,131,True,verificado,,referencias,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,referencias,llm
+e1,ultimo_puesto,"""desarrollador backend semi senior""","""Desarrollador backend semi senior""",True,verificado,,referencias,llm
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,referencias,llm
+e1,pretension_salarial,"{""monto"": 6000, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",False,sin_verificar,,referencias,llm
+e1,disponibilidad,"""2026-11-07""","""2026-11-14""",False,sin_verificar,,referencias,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,referencias,llm
+e2,anios_experiencia,3,3,True,verificado,,referencias,llm
+e2,ultimo_puesto,"""analista de datos senior en Farmacias Bienestar""","""Analista de datos senior""",False,verificado,,referencias,llm
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,referencias,llm
+e2,pretension_salarial,"{""monto"": 1880, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",False,sin_verificar,,referencias,llm
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,referencias,llm
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,referencias,llm
+e3,anios_experiencia,8,8,True,verificado,,referencias,llm
+e3,ultimo_puesto,"""jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,referencias,llm
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana"", ""Nagios""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,referencias,llm
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,referencias,llm
+e3,disponibilidad,"""2026-11-01""","""2026-12-01""",False,sin_verificar,,referencias,llm
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,referencias,llm
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,referencias,llm
+e4,ultimo_puesto,"""desarrollador frontend junior en una startup de educación""","""Desarrollador frontend junior""",False,verificado,,referencias,llm
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Jest"", ""Figma"", ""documentación""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",False,verificado,,referencias,llm
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,referencias,llm
+e4,disponibilidad,null,"""2026-11-30""",False,no_mencionado,ValueError: day 32 must be in range 1..31 for month 10 in year 2026,referencias,llm
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,referencias,llm
+e5,anios_experiencia,6.5,6,False,sin_verificar,,referencias,llm
+e5,ultimo_puesto,"""lider técnico de QA""","""Líder técnico de QA""",False,sin_verificar,,referencias,llm
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,referencias,llm
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,referencias,llm
+e5,disponibilidad,"""2026-01-11""","""2027-01-11""",False,sin_verificar,,referencias,llm
+e5,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,referencias,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,sin_verificar,,referencias,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,referencias,llm
+l1,descuento,10,10,True,verificado,,referencias,llm
+l1,direccion_entrega,"""Calle Los Cedros doscientos cuarenta y cinco, departamento trescientos dos, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,referencias,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,referencias,llm
+l1,total_dicho,96,96,True,verificado,,referencias,llm
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 2, ""precio_unitario"": 36}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",False,verificado,,referencias,llm
+l2,promocion,"""promo app""","""promo app""",True,verificado,,referencias,llm
+l2,descuento,5,5,True,verificado,,referencias,llm
+l2,direccion_entrega,"""Avenida Las Gardenias mil quinientos ochenta, casa de dos pisos con reja negra""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,referencias,llm
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,referencias,llm
+l2,total_dicho,95,95,True,verificado,,referencias,llm
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,sin_verificar,,referencias,llm
+l3,promocion,null,null,True,verificado,,referencias,llm
+l3,descuento,0,0,True,verificado,,referencias,llm
+l3,direccion_entrega,"""Jirón Los Halcones mil treinta y cuatro, interior cinco, en Jesús María""","""Jirón Los Halcones 1034, interior 5, Jesús María""",False,verificado,,referencias,llm
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,referencias,llm
+l3,total_dicho,121,121,True,verificado,,referencias,llm
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,referencias,llm
+l4,promocion,null,"""promo app""",False,sin_verificar,,referencias,llm
+l4,descuento,5,5,True,verificado,,referencias,llm
+l4,direccion_entrega,"""Calle Las Orquídeas cuatrocientos dieciocho, oficina setecientos dos, en Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",False,verificado,,referencias,llm
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,referencias,llm
+l4,total_dicho,85,85,True,verificado,,referencias,llm
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,referencias,llm
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,referencias,llm
+l5,descuento,10,10,True,verificado,,referencias,llm
+l5,direccion_entrega,"""Avenida Los Laureles dos mil doscientos setenta y uno, bloque C, departamento quinientos cuatro, en San Juan de Lehurigancho""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,sin_verificar,,referencias,llm
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,referencias,llm
+l5,total_dicho,131,131,True,verificado,,referencias,llm
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e2,anios_experiencia,3,3,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e2,ultimo_puesto,"""Analista de datos senior""","""Analista de datos senior""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e3,anios_experiencia,8,8,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e3,ultimo_puesto,"""Jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e3,disponibilidad,"""2026-12-01""","""2026-12-01""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_float16_cuda_hotwords,reglas
+e4,ultimo_puesto,"""Desarrollador front end junior""","""Desarrollador frontend junior""",False,verificado,,large-v3_float16_cuda_hotwords,reglas
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e4,disponibilidad,"""2026-11-30""","""2026-11-30""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e5,anios_experiencia,6,6,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e5,ultimo_puesto,"""Líder técnico de QA""","""Líder técnico de QA""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e5,pretension_salarial,null,"{""monto"": 7000, ""moneda"": ""PEN""}",False,no_mencionado,,large-v3_float16_cuda_hotwords,reglas
+e5,disponibilidad,"""2027-01-11""","""2027-01-11""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e5,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l1,descuento,10,10,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l1,direccion_entrega,"""Calle Los Cedros 245, Departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l1,total_dicho,96,96,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l2,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l2,descuento,5,5,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l2,direccion_entrega,"""Avenida Las Gardenias 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l2,total_dicho,95,95,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l3,promocion,null,null,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l3,descuento,0,0,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l3,direccion_entrega,null,"""Jirón Los Halcones 1034, interior 5, Jesús María""",False,no_mencionado,,large-v3_float16_cuda_hotwords,reglas
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l3,total_dicho,121,121,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l4,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l4,descuento,5,5,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l4,total_dicho,85,85,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l5,descuento,10,10,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l5,direccion_entrega,"""Avenida Los Laureles 2271""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,verificado,,large-v3_float16_cuda_hotwords,reglas
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_hotwords,reglas
+l5,total_dicho,131,131,True,verificado,,large-v3_float16_cuda_hotwords,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_float16_cuda_hotwords,llm
+e1,ultimo_puesto,"""desarrollador backend semi-senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e1,disponibilidad,"""2026-11-17""","""2026-11-14""",False,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e2,anios_experiencia,3,3,True,verificado,,large-v3_float16_cuda_hotwords,llm
+e2,ultimo_puesto,"""analista de datos senior en farmacias bienestar""","""Analista de datos senior""",False,verificado,,large-v3_float16_cuda_hotwords,llm
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python con pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,large-v3_float16_cuda_hotwords,llm
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e3,anios_experiencia,8,8,True,verificado,,large-v3_float16_cuda_hotwords,llm
+e3,ultimo_puesto,"""jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur""","""Jefe de infraestructura""",False,verificado,,large-v3_float16_cuda_hotwords,llm
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana"", ""Nagios""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,large-v3_float16_cuda_hotwords,llm
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e3,disponibilidad,"""2026-10-31""","""2026-12-01""",False,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+e4,ultimo_puesto,"""desarrollador front-end junior en una startup de educación""","""Desarrollador frontend junior""",False,verificado,,large-v3_float16_cuda_hotwords,llm
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest"", ""intermedio""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",False,verificado,,large-v3_float16_cuda_hotwords,llm
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e4,disponibilidad,null,"""2026-11-30""",False,no_mencionado,ValueError: day 32 must be in range 1..31 for month 10 in year 2026,large-v3_float16_cuda_hotwords,llm
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e5,anios_experiencia,6.5,6,False,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+e5,ultimo_puesto,"""lider técnico de QA""","""Líder técnico de QA""",False,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_hotwords,llm
+e5,disponibilidad,"""2026-01-11""","""2027-01-11""",False,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+e5,nivel_ingles,"""intermedio""","""avanzado""",False,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l1,descuento,10,10,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l1,direccion_entrega,"""Calle Los Cedros, 245, Departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l1,total_dicho,96,96,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 2, ""precio_unitario"": 36}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",False,verificado,,large-v3_float16_cuda_hotwords,llm
+l2,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l2,descuento,5,5,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l2,direccion_entrega,"""Avenida Las Gardenias, 1580, casa de dos pisos con reja negra, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,large-v3_float16_cuda_hotwords,llm
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l2,total_dicho,95,95,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""único"", ""cantidad"": 2, ""precio_unitario"": null}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+l3,promocion,null,null,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l3,descuento,0,0,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l3,direccion_entrega,"""Girón, Los Halcones, 1034, interior 5, en Jesús María.""","""Jirón Los Halcones 1034, interior 5, Jesús María""",False,verificado,,large-v3_float16_cuda_hotwords,llm
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l3,total_dicho,121,121,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l4,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l4,descuento,5,5,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l4,total_dicho,85,85,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,sin_verificar,,large-v3_float16_cuda_hotwords,llm
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l5,descuento,10,10,True,verificado,,large-v3_float16_cuda_hotwords,llm
+l5,direccion_entrega,"""Avenida Los Laureles 2271, Bloque C, Departamento 504, San Juan del Urigancho""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,verificado,,large-v3_float16_cuda_hotwords,llm
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_hotwords,llm
+l5,total_dicho,131,131,True,verificado,,large-v3_float16_cuda_hotwords,llm
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e2,anios_experiencia,3,3,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e2,ultimo_puesto,"""Analista de datos senior""","""Analista de datos senior""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e3,anios_experiencia,8,8,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e3,ultimo_puesto,"""Jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e3,disponibilidad,"""2026-12-01""","""2026-12-01""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_float16_cuda_sin-glosario,reglas
+e4,ultimo_puesto,"""Desarrollador front end junior""","""Desarrollador frontend junior""",False,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e4,disponibilidad,"""2026-11-30""","""2026-11-30""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e5,anios_experiencia,6,6,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e5,ultimo_puesto,"""Líder técnico de QA""","""Líder técnico de QA""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e5,pretension_salarial,null,"{""monto"": 7000, ""moneda"": ""PEN""}",False,no_mencionado,,large-v3_float16_cuda_sin-glosario,reglas
+e5,disponibilidad,"""2027-01-11""","""2027-01-11""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e5,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l1,descuento,10,10,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l1,direccion_entrega,"""Calle Los Cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l1,total_dicho,96,96,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l2,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l2,descuento,5,5,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l2,direccion_entrega,"""Avenida Las Gardenias 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l2,total_dicho,95,95,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l3,promocion,null,null,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l3,descuento,0,0,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l3,direccion_entrega,null,"""Jirón Los Halcones 1034, interior 5, Jesús María""",False,no_mencionado,,large-v3_float16_cuda_sin-glosario,reglas
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l3,total_dicho,121,121,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l4,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l4,descuento,5,5,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l4,total_dicho,85,85,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l5,descuento,10,10,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l5,direccion_entrega,"""Avenida Los Laureles 2271""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+l5,total_dicho,131,131,True,verificado,,large-v3_float16_cuda_sin-glosario,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e1,ultimo_puesto,"""desarrollador backend semi-senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e1,disponibilidad,"""2026-10-31""","""2026-11-14""",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e2,anios_experiencia,3.5,3,False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+e2,ultimo_puesto,"""analista de datos senior en farmacias bienestar""","""Analista de datos senior""",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python con Pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e3,anios_experiencia,8,8,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e3,ultimo_puesto,"""jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur""","""Jefe de infraestructura""",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana"", ""Nacos""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e3,disponibilidad,"""2026-11-01""","""2026-12-01""",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+e4,ultimo_puesto,"""desarrollador front-end junior en una startup de educación""","""Desarrollador frontend junior""",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest"", ""intermedio""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e4,disponibilidad,null,"""2026-11-30""",False,no_mencionado,ValueError: day 32 must be in range 1..31 for month 10 in year 2026,large-v3_float16_cuda_sin-glosario,llm
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e5,anios_experiencia,6.5,6,False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+e5,ultimo_puesto,"""lider técnico de QA""","""Líder técnico de QA""",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""Jmeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e5,disponibilidad,"""2026-01-11""","""2027-01-11""",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+e5,nivel_ingles,"""intermedio""","""avanzado""",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l1,descuento,10,10,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l1,direccion_entrega,"""Calle Los Cedros, 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l1,total_dicho,96,96,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 2, ""precio_unitario"": 36}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l2,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l2,descuento,5,5,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l2,direccion_entrega,"""Avenida Las Gardenias, 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l2,total_dicho,95,95,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""único"", ""cantidad"": 2, ""precio_unitario"": null}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+l3,promocion,null,null,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l3,descuento,0,0,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l3,direccion_entrega,"""Girón Los Halcones, 1034, interior 5, en Jesús María""","""Jirón Los Halcones 1034, interior 5, Jesús María""",False,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l3,total_dicho,121,121,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+l4,promocion,null,"""promo app""",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+l4,descuento,5,5,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l4,total_dicho,85,85,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l5,descuento,10,10,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l5,direccion_entrega,"""Avenida Los Laureles, 2271, Bloque C, Departamento 504, San Juan de La Lurigancho""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,sin_verificar,,large-v3_float16_cuda_sin-glosario,llm
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+l5,total_dicho,131,131,True,verificado,,large-v3_float16_cuda_sin-glosario,llm
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e2,anios_experiencia,3,3,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e2,ultimo_puesto,"""Analista de datos senior""","""Analista de datos senior""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e3,anios_experiencia,8,8,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e3,ultimo_puesto,"""Jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e3,disponibilidad,"""2026-12-01""","""2026-12-01""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_int8_cuda_sin-glosario,reglas
+e4,ultimo_puesto,"""Desarrollador front end junior""","""Desarrollador frontend junior""",False,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e4,disponibilidad,"""2026-11-30""","""2026-11-30""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e5,anios_experiencia,6,6,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e5,ultimo_puesto,"""Líder técnico de QA""","""Líder técnico de QA""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e5,pretension_salarial,null,"{""monto"": 7000, ""moneda"": ""PEN""}",False,no_mencionado,,large-v3_int8_cuda_sin-glosario,reglas
+e5,disponibilidad,"""2027-01-11""","""2027-01-11""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e5,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l1,descuento,10,10,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l1,direccion_entrega,"""Calle Los Cedros 245, Departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l1,total_dicho,96,96,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l2,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l2,descuento,5,5,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l2,direccion_entrega,"""Avenida Las Gardeñas 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l2,total_dicho,95,95,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l3,promocion,null,null,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l3,descuento,0,0,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l3,direccion_entrega,null,"""Jirón Los Halcones 1034, interior 5, Jesús María""",False,no_mencionado,,large-v3_int8_cuda_sin-glosario,reglas
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l3,total_dicho,121,121,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l4,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l4,descuento,5,5,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l4,total_dicho,85,85,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l5,descuento,10,10,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l5,direccion_entrega,"""Avenida Los Laureles 2271""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+l5,total_dicho,131,131,True,verificado,,large-v3_int8_cuda_sin-glosario,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e1,ultimo_puesto,"""desarrollador backend semi-senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e1,disponibilidad,"""2026-10-31""","""2026-11-14""",False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e2,anios_experiencia,3.5,3,False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+e2,ultimo_puesto,"""analista de datos senior en farmacias bienestar""","""Analista de datos senior""",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python con Pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e3,anios_experiencia,8,8,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e3,ultimo_puesto,"""jefe de infraestructura en una empresa de logística, Transportes Pacífico Sur""","""Jefe de infraestructura""",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana"", ""Nacos""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e3,disponibilidad,"""2026-11-01""","""2026-12-01""",False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+e4,ultimo_puesto,"""desarrollador front-end junior en una startup de educación""","""Desarrollador frontend junior""",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest"", ""intermedio""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e4,disponibilidad,null,"""2026-11-30""",False,no_mencionado,ValueError: day 32 must be in range 1..31 for month 10 in year 2026,large-v3_int8_cuda_sin-glosario,llm
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e5,anios_experiencia,6.5,6,False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+e5,ultimo_puesto,"""lider técnico de QA""","""Líder técnico de QA""",False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""Jmeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+e5,disponibilidad,"""2026-01-11""","""2027-01-11""",False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+e5,nivel_ingles,"""intermedio""","""avanzado""",False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l1,descuento,10,10,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l1,direccion_entrega,"""Calle Los Cedros, 245, Departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l1,total_dicho,96,96,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 2, ""precio_unitario"": 36}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l2,promocion,null,"""promo app""",False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+l2,descuento,5,5,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l2,direccion_entrega,"""Avenida Las Gardeñas, 1580, casa de dos pisos con reja negra""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l2,total_dicho,95,95,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""único"", ""cantidad"": 2, ""precio_unitario"": null}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,sin_verificar,,large-v3_int8_cuda_sin-glosario,llm
+l3,promocion,null,null,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l3,descuento,0,0,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l3,direccion_entrega,"""Girón Los Halcones, 1034, interior 5, en Jesús María""","""Jirón Los Halcones 1034, interior 5, Jesús María""",False,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l3,total_dicho,121,121,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l4,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l4,descuento,5,5,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l4,metodo_pago,"""plin""","""plin""",True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l4,total_dicho,85,85,True,verificado,,large-v3_int8_cuda_sin-glosario,llm
+l5,items,null,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,no_mencionado,JSONDecodeError: Unterminated string starting at: line 46 column 18 (char 1180),large-v3_int8_cuda_sin-glosario,llm
+l5,promocion,null,"""duo familiar""",False,no_mencionado,JSONDecodeError: Unterminated string starting at: line 46 column 18 (char 1180),large-v3_int8_cuda_sin-glosario,llm
+l5,descuento,null,10,False,no_mencionado,JSONDecodeError: Unterminated string starting at: line 46 column 18 (char 1180),large-v3_int8_cuda_sin-glosario,llm
+l5,direccion_entrega,null,"""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,no_mencionado,JSONDecodeError: Unterminated string starting at: line 46 column 18 (char 1180),large-v3_int8_cuda_sin-glosario,llm
+l5,metodo_pago,null,"""yape""",False,no_mencionado,JSONDecodeError: Unterminated string starting at: line 46 column 18 (char 1180),large-v3_int8_cuda_sin-glosario,llm
+l5,total_dicho,null,131,False,no_mencionado,JSONDecodeError: Unterminated string starting at: line 46 column 18 (char 1180),large-v3_int8_cuda_sin-glosario,llm
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e2,anios_experiencia,3,3,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e2,ultimo_puesto,"""Analista de datos senior""","""Analista de datos senior""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e3,anios_experiencia,8,8,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e3,ultimo_puesto,"""Jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e3,disponibilidad,"""2026-12-01""","""2026-12-01""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_float16_cuda_initial_prompt,reglas
+e4,ultimo_puesto,"""Desarrollador front end junior""","""Desarrollador frontend junior""",False,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e4,disponibilidad,"""2026-11-30""","""2026-11-30""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e5,anios_experiencia,6,6,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e5,ultimo_puesto,"""Líder técnico de QA""","""Líder técnico de QA""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e5,pretension_salarial,null,"{""monto"": 7000, ""moneda"": ""PEN""}",False,no_mencionado,,large-v3_float16_cuda_initial_prompt,reglas
+e5,disponibilidad,"""2027-01-11""","""2027-01-11""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e5,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l1,descuento,10,10,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l1,direccion_entrega,"""Calle Los Cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l1,total_dicho,96,96,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l2,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l2,descuento,5,5,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l2,direccion_entrega,"""Avenida Las Gardeñas 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l2,total_dicho,95,95,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l3,promocion,null,null,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l3,descuento,0,0,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l3,direccion_entrega,null,"""Jirón Los Halcones 1034, interior 5, Jesús María""",False,no_mencionado,,large-v3_float16_cuda_initial_prompt,reglas
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l3,total_dicho,121,121,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l4,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l4,descuento,5,5,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l4,metodo_pago,null,"""plin""",False,no_mencionado,,large-v3_float16_cuda_initial_prompt,reglas
+l4,total_dicho,85,85,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l5,descuento,10,10,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l5,direccion_entrega,"""Avenida Los Laureles 2271""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+l5,total_dicho,131,131,True,verificado,,large-v3_float16_cuda_initial_prompt,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e1,ultimo_puesto,"""desarrollador backend semi-senior""","""Desarrollador backend semi senior""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e1,tecnologias,"[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e1,disponibilidad,"""2026-11-17""","""2026-11-14""",False,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e2,anios_experiencia,3,3,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e2,ultimo_puesto,"""analista de datos senior en farmacias bienestar""","""Analista de datos senior""",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python con Pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e3,anios_experiencia,8,8,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e3,ultimo_puesto,"""jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e3,tecnologias,"[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana"", ""Nagios"", ""Grafana"", ""Grafana"", ""Grafana"", ""Grafana"", ""Grafana"", ""Grafana"", ""Grafana"", ""Grafana"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e3,disponibilidad,"""2026-12-01""","""2026-12-01""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+e4,ultimo_puesto,"""desarrollador front-end junior en una startup de educación""","""Desarrollador frontend junior""",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest"", ""intermedio""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e4,disponibilidad,null,"""2026-11-30""",False,no_mencionado,ValueError: day 32 must be in range 1..31 for month 10 in year 2026,large-v3_float16_cuda_initial_prompt,llm
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e5,anios_experiencia,6.5,6,False,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+e5,ultimo_puesto,"""lider técnico de QA""","""Líder técnico de QA""",False,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+e5,tecnologias,"[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""Jmeter""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e5,disponibilidad,"""2026-01-11""","""2027-01-11""",False,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+e5,nivel_ingles,"""intermedio""","""avanzado""",False,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l1,descuento,10,10,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l1,direccion_entrega,"""Calle Los Cedros, 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l1,total_dicho,96,96,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 2, ""precio_unitario"": 36}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l2,promocion,"""promo app""","""promo app""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l2,descuento,5,5,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l2,direccion_entrega,"""Avenida Las Gardeñas, 1580, casa de dos pisos con reja negra, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l2,total_dicho,95,95,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""único"", ""cantidad"": 2, ""precio_unitario"": null}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+l3,promocion,null,null,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l3,descuento,0,0,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l3,direccion_entrega,"""Girón Los Halcones, 1034, interior 5, en Jesús María""","""Jirón Los Halcones 1034, interior 5, Jesús María""",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l3,total_dicho,121,121,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l4,promocion,null,"""promo app""",False,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+l4,descuento,5,5,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l4,direccion_entrega,"""Calle Las Orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l4,metodo_pago,"""plin""","""plin""",True,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+l4,total_dicho,85,85,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,sin_verificar,,large-v3_float16_cuda_initial_prompt,llm
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l5,descuento,10,10,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l5,direccion_entrega,"""Avenida Los Laureles, 2271, Bloque C, Departamento 504, San Juan del Urigancho""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l5,metodo_pago,"""yape""","""yape""",True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+l5,total_dicho,131,131,True,verificado,,large-v3_float16_cuda_initial_prompt,llm
+e1,anios_experiencia,4.5,4.5,True,verificado,,small_float16_cuda_sin-glosario,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi signor""","""Desarrollador backend semi senior""",False,verificado,,small_float16_cuda_sin-glosario,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",False,verificado,,small_float16_cuda_sin-glosario,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e2,anios_experiencia,3,3,True,verificado,,small_float16_cuda_sin-glosario,reglas
+e2,ultimo_puesto,"""Analista de datos senior""","""Analista de datos senior""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,small_float16_cuda_sin-glosario,reglas
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e3,anios_experiencia,8,8,True,verificado,,small_float16_cuda_sin-glosario,reglas
+e3,ultimo_puesto,"""Jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e3,tecnologias,"[""AWS"", ""Terraform"", ""Jenkins"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,small_float16_cuda_sin-glosario,reglas
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e3,disponibilidad,"""2026-10-31""","""2026-12-01""",False,verificado,,small_float16_cuda_sin-glosario,reglas
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,small_float16_cuda_sin-glosario,reglas
+e4,ultimo_puesto,"""Desarrollador Frontend Junior""","""Desarrollador frontend junior""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e4,disponibilidad,"""2026-11-30""","""2026-11-30""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e5,anios_experiencia,6,6,True,verificado,,small_float16_cuda_sin-glosario,reglas
+e5,ultimo_puesto,"""Líder técnico de QA""","""Líder técnico de QA""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+e5,tecnologias,"[""Cypress"", ""Postman""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",False,verificado,,small_float16_cuda_sin-glosario,reglas
+e5,pretension_salarial,null,"{""monto"": 7000, ""moneda"": ""PEN""}",False,no_mencionado,,small_float16_cuda_sin-glosario,reglas
+e5,disponibilidad,"""2027-01-01""","""2027-01-11""",False,verificado,,small_float16_cuda_sin-glosario,reglas
+e5,nivel_ingles,null,"""avanzado""",False,no_mencionado,,small_float16_cuda_sin-glosario,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l1,descuento,10,10,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l1,direccion_entrega,"""Calle los cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l1,total_dicho,96,96,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l2,promocion,"""promo app""","""promo app""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l2,descuento,5,5,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l2,direccion_entrega,"""Avenida Las Gardeñas 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,small_float16_cuda_sin-glosario,reglas
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l2,total_dicho,95,95,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,verificado,,small_float16_cuda_sin-glosario,reglas
+l3,promocion,null,null,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l3,descuento,0,0,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l3,direccion_entrega,null,"""Jirón Los Halcones 1034, interior 5, Jesús María""",False,no_mencionado,,small_float16_cuda_sin-glosario,reglas
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l3,total_dicho,121,121,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l4,promocion,"""promo app""","""promo app""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l4,descuento,5,5,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l4,direccion_entrega,"""Calle las orquídeas 418, oficina 702""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",False,verificado,,small_float16_cuda_sin-glosario,reglas
+l4,metodo_pago,null,"""plin""",False,no_mencionado,,small_float16_cuda_sin-glosario,reglas
+l4,total_dicho,85,85,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""pollo a la brasa"", ""tamano"": null, ""cantidad"": 1, ""precio_unitario"": null}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,verificado,,small_float16_cuda_sin-glosario,reglas
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_float16_cuda_sin-glosario,reglas
+l5,descuento,10,10,True,verificado,,small_float16_cuda_sin-glosario,reglas
+l5,direccion_entrega,null,"""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,no_mencionado,,small_float16_cuda_sin-glosario,reglas
+l5,metodo_pago,null,"""yape""",False,no_mencionado,,small_float16_cuda_sin-glosario,reglas
+l5,total_dicho,131,131,True,verificado,,small_float16_cuda_sin-glosario,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,small_float16_cuda_sin-glosario,llm
+e1,ultimo_puesto,"""desarrollador backend semi-signor""","""Desarrollador backend semi senior""",False,verificado,,small_float16_cuda_sin-glosario,llm
+e1,tecnologias,"[""Python"", ""Django"", ""Postgre SQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",False,verificado,,small_float16_cuda_sin-glosario,llm
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,small_float16_cuda_sin-glosario,llm
+e1,disponibilidad,"""2026-11-17""","""2026-11-14""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_float16_cuda_sin-glosario,llm
+e2,anios_experiencia,3,3,True,verificado,,small_float16_cuda_sin-glosario,llm
+e2,ultimo_puesto,"""analista de datos senior en farmacias bienestar""","""Analista de datos senior""",False,verificado,,small_float16_cuda_sin-glosario,llm
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,small_float16_cuda_sin-glosario,llm
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,small_float16_cuda_sin-glosario,llm
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,small_float16_cuda_sin-glosario,llm
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,small_float16_cuda_sin-glosario,llm
+e3,anios_experiencia,8,8,True,verificado,,small_float16_cuda_sin-glosario,llm
+e3,ultimo_puesto,"""jefe de infraestructura en una empresa de logística""","""Jefe de infraestructura""",False,verificado,,small_float16_cuda_sin-glosario,llm
+e3,tecnologias,"[""AWS"", ""Cubernetes"", ""Terraform"", ""Jenkins"", ""Grafana"", ""Nacos""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,small_float16_cuda_sin-glosario,llm
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,small_float16_cuda_sin-glosario,llm
+e3,disponibilidad,"""2026-10-31""","""2026-12-01""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,small_float16_cuda_sin-glosario,llm
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,small_float16_cuda_sin-glosario,llm
+e4,ultimo_puesto,"""Soy desarrollador Frontend Junior en una startup de educación""","""Desarrollador frontend junior""",False,verificado,,small_float16_cuda_sin-glosario,llm
+e4,tecnologias,"[""React"", ""TypeScript"", ""next.js"", ""Figma"", ""Jest"", ""soles""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",False,verificado,,small_float16_cuda_sin-glosario,llm
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,small_float16_cuda_sin-glosario,llm
+e4,disponibilidad,"""2026-11-01""","""2026-11-30""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_float16_cuda_sin-glosario,llm
+e5,anios_experiencia,6.5,6,False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+e5,ultimo_puesto,"""lider técnico de QA""","""Líder técnico de QA""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+e5,tecnologias,"[""Cypress"", ""Postman"", ""Jmitre""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",False,verificado,,small_float16_cuda_sin-glosario,llm
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,small_float16_cuda_sin-glosario,llm
+e5,disponibilidad,"""2026-01-11""","""2027-01-11""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+e5,nivel_ingles,"""intermedio""","""avanzado""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",False,verificado,,small_float16_cuda_sin-glosario,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l1,descuento,10,10,True,verificado,,small_float16_cuda_sin-glosario,llm
+l1,direccion_entrega,"""Calle los cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l1,total_dicho,96,96,True,verificado,,small_float16_cuda_sin-glosario,llm
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 2, ""precio_unitario"": 36}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",False,verificado,,small_float16_cuda_sin-glosario,llm
+l2,promocion,"""promo app""","""promo app""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l2,descuento,5,5,True,verificado,,small_float16_cuda_sin-glosario,llm
+l2,direccion_entrega,"""Avenida Las Gardeñas 1580, casa de dos pisos con reja negra""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,small_float16_cuda_sin-glosario,llm
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l2,total_dicho,95,95,True,verificado,,small_float16_cuda_sin-glosario,llm
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,sin_verificar,,small_float16_cuda_sin-glosario,llm
+l3,promocion,null,null,True,verificado,,small_float16_cuda_sin-glosario,llm
+l3,descuento,0,0,True,verificado,,small_float16_cuda_sin-glosario,llm
+l3,direccion_entrega,"""Girón los alcones mil treinta y cuatro, interior cinco, Jesús María""","""Jirón Los Halcones 1034, interior 5, Jesús María""",False,verificado,,small_float16_cuda_sin-glosario,llm
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l3,total_dicho,121,121,True,verificado,,small_float16_cuda_sin-glosario,llm
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,small_float16_cuda_sin-glosario,llm
+l4,promocion,"""promo app""","""promo app""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l4,descuento,5,5,True,verificado,,small_float16_cuda_sin-glosario,llm
+l4,direccion_entrega,"""Calle las orquídeas 418, oficina 702, dejar en recepción""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",False,verificado,,small_float16_cuda_sin-glosario,llm
+l4,metodo_pago,"""plin""","""plin""",True,sin_verificar,,small_float16_cuda_sin-glosario,llm
+l4,total_dicho,85,85,True,verificado,,small_float16_cuda_sin-glosario,llm
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_float16_cuda_sin-glosario,llm
+l5,descuento,10,10,True,verificado,,small_float16_cuda_sin-glosario,llm
+l5,direccion_entrega,"""Pasaje Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+l5,metodo_pago,"""tarjeta""","""yape""",False,sin_verificar,,small_float16_cuda_sin-glosario,llm
+l5,total_dicho,131,131,True,verificado,,small_float16_cuda_sin-glosario,llm
+e1,anios_experiencia,4.5,4.5,True,verificado,,small_int8_cuda_sin-glosario,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi signor""","""Desarrollador backend semi senior""",False,verificado,,small_int8_cuda_sin-glosario,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",False,verificado,,small_int8_cuda_sin-glosario,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e2,anios_experiencia,3,3,True,verificado,,small_int8_cuda_sin-glosario,reglas
+e2,ultimo_puesto,"""Analista de datos senior""","""Analista de datos senior""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e3,anios_experiencia,8,8,True,verificado,,small_int8_cuda_sin-glosario,reglas
+e3,ultimo_puesto,"""Jefe de infraestructura""","""Jefe de infraestructura""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e3,tecnologias,"[""AWS"", ""Terraform"", ""Jenkins"", ""Grafana""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,small_int8_cuda_sin-glosario,reglas
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e3,disponibilidad,"""2026-12-01""","""2026-12-01""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,small_int8_cuda_sin-glosario,reglas
+e4,ultimo_puesto,"""Desarrollador Frontend Junior""","""Desarrollador frontend junior""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e4,tecnologias,"[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e4,disponibilidad,"""2026-11-30""","""2026-11-30""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e5,anios_experiencia,6,6,True,verificado,,small_int8_cuda_sin-glosario,reglas
+e5,ultimo_puesto,"""Líder técnico de QA""","""Líder técnico de QA""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+e5,tecnologias,"[""Cypress"", ""Postman""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",False,verificado,,small_int8_cuda_sin-glosario,reglas
+e5,pretension_salarial,null,"{""monto"": 7000, ""moneda"": ""PEN""}",False,no_mencionado,,small_int8_cuda_sin-glosario,reglas
+e5,disponibilidad,"""2027-01-01""","""2027-01-11""",False,verificado,,small_int8_cuda_sin-glosario,reglas
+e5,nivel_ingles,null,"""avanzado""",False,no_mencionado,,small_int8_cuda_sin-glosario,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l1,descuento,10,10,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l1,direccion_entrega,"""Calle los cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l1,total_dicho,96,96,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l2,promocion,"""promo app""","""promo app""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l2,descuento,5,5,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l2,direccion_entrega,"""Avenida Las Gardeñas 1580, Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,small_int8_cuda_sin-glosario,reglas
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l2,total_dicho,95,95,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l3,promocion,null,null,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l3,descuento,0,0,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l3,direccion_entrega,null,"""Jirón Los Halcones 1034, interior 5, Jesús María""",False,no_mencionado,,small_int8_cuda_sin-glosario,reglas
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l3,total_dicho,121,121,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l4,promocion,"""promo app""","""promo app""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l4,descuento,5,5,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l4,direccion_entrega,"""Calle las orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l4,metodo_pago,null,"""plin""",False,no_mencionado,,small_int8_cuda_sin-glosario,reglas
+l4,total_dicho,85,85,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""pollo a la brasa"", ""tamano"": null, ""cantidad"": 1, ""precio_unitario"": null}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,verificado,,small_int8_cuda_sin-glosario,reglas
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_int8_cuda_sin-glosario,reglas
+l5,descuento,10,10,True,verificado,,small_int8_cuda_sin-glosario,reglas
+l5,direccion_entrega,null,"""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,no_mencionado,,small_int8_cuda_sin-glosario,reglas
+l5,metodo_pago,null,"""yape""",False,no_mencionado,,small_int8_cuda_sin-glosario,reglas
+l5,total_dicho,131,131,True,verificado,,small_int8_cuda_sin-glosario,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,small_int8_cuda_sin-glosario,llm
+e1,ultimo_puesto,"""desarrollador backend semi-signor""","""Desarrollador backend semi senior""",False,verificado,,small_int8_cuda_sin-glosario,llm
+e1,tecnologias,"[""Python"", ""Django"", ""Postgre SQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",False,verificado,,small_int8_cuda_sin-glosario,llm
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,small_int8_cuda_sin-glosario,llm
+e1,disponibilidad,"""2026-11-17""","""2026-11-14""",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_int8_cuda_sin-glosario,llm
+e2,anios_experiencia,3,3,True,verificado,,small_int8_cuda_sin-glosario,llm
+e2,ultimo_puesto,"""analista de datos senior en farmacias bienestar""","""Analista de datos senior""",False,verificado,,small_int8_cuda_sin-glosario,llm
+e2,tecnologias,"[""Power BI"", ""SQL Server"", ""Python con pandas"", ""Airflow""]","[""Power BI"", ""SQL Server"", ""Python"", ""pandas"", ""Airflow""]",False,verificado,,small_int8_cuda_sin-glosario,llm
+e2,pretension_salarial,"{""monto"": 1800, ""moneda"": ""USD""}","{""monto"": 1800, ""moneda"": ""USD""}",True,verificado,,small_int8_cuda_sin-glosario,llm
+e2,disponibilidad,"""2026-10-31""","""2026-10-31""",True,verificado,,small_int8_cuda_sin-glosario,llm
+e2,nivel_ingles,"""avanzado""","""avanzado""",True,verificado,,small_int8_cuda_sin-glosario,llm
+e3,anios_experiencia,8,8,True,verificado,,small_int8_cuda_sin-glosario,llm
+e3,ultimo_puesto,"""jefe de infraestructura en una empresa de logística""","""Jefe de infraestructura""",False,verificado,,small_int8_cuda_sin-glosario,llm
+e3,tecnologias,"[""AWS"", ""Cubernetes"", ""Terraform"", ""Jenkins"", ""Grafana"", ""Knackers""]","[""AWS"", ""Kubernetes"", ""Terraform"", ""Jenkins"", ""Grafana""]",False,verificado,,small_int8_cuda_sin-glosario,llm
+e3,pretension_salarial,"{""monto"": 9500, ""moneda"": ""PEN""}","{""monto"": 9500, ""moneda"": ""PEN""}",True,verificado,,small_int8_cuda_sin-glosario,llm
+e3,disponibilidad,"""2026-11-01""","""2026-12-01""",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+e3,nivel_ingles,"""basico""","""basico""",True,verificado,,small_int8_cuda_sin-glosario,llm
+e4,anios_experiencia,2.5,2.5,True,sin_verificar,,small_int8_cuda_sin-glosario,llm
+e4,ultimo_puesto,"""Soy desarrollador Frontend Junior en una startup de educación""","""Desarrollador frontend junior""",False,verificado,,small_int8_cuda_sin-glosario,llm
+e4,tecnologias,"[""React"", ""TypeScript"", ""next.js"", ""Figma"", ""Jest"", ""soles""]","[""React"", ""TypeScript"", ""Next.js"", ""Figma"", ""Jest""]",False,verificado,,small_int8_cuda_sin-glosario,llm
+e4,pretension_salarial,"{""monto"": 4800, ""moneda"": ""PEN""}","{""monto"": 4800, ""moneda"": ""PEN""}",True,verificado,,small_int8_cuda_sin-glosario,llm
+e4,disponibilidad,"""2026-11-01""","""2026-11-30""",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+e4,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_int8_cuda_sin-glosario,llm
+e5,anios_experiencia,6.5,6,False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+e5,ultimo_puesto,"""lider técnico de QA""","""Líder técnico de QA""",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+e5,tecnologias,"[""Cypress"", ""Subinium"", ""Postman"", ""gira"", ""Jmitre""]","[""Cypress"", ""Selenium"", ""Postman"", ""Jira"", ""JMeter""]",False,verificado,,small_int8_cuda_sin-glosario,llm
+e5,pretension_salarial,"{""monto"": 7000, ""moneda"": ""PEN""}","{""monto"": 7000, ""moneda"": ""PEN""}",True,verificado,,small_int8_cuda_sin-glosario,llm
+e5,disponibilidad,"""2026-12-18""","""2027-01-11""",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+e5,nivel_ingles,"""intermedio""","""avanzado""",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,sin_verificar,,small_int8_cuda_sin-glosario,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l1,descuento,10,10,True,verificado,,small_int8_cuda_sin-glosario,llm
+l1,direccion_entrega,"""Calle los cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l1,total_dicho,96,96,True,verificado,,small_int8_cuda_sin-glosario,llm
+l2,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 2, ""precio_unitario"": 36}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 1, ""precio_unitario"": 9}]",False,verificado,,small_int8_cuda_sin-glosario,llm
+l2,promocion,"""promo app""","""promo app""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l2,descuento,5,5,True,verificado,,small_int8_cuda_sin-glosario,llm
+l2,direccion_entrega,"""Avenida Las Gardeñas 1580 en Pueblo Libre""","""Avenida Las Gardenias 1580, Pueblo Libre""",False,verificado,,small_int8_cuda_sin-glosario,llm
+l2,metodo_pago,"""efectivo""","""efectivo""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l2,total_dicho,95,95,True,verificado,,small_int8_cuda_sin-glosario,llm
+l3,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""cuarto"", ""cantidad"": 3, ""precio_unitario"": 20}, {""producto"": ""papas fritas"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 7}, {""producto"": ""gaseosa"", ""tamano"": ""personal"", ""cantidad"": 3, ""precio_unitario"": 4}, {""producto"": ""torta de chocolate"", ""tamano"": ""porción"", ""cantidad"": 2, ""precio_unitario"": 9}]",True,sin_verificar,,small_int8_cuda_sin-glosario,llm
+l3,promocion,null,null,True,verificado,,small_int8_cuda_sin-glosario,llm
+l3,descuento,0,0,True,verificado,,small_int8_cuda_sin-glosario,llm
+l3,direccion_entrega,"""Girón los alcones mil treinta y cuatro, interior cinco, Jesús María""","""Jirón Los Halcones 1034, interior 5, Jesús María""",False,verificado,,small_int8_cuda_sin-glosario,llm
+l3,metodo_pago,"""tarjeta""","""tarjeta""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l3,total_dicho,121,121,True,verificado,,small_int8_cuda_sin-glosario,llm
+l4,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""ensalada clásica"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 10}, {""producto"": ""mollejitas"", ""tamano"": ""único"", ""cantidad"": 1, ""precio_unitario"": 16}, {""producto"": ""anticuchos"", ""tamano"": ""porción"", ""cantidad"": 1, ""precio_unitario"": 18}, {""producto"": ""chicha morada"", ""tamano"": ""vaso"", ""cantidad"": 2, ""precio_unitario"": 5}]",True,verificado,,small_int8_cuda_sin-glosario,llm
+l4,promocion,"""promo app""","""promo app""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l4,descuento,5,5,True,verificado,,small_int8_cuda_sin-glosario,llm
+l4,direccion_entrega,"""Calle las orquídeas 418, oficina 702, Miraflores""","""Calle Las Orquídeas 418, oficina 702, Miraflores""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l4,metodo_pago,"""plin""","""plin""",True,sin_verificar,,small_int8_cuda_sin-glosario,llm
+l4,total_dicho,85,85,True,verificado,,small_int8_cuda_sin-glosario,llm
+l5,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""pollo a la brasa"", ""tamano"": ""medio"", ""cantidad"": 1, ""precio_unitario"": 36}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 2, ""precio_unitario"": 14}, {""producto"": ""gaseosa"", ""tamano"": ""1.5 litros"", ""cantidad"": 2, ""precio_unitario"": 9}]",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+l5,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_int8_cuda_sin-glosario,llm
+l5,descuento,10,10,True,verificado,,small_int8_cuda_sin-glosario,llm
+l5,direccion_entrega,"""Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""","""Avenida Los Laureles 2271, bloque C, departamento 504, San Juan de Lurigancho""",False,verificado,,small_int8_cuda_sin-glosario,llm
+l5,metodo_pago,"""efectivo""","""yape""",False,sin_verificar,,small_int8_cuda_sin-glosario,llm
+l5,total_dicho,131,131,True,verificado,,small_int8_cuda_sin-glosario,llm
+e1,anios_experiencia,4.5,4.5,True,verificado,,small_int8_cpu_sin-glosario,reglas
+e1,ultimo_puesto,"""Desarrollador backend semi signor""","""Desarrollador backend semi senior""",False,verificado,,small_int8_cpu_sin-glosario,reglas
+e1,tecnologias,"[""Python"", ""Django"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",False,verificado,,small_int8_cpu_sin-glosario,reglas
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,small_int8_cpu_sin-glosario,reglas
+e1,disponibilidad,"""2026-11-14""","""2026-11-14""",True,verificado,,small_int8_cpu_sin-glosario,reglas
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_int8_cpu_sin-glosario,reglas
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",True,verificado,,small_int8_cpu_sin-glosario,reglas
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_int8_cpu_sin-glosario,reglas
+l1,descuento,10,10,True,verificado,,small_int8_cpu_sin-glosario,reglas
+l1,direccion_entrega,"""Calle los cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,small_int8_cpu_sin-glosario,reglas
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,small_int8_cpu_sin-glosario,reglas
+l1,total_dicho,96,96,True,verificado,,small_int8_cpu_sin-glosario,reglas
+e1,anios_experiencia,4.5,4.5,True,verificado,,small_int8_cpu_sin-glosario,llm
+e1,ultimo_puesto,"""desarrollador backend semi-signor""","""Desarrollador backend semi senior""",False,verificado,,small_int8_cpu_sin-glosario,llm
+e1,tecnologias,"[""Python"", ""Django"", ""Postgre SQL"", ""Docker""]","[""Python"", ""Django"", ""PostgreSQL"", ""Docker""]",False,verificado,,small_int8_cpu_sin-glosario,llm
+e1,pretension_salarial,"{""monto"": 6500, ""moneda"": ""PEN""}","{""monto"": 6500, ""moneda"": ""PEN""}",True,verificado,,small_int8_cpu_sin-glosario,llm
+e1,disponibilidad,"""2026-11-17""","""2026-11-14""",False,sin_verificar,,small_int8_cpu_sin-glosario,llm
+e1,nivel_ingles,"""intermedio""","""intermedio""",True,verificado,,small_int8_cpu_sin-glosario,llm
+l1,items,"[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}]","[{""producto"": ""pollo a la brasa"", ""tamano"": ""entero"", ""cantidad"": 1, ""precio_unitario"": 68}, {""producto"": ""papas fritas"", ""tamano"": ""familiar"", ""cantidad"": 1, ""precio_unitario"": 14}, {""producto"": ""chicha morada"", ""tamano"": ""jarra"", ""cantidad"": 2, ""precio_unitario"": 12}]",False,verificado,,small_int8_cpu_sin-glosario,llm
+l1,promocion,"""duo familiar""","""duo familiar""",True,verificado,,small_int8_cpu_sin-glosario,llm
+l1,descuento,10,10,True,verificado,,small_int8_cpu_sin-glosario,llm
+l1,direccion_entrega,"""Calle los cedros 245, departamento 302, Surco""","""Calle Los Cedros 245, departamento 302, Surco""",True,verificado,,small_int8_cpu_sin-glosario,llm
+l1,metodo_pago,"""yape""","""yape""",True,verificado,,small_int8_cpu_sin-glosario,llm
+l1,total_dicho,96,96,True,verificado,,small_int8_cpu_sin-glosario,llm

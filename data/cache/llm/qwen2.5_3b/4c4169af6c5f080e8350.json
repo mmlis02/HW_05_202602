@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "4c4169af6c5f080e8350",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Un medio pollo a la brasa\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Una ensalada clásica\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Una de mollejitas\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Una porción de anticuchos\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"vaso\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Dos vasos de chicha morada\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": \"promo app\",\n    \"evidencia\": \"El descuento de la app\"\n  },\n  \"descuento\": {\n    \"valor\": 5,\n    \"evidencia\": \"El descuento de la app\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": \"Calle Las Orquídeas 418, oficina 702, Miraflores\",\n    \"evidencia\": \"Calle Las Orquídeas 418, oficina 702, en Miraflores\"\n  },\n  \"metodo_pago\": {\n    \"valor\": \"plin\",\n    \"evidencia\": \"Con Plin\"\n  },\n  \"total_dicho\": {\n    \"valor\": 85,\n    \"evidencia\": \"El total es 85 soles\"\n  }\n}",
+ "tiempo_s": 14.73,
+ "carga_s": 0.03,
+ "tokens_entrada": 975,
+ "tokens_salida": 428,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:13:21"
+}

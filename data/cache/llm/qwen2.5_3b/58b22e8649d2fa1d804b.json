@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "58b22e8649d2fa1d804b",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 3,\n      \"evidencia\": \"Tres cuartos de pollo, cada uno con su papa personal.\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 3,\n      \"evidencia\": \"Tres gaseosas personales.\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 3,\n      \"evidencia\": \"Tres gaseosas personales.\"\n    },\n    {\n      \"producto\": \"torta de chocolate\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Dos porciones de torta de chocolate.\"\n    }\n  ],\n  \"promocion\": {\"valor\": null, \"evidencia\": \"No, ninguno.\"},\n  \"descuento\": {\"valor\": 0, \"evidencia\": \"No, ninguno.\"},\n  \"direccion_entrega\": {\"valor\": \"Jirón Los Halcones mil treinta y cuatro, interior cinco, en Jesús María\", \"evidencia\": \"Jirón Los Halcones mil treinta y cuatro, interior cinco, en Jesús María.\"},\n  \"metodo_pago\": {\"valor\": \"tarjeta\", \"evidencia\": \"¿Forma de pago? Con tarjeta.\"},\n  \"total_dicho\": {\"valor\": 121, \"evidencia\": \"Le llega en cuarenta y cinco minutos aproximadamente. Gracias, buenas noches. Buenas noches.\"}\n}",
+ "tiempo_s": 20.02,
+ "carga_s": 0.29,
+ "tokens_entrada": 975,
+ "tokens_salida": 379,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:10:00"
+}

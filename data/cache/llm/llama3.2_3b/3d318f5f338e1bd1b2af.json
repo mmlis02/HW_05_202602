@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "pedido",
+ "clave": "3d318f5f338e1bd1b2af",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Quisiera una jarra de chicha morada\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 1,\n      \"evidencia\": \"Quisiera una jarra de chicha morada y un cuarto de pollo\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 2,\n      \"evidencia\": \"Mejor que sean dos cuartos de pollo\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": null\n  },\n  \"direccion_entrega\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"metodo_pago\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"total_dicho\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 8.42,
+ "carga_s": 0.02,
+ "tokens_entrada": 626,
+ "tokens_salida": 282,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:21:42"
+}

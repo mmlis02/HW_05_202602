@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "f4aee0081f0998a80f79",
+ "respuesta": "{\n  \"items\": [\n    {\"producto\": \"pollo a la brasa\", \"tamano\": \"medio\", \"cantidad\": 1, \"evidencia\": \"Un medio pollo a la brasa\"},\n    {\"producto\": \"ensalada clásica\", \"tamano\": \"único\", \"cantidad\": 1, \"evidencia\": \"una ensalada clásica\"},\n    {\"producto\": \"mollejitas\", \"tamano\": \"único\", \"cantidad\": 1, \"evidencia\": \"Una de mollejitas\"},\n    {\"producto\": \"anticuchos\", \"tamano\": \"porción\", \"cantidad\": 1, \"evidencia\": \"Una porción de anticuchos\"},\n    {\"producto\": \"chicha morada\", \"tamano\": \"vaso\", \"cantidad\": 2, \"evidencia\": \"Dos vasos de chicha morada\"}\n  ],\n  \"promocion\": {\"valor\": null, \"evidencia\": \"LEÑA5\"},\n  \"descuento\": {\"valor\": 5, \"evidencia\": \"5 soles de descuento\"},\n  \"direccion_entrega\": {\"valor\": \"Calle Las Orquídeas 418, oficina 702, Miraflores\", \"evidencia\": \"Calle Las Orquídeas 418, oficina 702, en Miraflores\"},\n  \"metodo_pago\": {\"valor\": \"plin\", \"evidencia\": \"Con Plim\"},\n  \"total_dicho\": {\"valor\": 85, \"evidencia\": \"El total es 85 soles\"}\n}",
+ "tiempo_s": 17.29,
+ "carga_s": 0.07,
+ "tokens_entrada": 981,
+ "tokens_salida": 364,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:16:22"
+}

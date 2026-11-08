@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "0538bb0e2e12bf46a842",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"Java\",\n      \"evidencia\": \"Java\"\n    },\n    {\n      \"valor\": \"Python\",\n      \"evidencia\": \"Python\"\n    },\n    {\n      \"valor\": \"JavaScript\",\n      \"evidencia\": \"JavaScript\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": {\n      \"monto\": 60000,\n      \"moneda\": \"PEN\"\n    },\n    \"evidencia\": \"A partir del quince de noviembre\"\n  },\n  \"disponibilidad\": {\n    \"valor\": \"2026-11-15\",\n    \"evidencia\": \"A partir del quince de noviembre\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": \"intermedio\",\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 6.91,
+ "carga_s": 0.08,
+ "tokens_entrada": 458,
+ "tokens_salida": 236,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T15:58:37"
+}

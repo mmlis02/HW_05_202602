@@ -1,0 +1,14 @@
+{
+ "modelo": "llama3.2:3b",
+ "esquema": "entrevista",
+ "clave": "74de12e5bd72c6fa6c73",
+ "respuesta": "{\n  \"anios_experiencia\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"ultimo_puesto\": {\n    \"valor\": null,\n    \"evidencia\": null\n  },\n  \"tecnologias\": [\n    {\n      \"valor\": \"S/.\",\n      \"evidencia\": \"S/.4.800 brutos\"\n    }\n  ],\n  \"pretension_salarial\": {\n    \"valor\": {\n      \"monto\": 4800,\n      \"moneda\": \"PEN\"\n    },\n    \"evidencia\": \"S/.4.800 brutos\"\n  },\n  \"disponibilidad\": {\n    \"valor\": \"2026-11-01\",\n    \"evidencia\": \"15 de noviembre\"\n  },\n  \"nivel_ingles\": {\n    \"valor\": null,\n    \"evidencia\": null\n  }\n}",
+ "tiempo_s": 13.56,
+ "carga_s": 0.02,
+ "tokens_entrada": 633,
+ "tokens_salida": 195,
+ "memoria_mb": 2442,
+ "version_ollama": "0.40.15",
+ "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+ "fecha": "2026-11-07T16:23:46"
+}

@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "98b436894064a19a3eff",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 3.5, \"evidencia\": \"Trabajo como analista de datos desde 2023, o sea, tres años.\"},\n  \"ultimo_puesto\": {\"valor\": \"analista de datos senior en farmacias bienestar\", \"evidencia\": \"Analista de datos senior en farmacias bienestar.\"},\n  \"tecnologias\": [\n    {\"valor\": \"Power BI\", \"evidencia\": \"Para los tableros, Power BI.\"},\n    {\"valor\": \"SQL Server\", \"evidencia\": \"Las consultas las hacía con SQL Server.\"},\n    {\"valor\": \"Python con Pandas\", \"evidencia\": \"Para automatizar la limpieza de datos usaba Python con Pandas.\"},\n    {\"valor\": \"Airflow\", \"evidencia\": \"Al final del año también armamos algunos flujos en Airflow.\"}\n  ],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 1800, \"moneda\": \"USD\"}, \"evidencia\": \"Estaba pensando en algo alrededor de $1.800 al mes.\"},\n  \"disponibilidad\": {\"valor\": \"2026-10-31\", \"evidencia\": \"Buenos días, puedo empezar de inmediato.\"},\n  \"nivel_ingles\": {\"valor\": \"avanzado\", \"evidencia\": \"Tengo un nivel avanzado.\"}\n}",
+ "tiempo_s": 13.24,
+ "carga_s": 0.02,
+ "tokens_entrada": 1144,
+ "tokens_salida": 324,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T19:17:13"
+}

@@ -6,6 +6,8 @@ av==18.1.0
 jiwer==4.0.0
 # Números en palabras -> dígitos en texto corrido, con soporte de español (alpha2digit(texto, "es"))
 text2num==3.1.0
+# Cliente del LLM local de extracción (Ollama corre aparte: https://ollama.com/download)
+ollama==0.6.3
 # Datos y configuración
 pandas==3.1.0
 PyYAML==6.0.3

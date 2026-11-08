@@ -92,6 +92,30 @@ python -c "import sys, src.engine; ui = {'streamlit','gradio','tkinter','PyQt5',
   - Con `hotwords`, Nagios llega bien transcrito y la extracción lo excluye igual. Además, es el único mecanismo que no pierde ningún término.
 - **Riesgo.** Los clips que empeoran con un glosario no fallan en los términos: Whisper repite una frase entera. Con `hotwords`, L4 repite la dirección (WER 8.7 %); con `initial_prompt`, E1 repite una oración (6.5 %).
 
+## Extracción con LLM
+
+Segundo camino de extracción: `src/extraccion_llm.py`, con un LLM local en Ollama. No hace falta clave de API. Misma firma y misma salida que las reglas (`valor` y `evidencia` por campo), y la misma verificación: el LLM no se verifica a sí mismo. Evaluación en `notebooks/03_extraccion.ipynb` (secciones 4 y 9, sobre las referencias) y `notebooks/06_resultados.ipynb` (sección 6, sobre las 7 corridas de audio).
+
+- **Cómo instalarlo.** Instala la app de https://ollama.com/download, ábrela (deja el servidor en `localhost:11434`) y ejecuta `ollama pull qwen2.5:3b`. Los notebooks y la app no lo necesitan para leer resultados: cada respuesta está en `data/cache/llm/`, con su tiempo y su memoria.
+- **Cómo se llama al modelo.** Con salida estructurada: Ollama recibe un esquema JSON (clases como enum, listas con tope), con temperatura 0 y semilla 42. Los prompts están en `config.yaml → extraccion.prompts`. `precio_unitario` sale de la carta, como en las reglas. Si Ollama falla o el JSON es inválido, el campo queda nulo con `error`.
+- **Modelo: `qwen2.5:3b`.** Se eligió entre tres instruct de 3 a 4 mil millones de parámetros, con un piloto sobre 29 variantes que no son del corpus. En la ronda 2 acierta 23 de 29, contra 18 de `llama3.2:3b` y 17 de `phi4-mini:3.8b`. Es el que menos memoria ocupa (2.0 GB con `num_ctx` 4096, contra 2.4 y 3.0 GB), que en una Mac M2 de 8 GB es lo que decide, y declara español entre sus idiomas. `gemma3:4b` (3.3 GB) quedó fuera por tamaño. Los prompts se revisaron una vez, sobre el piloto, y quedaron fijos antes de tocar el corpus.
+- **Tiempo y memoria.** Unos 15 s por clip en la corrida principal (mediana de 16.7 s en todo el corpus, con picos de 77 s cuando la Mac usaba swap), contra 7 ms de las reglas. El modelo cargado ocupa 2063 MB.
+
+**Reglas contra LLM** (aciertos de 60; IC de Wilson al 95 % en la corrida principal):
+
+| | Referencias | Corrida principal | Todas las corridas de audio |
+|---|---|---|---|
+| Reglas | 60 | 56 (0.84 a 0.97) | 321 de 372 |
+| LLM | 41 | 42 (0.57 a 0.80) | 243 de 372 |
+| Motor (reglas + pretensión del LLM) | 58 | 57 | 327 de 372 |
+
+- **Dónde pierde el LLM.** Fechas (7 de 31 en audio, contra 28 de las reglas: calcula mal), puesto (5 contra 24: pega la empresa al cargo), tecnologías (incluye Nagios, la trampa de E3, y "intermedio") e ítems (pierde la autocorrección de L2).
+- **Dónde gana.** `pretension_salarial`: 31 de 31 contra 25 de 31. Resuelve E5, con el sueldo actual y la pretensión en la misma oración, en todas las corridas.
+- **Corrige en silencio.** Solo en L4: Whisper escribe "Plim" o "plín" y el LLM devuelve `plin`. Queda `sin_verificar`, como debe, porque "plin" no está en la transcripción. La corrección la fuerza en parte el enum: con "Ya pe" (L5 en `small`) elige mal, `tarjeta` o `efectivo`. Donde el valor es texto libre, no corrige: copia "Girón" y "San Juan del Urigancho", que quedan `verificado` aunque estén mal.
+- **Inventa.** En textos cortos inventa tecnologías: en el piloto, 22 de las 27 que devuelve no están en el texto. En el corpus inventa años y nivel en E5, con valores que contradicen su propia evidencia ("ya van 6 años" → 6.5). Todo eso queda `sin_verificar`.
+
+**Decisión** (`config.yaml → extraccion.metodo: reglas`, `campos_llm: [pretension_salarial]`): el motor usa las reglas y toma del LLM solo la pretensión salarial, el único campo en que el LLM gana con audio real y donde sus valores se verifican. Si Ollama no responde, la pretensión sale de las reglas y el campo lleva `error_llm`. El costo es una llamada al LLM por entrevista. El techo baja de 60 a 58, porque en las referencias los montos están en palabras y el LLM los convierte mal. Whisper los escribe en cifras, que es lo que recibe el motor.
+
 ## Resultados Task 1
 
 Corrida principal: la configuración por defecto del motor, `large-v3` en float16 con glosario `hotwords`, sobre la T4 de Colab y los 10 clips. Todo se calcula desde `data/cache/`, sin transcribir: `notebooks/06_resultados.ipynb`, secciones 1 a 5. Las otras 6 corridas aparecen ahí como comparación.

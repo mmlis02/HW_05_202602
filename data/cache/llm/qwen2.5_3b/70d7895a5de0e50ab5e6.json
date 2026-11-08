@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "pedido",
+ "clave": "70d7895a5de0e50ab5e6",
+ "respuesta": "{\n  \"items\": [\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"medio\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa medio\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"cuarto\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa cuarto\"\n    },\n    {\n      \"producto\": \"pollo a la brasa\",\n      \"tamano\": \"entero\",\n      \"cantidad\": 1,\n      \"evidencia\": \"pollo a la brasa entero\"\n    },\n    {\n      \"producto\": \"papas fritas\",\n      \"tamano\": \"familiar\",\n      \"cantidad\": 1,\n      \"evidencia\": \"papas fritas familiar\"\n    },\n    {\n      \"producto\": \"chicha morada\",\n      \"tamano\": \"jarra\",\n      \"cantidad\": 1,\n      \"evidencia\": \"chicha morada jarra\"\n    },\n    {\n      \"producto\": \"gaseosa\",\n      \"tamano\": \"personal\",\n      \"cantidad\": 1,\n      \"evidencia\": \"gaseosa personal\"\n    },\n    {\n      \"producto\": \"ensalada clásica\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"ensalada clásica único\"\n    },\n    {\n      \"producto\": \"anticuchos\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"anticuchos porción\"\n    },\n    {\n      \"producto\": \"mollejitas\",\n      \"tamano\": \"único\",\n      \"cantidad\": 1,\n      \"evidencia\": \"mollejitas único\"\n    },\n    {\n      \"producto\": \"torta de chocolate\",\n      \"tamano\": \"porción\",\n      \"cantidad\": 1,\n      \"evidencia\": \"torta de chocolate porción\"\n    }\n  ],\n  \"promocion\": {\n    \"valor\": null,\n    \"evidencia\": \"no hay promocion\"\n  },\n  \"descuento\": {\n    \"valor\": 0,\n    \"evidencia\": \"no hay descuento\"\n  },\n  \"direccion_entrega\": {\n    \"valor\": null,\n    \"evidencia\": \"no hay dirección de entrega\"\n  },\n  \"metodo_pago\": {\n    \"valor\": null,\n    \"evidencia\": \"no hay método de pago\"\n  },\n  \"total_dicho\": {\n    \"valor\": 104,\n    \"evidencia\": \"total con delivery es S/ 104\"\n  }\n}",
+ "tiempo_s": 22.57,
+ "carga_s": 0.02,
+ "tokens_entrada": 492,
+ "tokens_salida": 601,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:14:27"
+}

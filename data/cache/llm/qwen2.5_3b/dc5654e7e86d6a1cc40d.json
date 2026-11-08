@@ -1,0 +1,14 @@
+{
+ "modelo": "qwen2.5:3b",
+ "esquema": "entrevista",
+ "clave": "dc5654e7e86d6a1cc40d",
+ "respuesta": "{\n  \"anios_experiencia\": {\"valor\": 4, \"evidencia\": \"cuatro años\"},\n  \"ultimo_puesto\": {\"valor\": null, \"evidencia\": null},\n  \"tecnologias\": [{\"valor\": \"Python\", \"evidencia\": \"Python\"},\n                  {\"valor\": \"Java\", \"evidencia\": \"Java\"},\n                  {\"valor\": \"HTML\", \"evidencia\": \"HTML\"},\n                  {\"valor\": \"CSS\", \"evidencia\": \"CSS\"},\n                  {\"valor\": \"JavaScript\", \"evidencia\": \"JavaScript\"},\n                  {\"valor\": \"SQL\", \"evidencia\": \"SQL\"},\n                  {\"valor\": \"Git\", \"evidencia\": \"Git\"},\n                  {\"valor\": \"Linux\", \"evidencia\": \"Linux\"},\n                  {\"valor\": \"Docker\", \"evidencia\": \"Docker\"},\n                  {\"valor\": \"Kubernetes\", \"evidencia\": \"Kubernetes\"}],\n  \"pretension_salarial\": {\"valor\": {\"monto\": 3000, \"moneda\": \"PEN\"}, \"evidencia\": \"3000 PEN\"},\n  \"disponibilidad\": {\"valor\": \"2026-10-31\", \"evidencia\": \"2026-10-31\"},\n  \"nivel_ingles\": {\"valor\": \"intermedio\", \"evidencia\": \"intermedio\"}\n}",
+ "tiempo_s": 12.11,
+ "carga_s": 0.02,
+ "tokens_entrada": 446,
+ "tokens_salida": 309,
+ "memoria_mb": 2063,
+ "version_ollama": "0.40.15",
+ "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+ "fecha": "2026-11-07T16:04:25"
+}
